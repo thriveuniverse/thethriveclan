@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  // no output: "export"
+  // Image Optimization works by default
 };
+
 export default nextConfig;

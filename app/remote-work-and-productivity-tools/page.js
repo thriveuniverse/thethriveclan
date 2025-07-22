@@ -19,4 +19,5 @@ export default function RemoteworkandproductivitytoolsPage() {
       </ul>
     </div>
   );
+
 }
