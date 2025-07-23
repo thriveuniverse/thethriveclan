@@ -103,11 +103,11 @@ main {{
 }}
 
 .nav-toggle {{
-  display: none;
+  display: ;
 }}
 
 .nav-toggle-label {{
-  display: none;
+  display: ;
   cursor: pointer;
   width: 2rem;
   height: 2rem;
@@ -144,7 +144,7 @@ main {{
     right: 0;
     background: var(--background);
     border-bottom: 1px solid #ddd;
-    display: none;
+    display: ;
     flex-direction: column;
     padding: 1rem;
   }}
@@ -220,3 +220,4 @@ main {{
   max-width: 640px;
   line-height: 1.4;
 }
+body { display: block !important; }

@@ -1,23 +1,39 @@
+import ProductGrid from "../../components/ProductGrid";
+
 export const metadata = {
-  title: "Remote Work and Productivity Tools – The Thrive Clan",
-  description: "Resources for remote work and productivity tools",
+  title: "Remote Work and Productivity Tools | The Thrive Clan",
+  description: "Resources for remote work and productivity tools.",
 };
 
-export default function RemoteworkandproductivitytoolsPage() {
-  return (
-    <div className="sector-page">
-      <h1>Remote Work and Productivity Tools</h1>
-      <ul className="keyword-list">
-          <li key="0">Remote work productivity tools 2025</li>
-          <li key="1">AI-powered task management</li>
-          <li key="2">Virtual collaboration platforms</li>
-          <li key="3">Remote team communication tools</li>
-          <li key="4">Digital nomad productivity solutions</li>
-          <li key="5">Remote work wellness tools</li>
-          <li key="6">Virtual team building platforms</li>
-          <li key="7">Remote work security solutions</li>
-      </ul>
-    </div>
-  );
+const keywords = [
+  "Remote work productivity tools 2025",
+  "AI-powered task management",
+  "Virtual collaboration platforms",
+  "Remote team communication tools",
+  "Digital nomad productivity solutions",
+  "Remote work wellness tools",
+  "Virtual team building platforms",
+  "Remote work security solutions",
+];
 
+const slugify = (str) =>
+  str.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+
+const items = keywords.map((kw) => ({
+  title: `${kw} Bundle`,
+  slug: slugify(kw),
+  img: `/images/products/${slugify(kw)}.jpg`,
+  alt: `${kw} bundle`,
+}));
+
+export default function RemoteWorkAndProductivityToolsPage() {
+  return (
+    <section className="mx-auto max-w-3xl px-4 py-12">
+      {/* TODO: blurb */}
+      <h1 className="text-3xl font-semibold mb-6">Remote Work and Productivity Tools</h1>
+
+      <h2 className="text-2xl font-semibold mt-10 mb-4">Products & Bundles</h2>
+      <ProductGrid items={items} />
+    </section>
+  );
 }

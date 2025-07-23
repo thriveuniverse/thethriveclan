@@ -1,43 +1,39 @@
+import ProductGrid from "../../components/ProductGrid";
+
 export const metadata = {
-  title: "E-Learning and Online Education – The Thrive Clan",
-  description: "Resources for e-learning and online education",
+  title: "E‑Learning & Online Education | The Thrive Clan",
+  description: "Resources for e-learning and online education.",
 };
 
-export default function ElearningandonlineeducationPage() {
-  return (
-    <div className="sector-page">
-      <h1>E-Learning and Online Education</h1>
-      <ul className="keyword-list">
-          <li key="0">Online learning platforms</li>
-          <li key="1">E-learning course development</li>
-          <li key="2">Online teaching degree programs</li>
-          <li key="3">Distance learning solutions</li>
-          <li key="4">Industry-specific training programs</li>
-          <li key="5">Professional certification courses</li>
-          <li key="6">Skills-based learning platforms</li>
-          <li key="7">Corporate training solutions</li>
-      </ul>
-    </div>
-  );
-}export default function Page() {
-  return (
-    <div className="max-w-4xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-semibold mb-6">AI &amp; Automation Tools</h1>
+const keywords = [
+  "Online learning platforms",
+  "E-learning course development",
+  "Online teaching degree programs",
+  "Distance learning solutions",
+  "Industry-specific training programs",
+  "Professional certification courses",
+  "Skills-based learning platforms",
+  "Corporate training solutions",
+];
 
-      <ul className="space-y-3 list-disc list-inside">
-        {[
-          "AI automation tools for small business",
-          "AI workflow automation",
-          "Business process automation tools",
-          "AI-powered productivity software",
-          "AI prompt engineering services",
-          "Automated testing services for web applications",
-          "AI ethics compliance tools",
-          "Machine learning automation platforms",
-        ].map((kw) => (
-          <li key={kw}>{kw}</li>
-        ))}
-      </ul>
-    </div>
+const slugify = (str) =>
+  str.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+
+const items = keywords.map((kw) => ({
+  title: `${kw} Bundle`,
+  slug: slugify(kw),
+  img: `/images/products/${slugify(kw)}.jpg`,
+  alt: `${kw} bundle`,
+}));
+
+export default function ELearningOnlineEdPage() {
+  return (
+    <section className="mx-auto max-w-3xl px-4 py-12">
+      {/* TODO: blurb */}
+      <h1 className="text-3xl font-semibold mb-6">E‑Learning & Online Education</h1>
+
+      <h2 className="text-2xl font-semibold mt-10 mb-4">Products & Bundles</h2>
+      <ProductGrid items={items} />
+    </section>
   );
 }

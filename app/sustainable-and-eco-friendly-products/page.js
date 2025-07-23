@@ -1,27 +1,39 @@
+import ProductGrid from "../../components/ProductGrid";
+
 export const metadata = {
-  title: "Sustainable and Eco-Friendly Products – The Thrive Clan",
-  description: "Resources for sustainable and eco-friendly products",
+  title: "Sustainable & Eco-Friendly Products | The Thrive Clan",
+  description: "Resources for sustainable and eco-friendly products.",
 };
 
-export default function Page() {
-  return (
-    <div className="max-w-4xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-semibold mb-6">AI &amp; Automation Tools</h1>
+const keywords = [
+  "Sustainable fashion brands",
+  "Eco-friendly packaging solutions",
+  "Zero-waste products",
+  "Renewable energy home solutions",
+  "Sustainable living guides for specific demographics",
+  "Eco-friendly business solutions",
+  "Green technology comparisons",
+  "Sustainable product reviews",
+];
 
-      <ul className="space-y-3 list-disc list-inside">
-        {[
-          "AI automation tools for small business",
-          "AI workflow automation",
-          "Business process automation tools",
-          "AI-powered productivity software",
-          "AI prompt engineering services",
-          "Automated testing services for web applications",
-          "AI ethics compliance tools",
-          "Machine learning automation platforms",
-        ].map((kw) => (
-          <li key={kw}>{kw}</li>
-        ))}
-      </ul>
-    </div>
+const slugify = (str) =>
+  str.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+
+const items = keywords.map((kw) => ({
+  title: `${kw} Bundle`,
+  slug: slugify(kw),
+  img: `/images/products/${slugify(kw)}.jpg`,
+  alt: `${kw} bundle`,
+}));
+
+export default function SustainableEcoProductsPage() {
+  return (
+    <section className="mx-auto max-w-3xl px-4 py-12">
+      {/* TODO: blurb */}
+      <h1 className="text-3xl font-semibold mb-6">Sustainable & Eco-Friendly Products</h1>
+
+      <h2 className="text-2xl font-semibold mt-10 mb-4">Products & Bundles</h2>
+      <ProductGrid items={items} />
+    </section>
   );
 }

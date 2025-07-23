@@ -1,22 +1,39 @@
+import ProductGrid from "../../components/ProductGrid";
+
 export const metadata = {
-  title: "Health and Wellness Specializations – The Thrive Clan",
-  description: "Resources for health and wellness specializations",
+  title: "Health & Wellness Specializations | The Thrive Clan",
+  description: "Resources for health and wellness specializations.",
 };
 
-export default function HealthandwellnessspecializationsPage() {
+const keywords = [
+  "Personalized health tracking",
+  "Creatine for brain health",
+  "Cold plunge therapy",
+  "Postbiotic supplements",
+  "Senior fitness training programs",
+  "Prenatal/postnatal fitness solutions",
+  "Remote worker health solutions",
+  "Mental health tools for professionals",
+];
+
+const slugify = (str) =>
+  str.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+
+const items = keywords.map((kw) => ({
+  title: `${kw} Bundle`,
+  slug: slugify(kw),
+  img: `/images/products/${slugify(kw)}.jpg`,
+  alt: `${kw} bundle`,
+}));
+
+export default function HealthWellnessSpecsPage() {
   return (
-    <div className="sector-page">
-      <h1>Health and Wellness Specializations</h1>
-      <ul className="keyword-list">
-          <li key="0">Personalized health tracking</li>
-          <li key="1">Creatine for brain health</li>
-          <li key="2">Cold plunge therapy</li>
-          <li key="3">Postbiotic supplements</li>
-          <li key="4">Senior fitness training programs</li>
-          <li key="5">Prenatal/postnatal fitness solutions</li>
-          <li key="6">Remote worker health solutions</li>
-          <li key="7">Mental health tools for professionals</li>
-      </ul>
-    </div>
+    <section className="mx-auto max-w-3xl px-4 py-12">
+      {/* TODO: blurb */}
+      <h1 className="text-3xl font-semibold mb-6">Health & Wellness Specializations</h1>
+
+      <h2 className="text-2xl font-semibold mt-10 mb-4">Products & Bundles</h2>
+      <ProductGrid items={items} />
+    </section>
   );
 }

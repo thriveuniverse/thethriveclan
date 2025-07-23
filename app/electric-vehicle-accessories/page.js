@@ -1,22 +1,39 @@
+import ProductGrid from "../../components/ProductGrid";
+
 export const metadata = {
-  title: "Electric Vehicle Accessories – The Thrive Clan",
-  description: "Resources for electric vehicle accessories",
+  title: "Electric Vehicle Accessories | The Thrive Clan",
+  description: "Resources for electric vehicle accessories.",
 };
 
-export default function ElectricvehicleaccessoriesPage() {
+const keywords = [
+  "EV charging station accessories",
+  "Electric vehicle storage solutions",
+  "Portable EV chargers",
+  "EV maintenance tools",
+  "EV cable management systems",
+  "Electric vehicle covers",
+  "EV tire inflators",
+  "Charging station organizers",
+];
+
+const slugify = (str) =>
+  str.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+
+const items = keywords.map((kw) => ({
+  title: `${kw} Bundle`,
+  slug: slugify(kw),
+  img: `/images/products/${slugify(kw)}.jpg`,
+  alt: `${kw} bundle`,
+}));
+
+export default function ElectricVehicleAccessoriesPage() {
   return (
-    <div className="sector-page">
-      <h1>Electric Vehicle Accessories</h1>
-      <ul className="keyword-list">
-          <li key="0">EV charging station accessories</li>
-          <li key="1">Electric vehicle storage solutions</li>
-          <li key="2">Portable EV chargers</li>
-          <li key="3">EV maintenance tools</li>
-          <li key="4">EV cable management systems</li>
-          <li key="5">Electric vehicle covers</li>
-          <li key="6">EV tire inflators</li>
-          <li key="7">Charging station organizers</li>
-      </ul>
-    </div>
+    <section className="mx-auto max-w-3xl px-4 py-12">
+      {/* TODO: blurb */}
+      <h1 className="text-3xl font-semibold mb-6">Electric Vehicle Accessories</h1>
+
+      <h2 className="text-2xl font-semibold mt-10 mb-4">Products & Bundles</h2>
+      <ProductGrid items={items} />
+    </section>
   );
 }
