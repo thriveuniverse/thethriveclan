@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Script from "next/script";
 import Image from "next/image";
 import Link from "next/link";
-import { products } from "../../../lib/products";
+import { products } from "../../../lib/products.js";
 
 const getProduct = (slug) => products.find((p) => p.slug === slug);
 
