@@ -1,3 +1,5 @@
+import slugify from "@/lib/slugify";
+import ProductGrid from "@/components/ProductGrid"; // <-- or keep your relative path
 import ProductGrid from "@/components/ProductGrid";
 
 export const metadata = {

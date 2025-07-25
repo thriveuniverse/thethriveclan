@@ -1,4 +1,6 @@
-import ProductGrid from "../../components/ProductGrid";
+// app/electric-vehicle-accessories/page.js
+import slugify from "@/lib/slugify";         // switch to "../../lib/slugify" if no alias
+import ProductGrid from "@/components/ProductGrid";
 
 export const metadata = {
   title: "Electric Vehicle Accessories | The Thrive Clan",
@@ -15,9 +17,6 @@ const keywords = [
   "EV tire inflators",
   "Charging station organizers",
 ];
-
-const slugify = (str) =>
-  str.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
 const items = keywords.map((kw) => ({
   title: `${kw} Bundle`,

@@ -1,4 +1,6 @@
-import ProductGrid from "../../components/ProductGrid";
+// app/health-and-wellness-specializations/page.js
+import slugify from "@/lib/slugify";          // use "../../lib/slugify" if you don’t have the alias
+import ProductGrid from "@/components/ProductGrid";
 
 export const metadata = {
   title: "Health & Wellness Specializations | The Thrive Clan",
@@ -15,9 +17,6 @@ const keywords = [
   "Remote worker health solutions",
   "Mental health tools for professionals",
 ];
-
-const slugify = (str) =>
-  str.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
 const items = keywords.map((kw) => ({
   title: `${kw} Bundle`,

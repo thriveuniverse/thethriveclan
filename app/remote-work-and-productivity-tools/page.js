@@ -1,4 +1,6 @@
-import ProductGrid from "../../components/ProductGrid";
+// app/remote-work-and-productivity-tools/page.js
+import slugify from "@/lib/slugify";
+import ProductGrid from "@/components/ProductGrid";
 
 export const metadata = {
   title: "Remote Work and Productivity Tools | The Thrive Clan",
@@ -15,9 +17,6 @@ const keywords = [
   "Virtual team building platforms",
   "Remote work security solutions",
 ];
-
-const slugify = (str) =>
-  str.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
 const items = keywords.map((kw) => ({
   title: `${kw} Bundle`,
