@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",          // 👈 tells the resolver “project root”
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["*"]          // no leading "./" needed when baseUrl is set
     }
   }
 }

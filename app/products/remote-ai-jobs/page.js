@@ -1,36 +1,32 @@
 // app/products/remote-ai-jobs/page.js
 import Script from "next/script";
-import Link from "next/link";
+import Link   from "next/link";
 
-/* ——— <head> meta ——— */
 export const metadata = {
-  title: "Remote AI Jobs Bundle | The Thrive Clan",
+  title: "Remote AI Jobs Bundle | The Thrive Clan",
   description:
     "150 keywords, templates, and outlines to rank, attract and place talent in remote AI roles.",
 };
 
 const PRICE  = "$490";
-const LS_URL = "https://yourstore.lemonsqueezy.com/checkout/buy/REPLACE_ME";
+const LS_URL = "https://yourstore.lemonsqueezy.com/checkout/buy/REPLACE_ME"; // ← replace
 
-/* component name updated to include 'Page' suffix (optional but tidy) */
 export default function RemoteAIJobsBundlePage() {
   return (
     <>
-      {/* Lemon Squeezy modal script (include once globally if you prefer) */}
       <Script src="https://app.lemonsqueezy.com/js/lemon.js" strategy="afterInteractive" />
 
       <main className="mx-auto max-w-3xl px-4 py-16">
-        {/* breadcrumb back to sector grid */}
         <nav className="mb-10 text-sm text-gray-500">
           <Link href="/ai-jobs-and-career-development" className="hover:underline">
             ← Back to sector
           </Link>
         </nav>
 
-        {/* ——— HERO ——— */}
+        {/* ─── HERO ─── */}
         <header className="text-center mb-16">
           <h1 className="text-4xl font-semibold leading-tight mb-4">
-            Your 2025 Remote AI Jobs Content Kit — 150 Keywords, Templates &amp; More
+            Your 2025 Remote AI Jobs Content Kit — 150 Keywords, Templates & More
           </h1>
           <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
             Fill your talent pipeline with search‑driven, high‑intent traffic in weeks—not quarters.
@@ -53,8 +49,8 @@ export default function RemoteAIJobsBundlePage() {
           </div>
         </header>
 
-        {/* ——— BODY (paste long‑form copy here) ——— */}
-        <section className="prose prose-lg max-w-none">
+        {/* ─── BODY ─── */}
+        <section id="preview" className="prose prose-lg max-w-none">
           {/* TODO: long‑form copy */}
         </section>
       </main>
