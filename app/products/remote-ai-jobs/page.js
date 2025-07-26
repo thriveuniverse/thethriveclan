@@ -1,28 +1,28 @@
-// app/products/remote-work-productivity-tools-2025/page.js
+// app/products/remote-ai-jobs/page.js
 import Script from "next/script";
 import Link from "next/link";
 
-/* ——— metadata (shows up in <head>) ——— */
+/* ——— <head> meta ——— */
 export const metadata = {
-  title: "Remote‑Work Productivity Tools 2025 Bundle | The Thrive Clan",
+  title: "Remote AI Jobs Bundle | The Thrive Clan",
   description:
-    "20 outlines, 150 keywords & more to rank, capture, and convert searches for remote‑work productivity tools.",
+    "150 keywords, templates, and outlines to rank, attract and place talent in remote AI roles.",
 };
 
 const PRICE  = "$490";
 const LS_URL = "https://yourstore.lemonsqueezy.com/checkout/buy/REPLACE_ME";
 
-/* component name updated to match product */
-export default function RemoteWorkProdBundlePage() {
+/* component name updated to include 'Page' suffix (optional but tidy) */
+export default function RemoteAIJobsBundlePage() {
   return (
     <>
-      {/* Lemon Squeezy modal script — include once globally if you like */}
+      {/* Lemon Squeezy modal script (include once globally if you prefer) */}
       <Script src="https://app.lemonsqueezy.com/js/lemon.js" strategy="afterInteractive" />
 
       <main className="mx-auto max-w-3xl px-4 py-16">
         {/* breadcrumb back to sector grid */}
         <nav className="mb-10 text-sm text-gray-500">
-          <Link href="/remote-work-and-productivity-tools" className="hover:underline">
+          <Link href="/ai-jobs-and-career-development" className="hover:underline">
             ← Back to sector
           </Link>
         </nav>
@@ -30,11 +30,10 @@ export default function RemoteWorkProdBundlePage() {
         {/* ——— HERO ——— */}
         <header className="text-center mb-16">
           <h1 className="text-4xl font-semibold leading-tight mb-4">
-            2025 Remote‑Work Productivity Content Bundle — Launch in 7 Days
+            Your 2025 Remote AI Jobs Content Kit — 150 Keywords, Templates &amp; More
           </h1>
-
           <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
-            Rank, capture, and convert remote‑work buyers with proven outlines and keyword clusters.
+            Fill your talent pipeline with search‑driven, high‑intent traffic in weeks—not quarters.
           </p>
 
           <div className="mt-8 flex gap-4 justify-center">
@@ -54,9 +53,9 @@ export default function RemoteWorkProdBundlePage() {
           </div>
         </header>
 
-        {/* ——— BODY — paste your long‑form copy below ——— */}
+        {/* ——— BODY (paste long‑form copy here) ——— */}
         <section className="prose prose-lg max-w-none">
-          {/* TODO: long copy */}
+          {/* TODO: long‑form copy */}
         </section>
       </main>
     </>
