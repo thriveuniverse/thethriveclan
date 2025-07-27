@@ -100,7 +100,7 @@ export default function SustainableFashionBundlePage() {
     </>
   );
 }
- */}
+
         </section>
       </main>
     </>
