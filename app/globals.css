@@ -1,0 +1,223 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+
+/* === Site Layout === */
+body {{
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: var(--background);
+  color: var(--foreground);
+}}
+
+main {{
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}}
+
+/* === Header === */
+.site-header {{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  background: var(--background);
+  z-index: 1000;
+}}
+
+.logo-wrap {{
+  display: flex;
+  align-items: center;
+}}
+
+.logo-link {{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}}
+
+.site-title {{
+  font-weight: 600;
+  font-size: 1.1rem;
+}}
+
+.site-nav ul {{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}}
+
+.site-nav a {{
+  text-decoration: none;
+  font-size: 0.95rem;
+}}
+
+.nav-toggle {{
+  display: ;
+}}
+
+.nav-toggle-label {{
+  display: ;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+}}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: currentColor;
+  transform: translateY(-50%);
+  transition: transform 0.2s;
+}}
+
+.nav-toggle-label span::before {{
+  top: -8px;
+}}
+
+.nav-toggle-label span::after {{
+  top: 8px;
+}}
+
+@media (max-width: 768px) {{
+  .site-nav {{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--background);
+    border-bottom: 1px solid #ddd;
+    display: ;
+    flex-direction: column;
+    padding: 1rem;
+  }}
+
+  .site-nav ul {{
+    flex-direction: column;
+    gap: 0.5rem;
+  }}
+
+  .nav-toggle {{
+    display: block;
+  }}
+
+  .nav-toggle-label {{
+    display: block;
+  }}
+
+  .nav-toggle:checked + .nav-toggle-label span {{
+    transform: rotate(45deg);
+  }}
+
+  .nav-toggle:checked + .nav-toggle-label span::before {{
+    transform: rotate(90deg) translateX(-8px);
+  }}
+
+  .nav-toggle:checked + .nav-toggle-label span::after {{
+    opacity: 0;
+  }}
+
+  .nav-toggle:checked ~ .site-nav {{
+    display: flex;
+  }}
+}}
+
+/* === Home Grid === */
+.sector-grid {{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}}
+
+.grid-card {{
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 2rem 1rem;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}}
+
+.grid-card:hover {{
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}}
+
+.keyword-list {{
+  list-style: disc;
+  padding-left: 1.25rem;
+}}
+
+
+.hero {
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+}
+
+.hero h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.hero p {
+  margin: 0 auto;
+  max-width: 640px;
+  line-height: 1.4;
+}
+body { display: block !important; }
