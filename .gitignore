@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Local Python virtualenvs
+product_inventory_system/venv/
+product_inventory_system/.venv/
+# Old Flask CMS (removed)
+product_inventory_system/product_cms/
+
