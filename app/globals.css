@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -44,79 +45,85 @@ a {
   }
 }
 
-
 /* === Site Layout === */
-body {{
+body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: var(--background);
   color: var(--foreground);
-}}
+}
 
-main {{
+main {
   padding: 1rem;
   max-width: 1200px;
   margin: 0 auto;
-}}
+}
 
 /* === Header === */
-.site-header {{
+.site-header {
   display: flex;
-  align-items: center;
+  align-items: center; /* Ensure all children are vertically centered */
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem; /* Keep this, but ensure it fits within 4rem */
   border-bottom: 1px solid #ddd;
   position: sticky;
   top: 0;
   background: var(--background);
   z-index: 1000;
-}}
-
-.logo-wrap {{
+  height: 4rem; /* Matches h-16 from layout.js */
+  box-sizing: border-box; /* Ensure padding doesn’t push height over 4rem */
+}
+.logo-wrap {
   display: flex;
   align-items: center;
-}}
+}
 
-.logo-link {{
+.logo-link {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-}}
+}
 
-.site-title {{
+.site-title {
   font-weight: 600;
   font-size: 1.1rem;
-}}
+}
 
-.site-nav ul {{
+.site-nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   gap: 1rem;
-}}
+  align-items: center; /* Center items vertically */
+  height: 100%; /* Fill the 4rem height */
+}
 
-.site-nav a {{
+
+.site-nav a,
+.site-nav button {
   text-decoration: none;
   font-size: 0.95rem;
-}}
+  padding: 0.25rem 0; /* Reduced padding to fit within 4rem, adjust as needed */
+  line-height: 1; /* Tighten line height for precise alignment */
+}
 
-.nav-toggle {{
-  display: ;
-}}
+.nav-toggle {
+  display: none; /* Removed invalid display: ; */
+}
 
-.nav-toggle-label {{
-  display: ;
+.nav-toggle-label {
+  display: none; /* Removed invalid display: ; */
   cursor: pointer;
   width: 2rem;
   height: 2rem;
   position: relative;
-}}
+}
 
 .nav-toggle-label span,
 .nav-toggle-label span::before,
-.nav-toggle-label span::after {{
+.nav-toggle-label span::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -126,84 +133,83 @@ main {{
   background: currentColor;
   transform: translateY(-50%);
   transition: transform 0.2s;
-}}
+}
 
-.nav-toggle-label span::before {{
+.nav-toggle-label span::before {
   top: -8px;
-}}
+}
 
-.nav-toggle-label span::after {{
+.nav-toggle-label span::after {
   top: 8px;
-}}
+}
 
-@media (max-width: 768px) {{
-  .site-nav {{
+@media (max-width: 768px) {
+  .site-nav {
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
     background: var(--background);
     border-bottom: 1px solid #ddd;
-    display: ;
+    display: none; /* Changed from invalid display: ; */
     flex-direction: column;
     padding: 1rem;
-  }}
+  }
 
-  .site-nav ul {{
+  .site-nav ul {
     flex-direction: column;
     gap: 0.5rem;
-  }}
+  }
 
-  .nav-toggle {{
+  .nav-toggle {
     display: block;
-  }}
+  }
 
-  .nav-toggle-label {{
+  .nav-toggle-label {
     display: block;
-  }}
+  }
 
-  .nav-toggle:checked + .nav-toggle-label span {{
+  .nav-toggle:checked + .nav-toggle-label span {
     transform: rotate(45deg);
-  }}
+  }
 
-  .nav-toggle:checked + .nav-toggle-label span::before {{
+  .nav-toggle:checked + .nav-toggle-label span::before {
     transform: rotate(90deg) translateX(-8px);
-  }}
+  }
 
-  .nav-toggle:checked + .nav-toggle-label span::after {{
+  .nav-toggle:checked + .nav-toggle-label span::after {
     opacity: 0;
-  }}
+  }
 
-  .nav-toggle:checked ~ .site-nav {{
+  .nav-toggle:checked ~ .site-nav {
     display: flex;
-  }}
-}}
+  }
+}
 
 /* === Home Grid === */
-.sector-grid {{
+.sector-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1rem;
   margin: 2rem 0;
-}}
+}
 
-.grid-card {{
+.grid-card {
   border: 1px solid #e5e5e5;
   border-radius: 8px;
   padding: 2rem 1rem;
   text-align: center;
   transition: box-shadow 0.2s;
-}}
+}
 
-.grid-card:hover {{
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}}
+.grid-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 
-.keyword-list {{
+.keyword-list {
   list-style: disc;
   padding-left: 1.25rem;
-}}
-
+}
 
 .hero {
   text-align: center;
@@ -220,4 +226,7 @@ main {{
   max-width: 640px;
   line-height: 1.4;
 }
-body { display: block !important; }
+
+body {
+  display: block !important;
+}
