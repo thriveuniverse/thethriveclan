@@ -242,16 +242,16 @@ body {
     background-attachment: scroll; /* Disable parallax on mobile */
     background-position: center;
     background-size: cover;
-    height: 300px; /* Increased height to accommodate text */
+    height: 320px; /* Increased from 300px to give extra space */
   }
 }
 
 /* Ensure text container fits within hero on mobile */
 @media (max-width: 768px) {
   .hero-text {
-    padding-top: 40px; /* Increased padding for better spacing */
-    padding-bottom: 40px; /* Increased padding for better spacing */
-    font-size: 1rem; /* Reduced from text-xl (1.25rem) for mobile */
+    padding-top: 50px; /* Increased from 40px to lift text slightly */
+    padding-bottom: 40px; /* Kept as is */
+    font-size: 1rem; /* Kept reduced size for mobile */
   }
 }
 
