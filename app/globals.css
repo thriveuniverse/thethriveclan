@@ -242,14 +242,23 @@ body {
     background-attachment: scroll; /* Disable parallax on mobile */
     background-position: center;
     background-size: cover;
-    height: 200px; /* Fixed height for mobile to prevent text overflow */
+    height: 300px; /* Increased height to accommodate text */
   }
 }
 
 /* Ensure text container fits within hero on mobile */
 @media (max-width: 768px) {
   .hero-text {
-    padding-top: 20px; /* Add space above text */
-    padding-bottom: 20px; /* Add space below text */
+    padding-top: 40px; /* Increased padding for better spacing */
+    padding-bottom: 40px; /* Increased padding for better spacing */
+    font-size: 1rem; /* Reduced from text-xl (1.25rem) for mobile */
   }
+}
+
+/* Ensure overlay covers full height */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Consistent overlay */
+  z-index: 0;
 }

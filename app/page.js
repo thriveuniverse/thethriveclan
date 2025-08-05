@@ -20,7 +20,7 @@ export default function Home() {
             backgroundSize: "cover",
           }}
         >
-          <div className="absolute inset-0 bg-black bg-opacity-50"></div> {/* Overlay for readability */}
+          <div className="hero-overlay"></div> {/* Separate overlay layer */}
         </div>
         <div className="relative z-10 flex items-center justify-center h-full">
           <div className="text-center max-w-4xl mx-auto px-4 hero-text"> {/* Added hero-text class */}
@@ -30,7 +30,7 @@ export default function Home() {
             <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-gray-200">
               with Strategic Intelligence
             </h2>
-            <p className="text-xl mb-6 text-gray-300 leading-relaxed">
+            <p className="text-xl md:text-lg mb-6 text-gray-300 leading-relaxed">
               Welcome to The Thrive Clan, where expert insights drive business growth in a rapidly evolving digital world.
             </p>
           </div>
