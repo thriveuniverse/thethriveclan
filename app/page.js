@@ -22,7 +22,7 @@ export default function Home() {
           </h2>
           <p className="text-xl mb-12 text-gray-600 leading-relaxed">
             Welcome to The Thrive Clan, where cutting-edge market intelligence meets strategic business growth. 
-            In today's rapidly evolving digital landscape, staying ahead requires more than intuition—it demands 
+            In today&apos;s rapidly evolving digital landscape, staying ahead requires more than intuition—it demands 
             data-driven insights and forward-thinking strategies that position your business for sustained success.
           </p>
         </div>
@@ -34,7 +34,7 @@ export default function Home() {
               Strategic Intelligence for Tomorrow's Winners
             </h3>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              At The Thrive Clan, we specialize in two critical areas that define tomorrow's business winners: 
+              At The Thrive Clan, we specialize in two critical areas that define tomorrow&apos;s business winners: 
               comprehensive sector analysis through our SEO intelligence reports and identifying breakthrough 
               investment opportunities in emerging markets. Our mission is to empower businesses, entrepreneurs, 
               and investors with the strategic intelligence needed to thrive in an increasingly competitive marketplace.
@@ -103,7 +103,7 @@ export default function Home() {
             <h3 className="text-3xl font-bold mb-6">Why Choose The Thrive Clan?</h3>
             <p className="text-lg leading-relaxed max-w-4xl mx-auto">
               Our unique combination of SEO market intelligence and emerging opportunity analysis gives you a 
-              comprehensive view of both current market dynamics and future growth potential. We don't just 
+              comprehensive view of both current market dynamics and future growth potential. We don&apos;t just 
               provide data—we deliver actionable insights that translate directly into business growth, 
               competitive advantage, and investment success. Join The Thrive Clan community and gain access 
               to the strategic intelligence that separates market leaders from followers.
