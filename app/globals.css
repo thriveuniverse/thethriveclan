@@ -242,14 +242,15 @@ body {
     background-attachment: scroll; /* Disable parallax on mobile */
     background-position: center;
     background-size: cover;
-    height: 320px; /* Increased from 300px to give extra space */
+    height: 340px; /* Increased from 320px for extra headroom */
+    min-height: 300px; /* Prevents collapse if content adjusts */
   }
 }
 
 /* Ensure text container fits within hero on mobile */
 @media (max-width: 768px) {
   .hero-text {
-    padding-top: 50px; /* Increased from 40px to lift text slightly */
+    padding-top: 60px; /* Increased from 50px to lift text further */
     padding-bottom: 40px; /* Kept as is */
     font-size: 1rem; /* Kept reduced size for mobile */
   }
