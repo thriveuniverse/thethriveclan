@@ -18,6 +18,7 @@ export const metadata = {
 const navItems = [
   { href: "/", label: "Home" },
   {
+    href: "/sector-seo", // Updated to point to the new page
     label: "Sector SEO",
     dropdown: [
       { href: "/ai-and-automation-tools", label: "AI & Automation" },
@@ -30,7 +31,7 @@ const navItems = [
       { href: "/senior-care-and-products", label: "Senior Care" },
     ],
   },
-  { href: "/emerging-opportunities", label: "Emerging Opportunitiess" },
+  { href: "/emerging-opportunities", label: "Emerging Opportunities" }, // Fixed typo "Opportunitiess"
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
   { href: "/blog", label: "Blog" },
@@ -78,12 +79,17 @@ function Header() {
         <nav className="hidden md:flex space-x-6 items-center h-full">
           {navItems.map((item) =>
             item.dropdown ? (
-              <Dropdown key={item.label} label={item.label} items={item.dropdown} />
+              <Dropdown
+                key={item.label}
+                href={item.href} // Pass the href prop
+                label={item.label}
+                items={item.dropdown}
+              />
             ) : (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors py-1" /* Adjusted padding */
+                className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors py-1"
               >
                 {item.label}
               </Link>
@@ -142,12 +148,15 @@ function Header() {
 // Dropdown Component
 // ---------------------------------------------------------------------------
 
-function Dropdown({ label, items }) {
+function Dropdown({ href, label, items }) {
   return (
-    <div className="relative group p-2"> {/* Added padding for hover area */}
-      <button className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors py-2">
+    <div className="relative group">
+      <Link
+        href={href}
+        className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors py-2"
+      >
         {label}
-      </button>
+      </Link>
       <div className="hidden group-hover:block absolute bg-white shadow-lg rounded-md mt-2 w-48 z-50">
         {items.map((item) => (
           <Link

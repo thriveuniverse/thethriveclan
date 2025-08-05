@@ -1,3 +1,3 @@
-export default function IndustryAnalysisPage() {
-  return <h1>Emerging Opportunities Reports</h1>;
+export default function ContactPage() {
+  return <h1>Contact Us</h1>;
 }
