@@ -250,7 +250,7 @@ body {
 /* Ensure text container fits within hero on mobile */
 @media (max-width: 768px) {
   .hero-text {
-    padding-top: 60px; /* Increased from 50px to lift text further */
+    padding-top: 70px; /* Increased from 50px to lift text further */
     padding-bottom: 40px; /* Kept as is */
     font-size: 1rem; /* Kept reduced size for mobile */
   }
