@@ -240,5 +240,16 @@ body {
 @media (max-width: 768px) {
   .parallax {
     background-attachment: scroll; /* Disable parallax on mobile */
+    background-position: center;
+    background-size: cover;
+    height: 200px; /* Fixed height for mobile to prevent text overflow */
+  }
+}
+
+/* Ensure text container fits within hero on mobile */
+@media (max-width: 768px) {
+  .hero-text {
+    padding-top: 20px; /* Add space above text */
+    padding-bottom: 20px; /* Add space below text */
   }
 }
