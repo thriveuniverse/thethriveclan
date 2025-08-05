@@ -31,7 +31,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto mb-16">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold mb-6 text-gray-800">
-              Strategic Intelligence for Tomorrow's Winners
+              Strategic Intelligence for Tomorrow&apos;s Winners
             </h3>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
               At The Thrive Clan, we specialize in two critical areas that define tomorrow&apos;s business winners: 
@@ -114,4 +114,3 @@ export default function Home() {
     </div>
   );
 }
-
