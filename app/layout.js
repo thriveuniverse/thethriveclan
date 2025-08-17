@@ -175,7 +175,6 @@ function Dropdown({ href, label, items }) {
 // ---------------------------------------------------------------------------
 // Footer Component
 // ---------------------------------------------------------------------------
-import Link from "next/link";
 
 function Footer() {
   return (
