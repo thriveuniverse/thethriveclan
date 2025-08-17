@@ -175,7 +175,7 @@ function Dropdown({ href, label, items }) {
 // Footer Component
 // ---------------------------------------------------------------------------
 
-ffunction Footer() {
+function Footer() {
   return (
     <footer className="bg-gray-100 py-6">
       <div className="mx-auto max-w-7xl px-4 text-center text-sm text-gray-500">
