@@ -171,34 +171,39 @@ function Dropdown({ href, label, items }) {
     </div>
   );
 }
+
 // ---------------------------------------------------------------------------
 // Footer Component
 // ---------------------------------------------------------------------------
+import Link from "next/link";
 
 function Footer() {
   return (
     <footer className="bg-gray-100 py-6">
-      <div className="mx-auto max-w-7xl px-4 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} The Thrive Clan · All rights reserved.
-      </div>
+      <div className="mx-auto max-w-7xl px-4 text-center text-sm text-gray-500 space-y-4">
+        {/* Copyright */}
+        <div>© {new Date().getFullYear()} The Thrive Clan · All rights reserved.</div>
 
-      {/* Plain HTML sitemap for AI discoverability */}
-      <nav className="mt-4 text-center">
-        <a href="/" className="mx-2 text-gray-700 hover:underline">Home</a>|
-        <a href="/sector-seo" className="mx-2 text-gray-700 hover:underline">Sector SEO</a>|
-        <a href="/ai-and-automation-tools" className="mx-2 text-gray-700 hover:underline">AI & Automation</a>|
-        <a href="/ai-jobs-and-career-development" className="mx-2 text-gray-700 hover:underline">AI Careers</a>|
-        <a href="/health-and-wellness-specializations" className="mx-2 text-gray-700 hover:underline">Health & Wellness</a>|
-        <a href="/sustainable-and-eco-friendly-products" className="mx-2 text-gray-700 hover:underline">Eco Products</a>|
-        <a href="/electric-vehicle-accessories" className="mx-2 text-gray-700 hover:underline">EV Accessories</a>|
-        <a href="/remote-work-and-productivity-tools" className="mx-2 text-gray-700 hover:underline">Remote Work</a>|
-        <a href="/e-learning-and-online-education" className="mx-2 text-gray-700 hover:underline">E-Learning</a>|
-        <a href="/senior-care-and-products" className="mx-2 text-gray-700 hover:underline">Senior Care</a>|
-        <a href="/emerging-opportunities" className="mx-2 text-gray-700 hover:underline">Emerging Opportunities</a>|
-        <a href="/about" className="mx-2 text-gray-700 hover:underline">About</a>|
-        <a href="/contact" className="mx-2 text-gray-700 hover:underline">Contact</a>|
-        <a href="/blog" className="mx-2 text-gray-700 hover:underline">Blog</a>
-      </nav>
+        {/* Sitemap */}
+        <nav className="flex flex-wrap justify-center gap-4">
+          <Link href="/">Home</Link>
+          <Link href="/sector-seo">Sector SEO</Link>
+          <Link href="/ai-and-automation-tools">AI & Automation</Link>
+          <Link href="/ai-jobs-and-career-development">AI Careers</Link>
+          <Link href="/health-and-wellness-specializations">Health & Wellness</Link>
+          <Link href="/sustainable-and-eco-friendly-products">Eco Products</Link>
+          <Link href="/electric-vehicle-accessories">EV Accessories</Link>
+          <Link href="/remote-work-and-productivity-tools">Remote Work</Link>
+          <Link href="/e-learning-and-online-education">E-Learning</Link>
+          <Link href="/senior-care-and-products">Senior Care</Link>
+          <Link href="/emerging-opportunities">Emerging Opportunities</Link>
+          <Link href="/about">About</Link>
+          <Link href="/contact">Contact</Link>
+          <Link href="/blog">Blog</Link>
+        </nav>
+      </div>
     </footer>
   );
 }
+
+export { Footer }; // Named export for Footer
