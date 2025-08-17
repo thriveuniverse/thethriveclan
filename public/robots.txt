@@ -1,4 +1,9 @@
+# *
 User-agent: *
 Allow: /
 
+# Host
+Host: https://thethriveclan.com
+
+# Sitemaps
 Sitemap: https://thethriveclan.com/sitemap.xml
