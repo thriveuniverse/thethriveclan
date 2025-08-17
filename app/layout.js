@@ -175,12 +175,30 @@ function Dropdown({ href, label, items }) {
 // Footer Component
 // ---------------------------------------------------------------------------
 
-function Footer() {
+ffunction Footer() {
   return (
     <footer className="bg-gray-100 py-6">
       <div className="mx-auto max-w-7xl px-4 text-center text-sm text-gray-500">
         © {new Date().getFullYear()} The Thrive Clan · All rights reserved.
       </div>
+
+      {/* Plain HTML sitemap for AI discoverability */}
+      <nav className="mt-4 text-center">
+        <a href="/" className="mx-2 text-gray-700 hover:underline">Home</a>|
+        <a href="/sector-seo" className="mx-2 text-gray-700 hover:underline">Sector SEO</a>|
+        <a href="/ai-and-automation-tools" className="mx-2 text-gray-700 hover:underline">AI & Automation</a>|
+        <a href="/ai-jobs-and-career-development" className="mx-2 text-gray-700 hover:underline">AI Careers</a>|
+        <a href="/health-and-wellness-specializations" className="mx-2 text-gray-700 hover:underline">Health & Wellness</a>|
+        <a href="/sustainable-and-eco-friendly-products" className="mx-2 text-gray-700 hover:underline">Eco Products</a>|
+        <a href="/electric-vehicle-accessories" className="mx-2 text-gray-700 hover:underline">EV Accessories</a>|
+        <a href="/remote-work-and-productivity-tools" className="mx-2 text-gray-700 hover:underline">Remote Work</a>|
+        <a href="/e-learning-and-online-education" className="mx-2 text-gray-700 hover:underline">E-Learning</a>|
+        <a href="/senior-care-and-products" className="mx-2 text-gray-700 hover:underline">Senior Care</a>|
+        <a href="/emerging-opportunities" className="mx-2 text-gray-700 hover:underline">Emerging Opportunities</a>|
+        <a href="/about" className="mx-2 text-gray-700 hover:underline">About</a>|
+        <a href="/contact" className="mx-2 text-gray-700 hover:underline">Contact</a>|
+        <a href="/blog" className="mx-2 text-gray-700 hover:underline">Blog</a>
+      </nav>
     </footer>
   );
 }
