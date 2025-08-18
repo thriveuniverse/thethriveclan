@@ -1,5 +1,5 @@
 // app/contact/page.js
-"use client"; // needed if you want to handle form state
+"use client";
 
 import { useState } from "react";
 
@@ -22,16 +22,21 @@ export default function ContactPage() {
         body: JSON.stringify(formData),
       });
 
+      const data = await res.json();
+
       if (res.ok) {
         setStatus("Message sent successfully!");
         setFormData({ name: "", email: "", message: "" });
       } else {
-        setStatus("Failed to send message.");
+        setStatus(data.message || "Failed to send message.");
       }
     } catch (err) {
-      setStatus("Error sending message.");
       console.error(err);
+      setStatus("Error sending message.");
     }
+
+    // Clear status message after 5 seconds
+    setTimeout(() => setStatus(""), 5000);
   };
 
   return (
@@ -64,8 +69,12 @@ export default function ContactPage() {
           required
           className="w-full p-2 border rounded"
         />
-        <button type="submit" className="px-4 py-2 bg-blue-600 text-white rounded">
-          Send
+        <button
+          type="submit"
+          disabled={status === "Sending..."}
+          className="px-4 py-2 bg-blue-600 text-white rounded disabled:opacity-50"
+        >
+          {status === "Sending..." ? "Sending..." : "Send"}
         </button>
       </form>
       {status && <p className="mt-2">{status}</p>}
