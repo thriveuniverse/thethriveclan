@@ -17,21 +17,8 @@ export const metadata = {
 
 const navItems = [
   { href: "/", label: "Home" },
-  { href: "/llmo", label: "LLMO" }, // Moved to first position
-  {
-    href: "/sector-seo",
-    label: "Sector SEO",
-    dropdown: [
-      { href: "/ai-and-automation-tools", label: "AI & Automation" },
-      { href: "/ai-jobs-and-career-development", label: "AI Careers" },
-      { href: "/health-and-wellness-specializations", label: "Health & Wellness" },
-      { href: "/sustainable-and-eco-friendly-products", label: "Eco Products" },
-      { href: "/electric-vehicle-accessories", label: "EV Accessories" },
-      { href: "/remote-work-and-productivity-tools", label: "Remote Work" },
-      { href: "/e-learning-and-online-education", label: "E‑Learning" },
-      { href: "/senior-care-and-products", label: "Senior Care" },
-    ],
-  },
+  { href: "/llmo", label: "LLMO" },
+  { href: "/sector-seo", label: "Sector SEO" },
   { href: "/emerging-opportunities", label: "Emerging Opportunities" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
@@ -78,24 +65,15 @@ function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-6 items-center h-full">
-          {navItems.map((item) =>
-            item.dropdown ? (
-              <Dropdown
-                key={item.label}
-                href={item.href}
-                label={item.label}
-                items={item.dropdown}
-              />
-            ) : (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors py-1"
-              >
-                {item.label}
-              </Link>
-            )
-          )}
+          {navItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors py-1"
+            >
+              {item.label}
+            </Link>
+          ))}
         </nav>
 
         {/* Mobile Menu */}
@@ -117,59 +95,19 @@ function Header() {
             </svg>
           </summary>
           <div className="absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 py-2 z-50">
-            {navItems.map((item) =>
-              item.dropdown
-                ? item.dropdown.map((subItem) => (
-                    <Link
-                      key={subItem.href}
-                      href={subItem.href}
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    >
-                      {subItem.label}
-                    </Link>
-                  ))
-                : (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    >
-                      {item.label}
-                    </Link>
-                  )
-            )}
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              >
+                {item.label}
+              </Link>
+            ))}
           </div>
         </details>
       </div>
     </header>
-  );
-}
-
-// ---------------------------------------------------------------------------
-// Dropdown Component
-// ---------------------------------------------------------------------------
-
-function Dropdown({ href, label, items }) {
-  return (
-    <div className="relative group">
-      <Link
-        href={href}
-        className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors py-2"
-      >
-        {label}
-      </Link>
-      <div className="hidden group-hover:block absolute bg-white shadow-lg rounded-md mt-2 w-48 z-50">
-        {items.map((item) => (
-          <Link
-            key={item.href}
-            href={item.href}
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-          >
-            {item.label}
-          </Link>
-        ))}
-      </div>
-    </div>
   );
 }
 
@@ -184,26 +122,17 @@ function Footer() {
         {/* Copyright */}
         <div>© {new Date().getFullYear()} The Thrive Clan · All rights reserved.</div>
 
-        {/* Sitemap with Dropdown */}
+        {/* Sitemap */}
         <nav className="flex flex-wrap justify-center gap-4">
-          {navItems.map((item) =>
-            item.dropdown ? (
-              <Dropdown
-                key={item.label}
-                href={item.href}
-                label={item.label}
-                items={item.dropdown}
-              />
-            ) : (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-sm text-gray-500 hover:text-gray-700 transition-colors"
-              >
-                {item.label}
-              </Link>
-            )
-          )}
+          {navItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="text-sm text-gray-500 hover:text-gray-700 transition-colors"
+            >
+              {item.label}
+            </Link>
+          ))}
         </nav>
       </div>
     </footer>
