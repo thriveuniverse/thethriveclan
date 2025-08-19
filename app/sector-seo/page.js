@@ -1,11 +1,5 @@
-// app/sector-seo/page.js
 import Image from "next/image";
 import Link from "next/link";
-
-export const metadata = {
-  title: "Sector SEO - The Thrive Clan",
-  description: "Tailored SEO strategies for forward-thinking sectors by The Thrive Clan.",
-};
 
 // Centralized data so you only edit in one place
 const sectors = [
@@ -59,20 +53,23 @@ const sectors = [
   },
 ];
 
+export const metadata = {
+  title: "Sector SEO - The Thrive Clan",
+  description: "Tailored SEO strategies for forward-thinking sectors by The Thrive Clan.",
+};
+
 export default function SectorSEO() {
   return (
     <main>
       {/* Hero / Intro */}
-      <section className="mx-auto max-w-3xl px-4 py-16 text-center">
+      <section className="mx-auto max-w-3xl px-4 py-16 text-left">
         <h1 className="text-4xl font-semibold mb-4">The Thrive Clan</h1>
         <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-          {/* TODO: Replace this with your SEO-friendly intro copy.
-              Work in natural language mentions of your eight focus areas
-              without keyword stuffing. */}
-          Curated resources spanning intelligent automation, future‑proof
-          careers, wellbeing, sustainability, electric mobility, remote
-          productivity, digital learning, and aging well—so you can thrive in a
-          fast‑changing world.
+          <strong>What does Sector SEO offer?</strong> This is your resource for refined strategies, building on your SEO know-how to lead in industries like AI automation, health and wellness, or electric vehicle accessories. As AI reshapes the digital landscape and economic uncertainty lingers, we’re here to guide you—saving you time on research so you can adapt swiftly with confidence.
+          <br /><br />
+          <strong>Your Path to Resilience.</strong> At The Thrive Clan, we’ve crafted tailored tactics across e-learning, sustainable products, and more, drawing on our expertise to help you surpass last year’s goals. Let us be your partner in navigating this non-boom market with ready-to-use solutions.
+          <br /><br />
+          <strong>Take the Next Step Today.</strong> In today’s challenging climate, waiting can set you back. With our support, you can boost visibility across all sectors and exceed expectations—explore the opportunities below and let’s thrive together.
         </p>
       </section>
 
