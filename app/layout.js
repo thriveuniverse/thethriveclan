@@ -17,8 +17,9 @@ export const metadata = {
 
 const navItems = [
   { href: "/", label: "Home" },
+  { href: "/llmo", label: "LLMO" }, // Moved to first position
   {
-    href: "/sector-seo", // Updated to point to the new page
+    href: "/sector-seo",
     label: "Sector SEO",
     dropdown: [
       { href: "/ai-and-automation-tools", label: "AI & Automation" },
@@ -31,7 +32,7 @@ const navItems = [
       { href: "/senior-care-and-products", label: "Senior Care" },
     ],
   },
-  { href: "/emerging-opportunities", label: "Emerging Opportunities" }, // Fixed typo "Opportunitiess"
+  { href: "/emerging-opportunities", label: "Emerging Opportunities" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
   { href: "/blog", label: "Blog" },
@@ -81,7 +82,7 @@ function Header() {
             item.dropdown ? (
               <Dropdown
                 key={item.label}
-                href={item.href} // Pass the href prop
+                href={item.href}
                 label={item.label}
                 items={item.dropdown}
               />
@@ -183,22 +184,26 @@ function Footer() {
         {/* Copyright */}
         <div>© {new Date().getFullYear()} The Thrive Clan · All rights reserved.</div>
 
-        {/* Sitemap */}
+        {/* Sitemap with Dropdown */}
         <nav className="flex flex-wrap justify-center gap-4">
-          <Link href="/">Home</Link>
-          <Link href="/sector-seo">Sector SEO</Link>
-          <Link href="/ai-and-automation-tools">AI & Automation</Link>
-          <Link href="/ai-jobs-and-career-development">AI Careers</Link>
-          <Link href="/health-and-wellness-specializations">Health & Wellness</Link>
-          <Link href="/sustainable-and-eco-friendly-products">Eco Products</Link>
-          <Link href="/electric-vehicle-accessories">EV Accessories</Link>
-          <Link href="/remote-work-and-productivity-tools">Remote Work</Link>
-          <Link href="/e-learning-and-online-education">E-Learning</Link>
-          <Link href="/senior-care-and-products">Senior Care</Link>
-          <Link href="/emerging-opportunities">Emerging Opportunities</Link>
-          <Link href="/about">About</Link>
-          <Link href="/contact">Contact</Link>
-          <Link href="/blog">Blog</Link>
+          {navItems.map((item) =>
+            item.dropdown ? (
+              <Dropdown
+                key={item.label}
+                href={item.href}
+                label={item.label}
+                items={item.dropdown}
+              />
+            ) : (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-sm text-gray-500 hover:text-gray-700 transition-colors"
+              >
+                {item.label}
+              </Link>
+            )
+          )}
         </nav>
       </div>
     </footer>
