@@ -1,13 +1,7 @@
 import Link from "next/link";
 
-// Centralized data with LLMO prefix
+// Centralized data with LLMO prefix, excluding general Strategy
 const sectors = [
-  {
-    title: "LLMO Strategy",
-    slug: "llmo-strategy",
-    img: "/images/ai-strategy.jpg",
-    alt: "Professional illustration of AI automation featuring digital circuits, robotic arm, AI chip, and workflow automation symbols in modern blue tones",
-  },
   {
     title: "LLMO AI Automation Tools",
     slug: "llmo-ai-automation-tools",
