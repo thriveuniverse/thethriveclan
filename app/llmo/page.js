@@ -79,17 +79,21 @@ export default function LLMO() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              ...sectors.map((sector) => sector.title), // Use the titles from the sectors array
-              "LLMO Strategy", // Add the general strategy as the first item
-            ].map((title, index) => (
-              <Link
-                key={index}
-                href={`/llmo/${title.toLowerCase().replace(/ /g, "-").replace(/&/g, "")}`}
-                className="block bg-white rounded-xl p-4 border border-gray-200 shadow-sm hover:shadow-md transition-shadow"
-              >
-                <h4 className="text-md font-medium text-cyan-600">{title}</h4>
-              </Link>
-            ))}
+              "LLMO Strategy", // General page first
+              ...sectors.map((sector) => sector.title), // Industry-specific pages
+            ].map((title, index) => {
+              // Find the corresponding sector to use its slug
+              const sector = sectors.find((s) => s.title === title) || { slug: title.toLowerCase().replace(/ /g, "-").replace(/&/g, "") };
+              return (
+                <Link
+                  key={index}
+                  href={`/llmo/${sector.slug}`} // Use slug directly
+                  className="block bg-white rounded-xl p-4 border border-gray-200 shadow-sm hover:shadow-md transition-shadow"
+                >
+                  <h4 className="text-md font-medium text-cyan-600">{title}</h4>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </div>
