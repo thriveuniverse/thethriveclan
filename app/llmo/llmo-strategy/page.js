@@ -53,38 +53,120 @@ const sectors = [
 ];
 
 export const metadata = {
-  title: "The Thrive Clan | LLMO Strategy",
-  description: "Discover the foundational LLMO strategy to empower your business with AI-driven optimization.",
+  title: "The Thrive Clan | LLMO Strategy Package",
+  description:
+    "Launch your business into the $3.68T AI-driven market with our LLMO Strategy Package—your blueprint for dominating answer engines and scaling with freedom.",
+  keywords:
+    "LLMO strategy, AI optimization, answer engine optimization, business growth, hyperautomation, SEO strategy",
+  openGraph: {
+    title: "The Thrive Clan | LLMO Strategy Package",
+    description:
+      "Master the $3.68T AI market with our LLMO Strategy Package. Get tools and insights to lead answer engines and achieve limitless success.",
+    images: ["/images/llmo-strategy.jpg"],
+    url: "https://thethriveclan.com/llmo/llmo-strategy",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Thrive Clan | LLMO Strategy Package",
+    description:
+      "Lead the AI revolution with our LLMO Strategy Package—your key to dominating answer engines and scaling your business.",
+    images: ["/images/llmo-strategy.jpg"],
+  },
 };
 
 export default function LLMOStrategy() {
   return (
     <div className="min-h-screen bg-gray-50 py-16">
-      <div className="max-w-3xl mx-auto px-4">
-        <h1 className="text-3xl font-bold mb-6 text-cyan-700">LLMO Strategy</h1>
-        <p className="text-lg text-gray-700 leading-relaxed">
-          These LLMO Specialisation Reports go far beyond a static playbook. They are crafted to empower businesses in high-growth sectors—whether in health and wellness, sustainable products, electric mobility, online education, or senior care—with a clear competitive edge in the era of AI-driven search. Each report distills sector-specific market insights, keyword opportunities, optimisation strategies, and best practices into a roadmap businesses can execute immediately.
-          <br /><br />
-          The real power lies in their practicality. Customers receive a complete optimisation toolkit: curated keyword lists, suggested blog and content calendars, schema and structured data strategies, and practical guidance for platforms like WordPress, Shopify, and Webflow. This enables businesses to quickly publish content that’s not only discoverable by answer engines like ChatGPT, Perplexity, and Gemini, but also authoritative enough to win citations and visibility across the buyer journey.
-          <br /><br />
-          For business leaders, the goal is straightforward: accelerate growth while reducing reliance on paid channels. By positioning brands as thought leaders in niches like sustainable consumer products or remote work tools, LLMO ensures content is seen, cited, and trusted by the systems billions of customers rely on. Instead of chasing fleeting trends, companies build a sustainable digital asset base that compounds in value over time.
-          <br /><br />
-          The business value is tangible. Organisations adopting LLMO don’t just see traffic increases; they capture higher-intent customers—those comparing solutions, seeking expert guidance, or ready to buy. Whether you’re a startup in senior care or an established eLearning provider, these reports offer a framework to own your category, strengthen brand authority, and drive measurable ROI. Explore how this applies to your sector in the grid below.
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 className="text-4xl font-extrabold text-cyan-700 mb-6">
+          Launch Your Empire with the LLMO Strategy Package
+        </h1>
+        <p className="text-lg text-gray-700 leading-relaxed mb-8">
+          <strong>Seize the $3.68 Trillion AI Revolution</strong>
+          <br />
+          Imagine a world where your business doesn’t just grow—it dominates, leading a $3.68 trillion AI-driven market by 2034. The LLMO Strategy Package is your launchpad, a dynamic blueprint crafted for visionaries—entrepreneurs, developers, and consultants—ready to conquer answer engines like ChatGPT, Perplexity, and Gemini. With AI and automation surging at 23.68% annually, this is your 12-18 month window to break free from outdated tactics, unlock limitless potential, and build a legacy of unstoppable success.
         </p>
-        <div className="mt-12">
-          <h2 className="text-2xl font-semibold mb-4 text-cyan-700">Sector Specializations</h2>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+            Your Secret Weapon for Market Domination
+          </h2>
+          <p className="text-gray-700 leading-relaxed">
+            Forget chasing trends or burning budgets on paid ads. Our LLMO Strategy Package empowers you to own your niche—whether it’s health and wellness, sustainable products, or e-learning—by harnessing the power of answer engine optimization. With 70% of searches driven by high-intent queries, this package positions your brand as a trusted authority, capturing leads and building trust across platforms like WordPress, Shopify, and Webflow. It’s not just a strategy; it’s your ticket to freedom, creativity, and market leadership.
+          </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+            A Toolkit That Transforms Vision into Victory
+          </h2>
+          <p className="text-gray-700 leading-relaxed">
+            This isn’t a static playbook—it’s a rocket-powered toolkit designed for immediate impact. Tailored for high-growth sectors, the LLMO Strategy Package equips you with:
+          </p>
+          <ul className="list-disc list-inside text-gray-700 mt-4 space-y-2">
+            <li>
+              <strong>Curated Keyword Lists</strong>: Target high-intent searches to dominate answer engines and drive qualified leads.
+            </li>
+            <li>
+              <strong>Content & Blog Calendars</strong>: Ready-to-execute plans to publish authoritative content that wins citations fast.
+            </li>
+            <li>
+              <strong>Schema & Structured Data Strategies</strong>: Automated setups for SoftwareApplication, FAQ, and How-To schemas to secure featured snippets.
+            </li>
+            <li>
+              <strong>Platform-Specific Guidance</strong>: Practical steps for optimizing on WordPress, Shopify, Webflow, and more.
+            </li>
+            <li>
+              <strong>90-Day Roadmap</strong>: A clear plan to boost organic traffic by 200-300% and slash customer acquisition costs by 25-35% in 6-12 months.
+            </li>
+          </ul>
+          <p className="text-gray-700 mt-4">
+            From startups in senior care to established e-learning providers, this package delivers measurable ROI, turning your content into a sustainable digital asset that compounds in value over time.
+          </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+            Explore Our Industry-Tailored LLMO Solutions
+          </h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Ready to lead your industry? Our LLMO packages are crafted for specific sectors, each designed to amplify your success with cutting-edge strategies. Discover your path to dominance:
+          </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {sectors.map((sector, index) => (
+            {sectors.map((sector) => (
               <Link
-                key={index}
+                key={sector.slug}
                 href={`/llmo/${sector.slug}`}
-                className="block bg-white rounded-xl p-4 border border-gray-200 shadow-sm hover:shadow-md transition-shadow"
+                className="block bg-white rounded-lg shadow-md hover:shadow-lg transition p-4"
               >
-                <h4 className="text-md font-medium text-cyan-600">{sector.title}</h4>
+                <img
+                  src={sector.img}
+                  alt={sector.alt}
+                  className="w-full h-48 object-cover rounded-t-lg mb-4"
+                />
+                <h3 className="text-xl font-semibold text-cyan-600">
+                  {sector.title}
+                </h3>
               </Link>
             ))}
           </div>
-        </div>
+        </section>
+
+        <section className="text-center bg-cyan-50 p-8 rounded-lg">
+          <h2 className="text-2xl font-semibold text-cyan-700 mb-4">
+            Ready to Conquer the AI-Powered Future?
+          </h2>
+          <p className="text-gray-700 mb-6">
+            Don’t just compete—dominate. Grab the LLMO Strategy Package now and unlock a world of freedom, growth, and market leadership. The clock’s ticking—seize your 12-18 month advantage today!
+          </p>
+          {/* TODO: Replace with actual Lemon Squeezy button code */}
+          <a
+            href="https://lemonsqueezy.com/your-product-link"
+            className="inline-block bg-cyan-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-cyan-700 transition"
+          >
+            Get the LLMO Strategy Package Now
+          </a>
+        </section>
       </div>
     </div>
   );
