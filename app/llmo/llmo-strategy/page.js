@@ -1,52 +1,46 @@
 import Link from "next/link";
 
-// Centralized data for sectors (excluding the strategy page itself)
+// Centralized data for sectors (excluding the strategy page itself and missing e-learning page)
 const sectors = [
   {
     title: "LLMO AI Automation Tools",
-    slug: "ai-automation-tools",
+    slug: "llmo-ai-automation-tools",
     img: "/images/ai-automation.jpg",
     alt: "Professional illustration of AI automation featuring digital circuits, robotic arm, AI chip, and workflow automation symbols in modern blue tones",
   },
   {
     title: "LLMO AI Jobs & Career Development",
-    slug: "ai-jobs-career-development",
+    slug: "llmo-ai-jobs-career-development",
     img: "/images/ai-careers.jpg",
     alt: "Professional workspace illustration showing person at desk with AI brain symbol, career growth charts, and professional development icons",
   },
   {
     title: "LLMO Health Wellness Specializations",
-    slug: "health-wellness-specializations",
+    slug: "llmo-health-wellness-specializations",
     img: "/images/health-wellness.jpg",
     alt: "Digital health technology illustration featuring health monitoring devices, medical cross, wellness tracking interfaces, and health data visualization",
   },
   {
     title: "LLMO Sustainable Eco-Friendly Products",
-    slug: "sustainable-eco-friendly-products",
+    slug: "llmo-sustainable-eco-friendly-products",
     img: "/images/sustainable.jpg",
     alt: "Eco-friendly business illustration with professional businessman, recycling symbols, wind turbines, solar panels, and green growth charts",
   },
   {
     title: "LLMO Electric Vehicle Accessories",
-    slug: "electric-vehicle-accessories",
+    slug: "llmo-electric-vehicle-accessories",
     img: "/images/ev-accessories.jpg",
     alt: "Electric vehicle technology illustration featuring EV charging station, electric car, charging cables, and battery technology in professional blue tones",
   },
   {
     title: "LLMO Remote Work Productivity Tools",
-    slug: "remote-work-productivity-tools",
+    slug: "llmo-remote-work-productivity-tools",
     img: "/images/remote-work.jpg",
     alt: "Modern home office illustration with productivity workspace, collaboration tools, time management, and remote work applications interface",
   },
   {
-    title: "LLMO E-Learning Online Education",
-    slug: "e-learning-online-education",
-    img: "/images/e-learning.jpg",
-    alt: "Digital learning platform illustration featuring online instructor, graduation cap, educational tools, and e-learning interface elements",
-  },
-  {
     title: "LLMO Senior Care Products",
-    slug: "senior-care-products",
+    slug: "llmo-senior-care-products",
     img: "/images/senior-care.jpg",
     alt: "Senior care technology illustration showing elderly gentleman with assistive devices, health monitoring tools, and compassionate care support systems",
   },
