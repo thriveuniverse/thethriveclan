@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 
 // Centralized data for sectors (not used here but kept for consistency)
@@ -51,9 +52,35 @@ export const metadata = {
   description: "Shape the $127 billion remote work revolution with tailored LLMO strategies.",
 };
 
+
 export default function RemoteWorkProductivityTools() {
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "LLMO Remote Work and Productivity Tools Package",
+    description: metadata.description, // Reuse metadata for consistency
+    image: "/images/remote-work.jpg", // Ensure this image exists
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "USD",
+      // Price omitted until Lemon Squeezy is integrated
+      availability: "https://schema.org/InStock",
+      url: "https://thethriveclan.com/llmo-remote-work-productivity-tools", // Replace with your domain
+    },
+    brand: {
+      "@type": "Brand",
+      name: "The Thrive Clan",
+    },
+  };
+
   return (
     <div className="min-h-screen bg-gray-50 py-16">
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        />
+      </Head>
       <div className="max-w-3xl mx-auto px-4">
         <h1 className="text-3xl font-bold mb-6 text-cyan-700">LLMO Remote Work and Productivity Tools Package</h1>
         <p className="text-lg text-gray-700 leading-relaxed">
