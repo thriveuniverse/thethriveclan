@@ -1,5 +1,4 @@
 import "./globals.css";
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { createOrganizationSchema } from "../lib/schemas/organization";
@@ -11,6 +10,10 @@ import { createOrganizationSchema } from "../lib/schemas/organization";
 export const metadata = {
   title: "The Thrive Clan",
   description: "Sector-specific resources curated by The Thrive Clan.",
+  // Add schema to metadata
+  other: {
+    'application/ld+json': createOrganizationSchema(),
+  },
 };
 
 // ---------------------------------------------------------------------------
@@ -32,16 +35,8 @@ const navItems = [
 // ---------------------------------------------------------------------------
 
 export default function RootLayout({ children }) {
-  const organizationSchema = createOrganizationSchema();
-
   return (
     <html lang="en" className="h-full">
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-        />
-      </Head>
       <body className="min-h-full flex flex-col">
         <Header />
         <main className="flex-1">{children}</main>
@@ -77,7 +72,7 @@ function Header() {
         <nav className="hidden md:flex space-x-6 items-center h-full">
           {navItems.map((item) => (
             <Link
-              key={item.href} // Fixed typo: <Linkkey= to <Link key=
+              key={item.href}
               href={item.href}
               className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors py-1"
             >
