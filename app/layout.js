@@ -1,6 +1,7 @@
 import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 import { createOrganizationSchema } from "../lib/schemas/organization";
 
 // ---------------------------------------------------------------------------
@@ -10,10 +11,6 @@ import { createOrganizationSchema } from "../lib/schemas/organization";
 export const metadata = {
   title: "The Thrive Clan",
   description: "Sector-specific resources curated by The Thrive Clan.",
-  // Add schema to metadata
-  other: {
-    'application/ld+json': createOrganizationSchema(),
-  },
 };
 
 // ---------------------------------------------------------------------------
@@ -35,8 +32,17 @@ const navItems = [
 // ---------------------------------------------------------------------------
 
 export default function RootLayout({ children }) {
+  const organizationSchema = createOrganizationSchema();
+
   return (
     <html lang="en" className="h-full">
+      <head>
+        <Script
+          id="organization-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+      </head>
       <body className="min-h-full flex flex-col">
         <Header />
         <main className="flex-1">{children}</main>
