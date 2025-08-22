@@ -1,7 +1,7 @@
 import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
+import Head from "next/head"; // Revert to next/head for static rendering
 import { createOrganizationSchema } from "../lib/schemas/organization";
 
 // ---------------------------------------------------------------------------
@@ -36,13 +36,13 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" className="h-full">
-      <head>
-        <Script
+      <Head>
+        <script
           id="organization-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
-      </head>
+      </Head>
       <body className="min-h-full flex flex-col">
         <Header />
         <main className="flex-1">{children}</main>
