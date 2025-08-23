@@ -1,22 +1,15 @@
 import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
-import Head from "next/head"; // Revert to next/head for static rendering
 import { createOrganizationSchema } from "../lib/schemas/organization";
 
-// ---------------------------------------------------------------------------
 // Metadata
-// ---------------------------------------------------------------------------
-
 export const metadata = {
   title: "The Thrive Clan",
   description: "Sector-specific resources curated by The Thrive Clan.",
 };
 
-// ---------------------------------------------------------------------------
 // Navigation items
-// ---------------------------------------------------------------------------
-
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/llmo", label: "LLMO" },
@@ -27,22 +20,20 @@ const navItems = [
   { href: "/blog", label: "Blog" },
 ];
 
-// ---------------------------------------------------------------------------
-// Root Layout
-// ---------------------------------------------------------------------------
-
+// Root Layout (Server Component)
 export default function RootLayout({ children }) {
   const organizationSchema = createOrganizationSchema();
 
   return (
     <html lang="en" className="h-full">
-      <Head>
+      <head>
         <script
-          id="organization-schema"
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
         />
-      </Head>
+      </head>
       <body className="min-h-full flex flex-col">
         <Header />
         <main className="flex-1">{children}</main>
@@ -52,10 +43,7 @@ export default function RootLayout({ children }) {
   );
 }
 
-// ---------------------------------------------------------------------------
 // Header Component
-// ---------------------------------------------------------------------------
-
 function Header() {
   return (
     <header className="shadow-md bg-white">
@@ -122,10 +110,7 @@ function Header() {
   );
 }
 
-// ---------------------------------------------------------------------------
 // Footer Component
-// ---------------------------------------------------------------------------
-
 function Footer() {
   return (
     <footer className="bg-gray-100 py-6">
@@ -150,4 +135,4 @@ function Footer() {
   );
 }
 
-export { Footer }; // Named export for Footer
+export { Footer };
