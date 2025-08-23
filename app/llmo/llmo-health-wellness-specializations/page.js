@@ -96,7 +96,7 @@ export default function HealthWellnessSpecializations() {
                 Seize the Unstoppable Health & Wellness Boom
               </h2>
               <p className="mb-4">
-                Imagine tapping into a transformative <strong>$1.28 trillion market</strong>—the complementary and alternative medicine sector is set to explode from $193.36 billion in 2025 to this jaw-dropping figure by 2033, fueled by a staggering 23.9% annual growth. This isn't just a trend; it's a global revolution driven by aging populations, rising health demands, and limited resources stretching practitioners thin.
+                Imagine tapping into a transformative <strong>$1.28 trillion market</strong>—the complementary and alternative medicine sector is set to explode from $193.36 billion in 2025 to this jaw-dropping figure by 2033, fueled by a staggering 23.9% annual growth. This isn&apos;t just a trend; it&apos;s a global revolution driven by aging populations, rising health demands, and limited resources stretching practitioners thin.
               </p>
               <p>
                 Our LLMO Strategic Guide is your key to mastering this explosive landscape, blending cutting-edge healthcare technology ($659.8 billion by 2030), a wellness industry soaring 9.9% yearly, and the rise of answer engines as patients' go-to health discovery tools. Ready to turn scarcity into opportunity? This guide lights the way.
@@ -108,10 +108,10 @@ export default function HealthWellnessSpecializations() {
                 Dominate with Precision and Bold Compliance
               </h2>
               <p className="mb-4">
-                Here's your chance to claim an underserved market with a daring edge. While 71% of health and wellness vendors lag without LLMO strategies and only 23% of platforms are optimized for answer engines, you can seize a golden <strong>18-24 month window to lead</strong>.
+                Here&apos;s your chance to claim an underserved market with a daring edge. While 71% of health and wellness vendors lag without LLMO strategies and only 23% of platforms are optimized for answer engines, you can seize a golden <strong>18-24 month window to lead</strong>.
               </p>
               <p>
-                This guide doesn't just accelerate your content's citation time from a sluggish 120-180 days to a dynamic 45-67 days—it does so with ironclad compliance to <strong>HIPAA, E-A-T standards, and medical disclaimers</strong>. Picture your brand standing out as a trusted authority, outpacing competitors while safeguarding patients and practitioners with every step.
+                This guide doesn&apos;t just accelerate your content&apos;s citation time from a sluggish 120-180 days to a dynamic 45-67 days—it does so with ironclad compliance to <strong>HIPAA, E-A-T standards, and medical disclaimers</strong>. Picture your brand standing out as a trusted authority, outpacing competitors while safeguarding patients and practitioners with every step.
               </p>
             </section>
 
@@ -120,7 +120,7 @@ export default function HealthWellnessSpecializations() {
                 Transform Lives with Extraordinary Results
               </h2>
               <p className="mb-4">
-                This isn't just growth—it's a breakthrough. Our 90-day implementation framework delivers awe-inspiring outcomes without disrupting your practice. Envision:
+                This isn&apos;t just growth—it&apos;s a breakthrough. Our 90-day implementation framework delivers awe-inspiring outcomes without disrupting your practice. Envision:
               </p>
               <ul className="list-disc pl-6 space-y-2 mb-4">
                 <li><strong>150-250% leap in qualified leads</strong> within 12 months</li>
@@ -130,7 +130,7 @@ export default function HealthWellnessSpecializations() {
                 <li><strong>3-5x surge in organic traffic</strong></li>
               </ul>
               <p>
-                You'll build a scalable, patient-centered empire rooted in clinical excellence and thought leadership. Feel the thrill: with this guide, you can turn resource constraints into a launchpad for extraordinary success—proving you can really do this!
+                You&apos;ll build a scalable, patient-centered empire rooted in clinical excellence and thought leadership. Feel the thrill: with this guide, you can turn resource constraints into a launchpad for extraordinary success—proving you can really do this!
               </p>
             </section>
 

@@ -138,7 +138,7 @@ export default function SustainableEcoFriendlyProducts() {
               <ul className="list-disc pl-6 space-y-2">
                 <li><strong>Perfect timing</strong>: Enter while sustainable materials market explodes from $374.67 billion (2025) to $1.07 trillion (2034) at 12.41% CAGR.</li>
                 <li><strong>Regulatory tailwinds</strong>: France, Germany, and the EU lead with robust recycling mandates creating massive opportunities for compliant brands.</li>
-                <li><strong>Consumer behavior shift</strong>: This isn't a trend—it's a permanent transformation toward conscious consumption.</li>
+                <li><strong>Consumer behavior shift</strong>: This isn&apos;t a trend—it&apos;s a permanent transformation toward conscious consumption.</li>
               </ul>
             </section>
 

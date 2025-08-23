@@ -134,7 +134,7 @@ export default function LLMO() {
               <section>
                 <h2 className="text-2xl font-semibold text-cyan-600 mb-4">Your Path to Success</h2>
                 <p>
-                  At The Thrive Clan, we've mapped out strategies to empower your business—starting with a{' '}
+                  At The Thrive Clan, we&apos;ve mapped out strategies to empower your business—starting with a{' '}
                   <Link href="/llmo/llmo-strategy" className="text-cyan-600 hover:underline font-semibold">
                     general LLMO framework
                   </Link>
@@ -159,7 +159,7 @@ export default function LLMO() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-cyan-600 mb-4">Don't Miss Out</h2>
+                <h2 className="text-2xl font-semibold text-cyan-600 mb-4">Don&apos;t Miss Out</h2>
                 <p>
                   The choice is clear: cling to outdated methods and watch competitors surge ahead, or embrace LLMO to seize market share and secure your digital future. Explore our strategies below and take the first step to outpace the competition—before they do.
                 </p>

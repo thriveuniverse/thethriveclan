@@ -105,7 +105,7 @@ export default function SeniorCareProducts() {
                 <li>Master five pillars: elder safety with E-A-T optimization, regulatory compliance, systematic refinement, scalable infrastructure, and family-centered focus.</li>
                 <li>Outshine 77% of competitors with poor content (average 6.2/10) using <strong>HIPAA-aligned strategies</strong>, professional credentialing, and schema markup (LocalBusiness, ProfessionalService).</li>
                 <li>Capture high-intent queries on aging-in-place trends across North America, Europe, and Asia-Pacific, with citation times slashed to <strong>18-24 days</strong>.</li>
-                <li>Position your brand as a leader in the world's fastest-growing healthcare segment.</li>
+                <li>Position your brand as a leader in the world&apos;s fastest-growing healthcare segment.</li>
               </ul>
             </section>
 
@@ -128,7 +128,7 @@ export default function SeniorCareProducts() {
               <ul className="list-disc pl-6 space-y-2 mb-4">
                 <li>Fill the gap where <strong>23% of platforms lack LLMO</strong>, giving you an edge in a $2.63 trillion market opportunity.</li>
                 <li>Capitalize on demographic inevitability: by 2050, approximately <strong>80% of older adults will reside in low- and middle-income countries</strong> (WHO), creating unprecedented global demand.</li>
-                <li>Lead with purpose in the world's most impactful industry—your chance to elevate senior care while building substantial wealth!</li>
+                <li>Lead with purpose in the world&apos;s most impactful industry—your chance to elevate senior care while building substantial wealth!</li>
               </ul>
               
               <div className="bg-cyan-50 p-4 rounded-lg">
@@ -144,7 +144,7 @@ export default function SeniorCareProducts() {
                 Ready to Dominate the $2.63 Trillion Senior Care Market?
               </h2>
               <p className="text-gray-700 mb-6">
-                Get the LLMO Senior Care Strategic Guide now and position yourself in the world's largest healthcare opportunity. Turn demographic change into your competitive advantage and build a legacy that truly matters!
+                Get the LLMO Senior Care Strategic Guide now and position yourself in the world&apos;s largest healthcare opportunity. Turn demographic change into your competitive advantage and build a legacy that truly matters!
               </p>
               {/* TODO: Replace with actual Lemon Squeezy button code */}
               <a

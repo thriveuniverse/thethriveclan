@@ -86,10 +86,10 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 py-16">
           <div className="mb-12">
             <h3 className="text-3xl font-bold mb-6 text-gray-800">
-              Strategic Intelligence for Tomorrow's Winners
+              Strategic Intelligence for Tomorrow&apos;s Winners
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed">
-              At The Thrive Clan, we specialize in three critical areas that define tomorrow's business winners: Large Language Model Optimization (LLMO) with cutting-edge AI language model optimization strategies; comprehensive sector analysis through our SEO intelligence reports, covering high-growth industries like AI automation, health and wellness, sustainable products, electric vehicle accessories, remote work solutions, and e-learning platforms; and identifying breakthrough investment opportunities in emerging markets, such as hydrogen fuel cell vehicles (FCEV), drone technology, and institutional pension fund trends. Our mission is to empower businesses, entrepreneurs, and investors with actionable, data-driven intelligence to thrive in an increasingly competitive marketplace, offering detailed competitive analysis, keyword strategies, and market force insights to ensure sustained success.
+              At The Thrive Clan, we specialize in three critical areas that define tomorrow&apos;s business winners: Large Language Model Optimization (LLMO) with cutting-edge AI language model optimization strategies; comprehensive sector analysis through our SEO intelligence reports, covering high-growth industries like AI automation, health and wellness, sustainable products, electric vehicle accessories, remote work solutions, and e-learning platforms; and identifying breakthrough investment opportunities in emerging markets, such as hydrogen fuel cell vehicles (FCEV), drone technology, and institutional pension fund trends. Our mission is to empower businesses, entrepreneurs, and investors with actionable, data-driven intelligence to thrive in an increasingly competitive marketplace, offering detailed competitive analysis, keyword strategies, and market force insights to ensure sustained success.
             </p>
           </div>
 

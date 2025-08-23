@@ -139,16 +139,16 @@ export default function ELearningOnlineEducation() {
                 Take Control of the Education SERPs
               </h2>
               <p className="mb-6">
-                If our Remote Work kit made you a productivity leader, this package plants your flag in a bigger, faster-growing, regulation-rich market. Plug in the 90-day roadmap, own the search results universities and HR directors rely on, and turn education's evolution into your triumph!
+                If our Remote Work kit made you a productivity leader, this package plants your flag in a bigger, faster-growing, regulation-rich market. Plug in the 90-day roadmap, own the search results universities and HR directors rely on, and turn education&apos;s evolution into your triumph!
               </p>
               
               {/* Call to Action Section */}
               <div className="mt-8 p-6 bg-cyan-50 rounded-lg text-center">
                 <h3 className="text-xl font-semibold text-cyan-700 mb-4">
-                  Ready to Lead E-Learning's Future?
+                  Ready to Lead E-Learning&apos;s Future?
                 </h3>
                 <p className="text-gray-700 mb-6">
-                  Get the LLMO E-Learning Package now and dominate the $1.5 trillion education market. Transform education's evolution into your triumph!
+                  Get the LLMO E-Learning Package now and dominate the $1.5 trillion education market. Transform education&apos;s evolution into your triumph!
                 </p>
                 {/* TODO: Replace with actual Lemon Squeezy button code */}
                 <a

@@ -103,7 +103,7 @@ export default function LLMOStrategy() {
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
             <strong>Seize the $3.68 Trillion AI Revolution</strong>
             <br />
-            Imagine a world where your business doesn't just grow—it dominates, leading a $3.68 trillion AI-driven market by 2034. The LLMO Strategy Package is your launchpad, a dynamic blueprint crafted for visionaries—entrepreneurs, developers, and consultants—ready to conquer answer engines like ChatGPT, Perplexity, and Gemini. With AI and automation surging at 23.68% annually, this is your 12-18 month window to break free from outdated tactics, unlock limitless potential, and build a legacy of unstoppable success.
+            Imagine a world where your business doesn&apos;t just grow—it dominates, leading a $3.68 trillion AI-driven market by 2034. The LLMO Strategy Package is your launchpad, a dynamic blueprint crafted for visionaries—entrepreneurs, developers, and consultants—ready to conquer answer engines like ChatGPT, Perplexity, and Gemini. With AI and automation surging at 23.68% annually, this is your 12-18 month window to break free from outdated tactics, unlock limitless potential, and build a legacy of unstoppable success.
           </p>
 
           <section className="mb-12">
@@ -111,7 +111,7 @@ export default function LLMOStrategy() {
               Your Secret Weapon for Market Domination
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              Forget chasing trends or burning budgets on paid ads. Our LLMO Strategy Package empowers you to own your niche—whether it's health and wellness, sustainable products, or e-learning—by harnessing the power of answer engine optimization. With 70% of searches driven by high-intent queries, this package positions your brand as a trusted authority, capturing leads and building trust across platforms like WordPress, Shopify, and Webflow. It's not just a strategy; it's your ticket to freedom, creativity, and market leadership.
+              Forget chasing trends or burning budgets on paid ads. Our LLMO Strategy Package empowers you to own your niche—whether it&apos;s health and wellness, sustainable products, or e-learning—by harnessing the power of answer engine optimization. With 70% of searches driven by high-intent queries, this package positions your brand as a trusted authority, capturing leads and building trust across platforms like WordPress, Shopify, and Webflow. It&apos;s not just a strategy; it&apos;s your ticket to freedom, creativity, and market leadership.
             </p>
           </section>
 
@@ -120,7 +120,7 @@ export default function LLMOStrategy() {
               A Toolkit That Transforms Vision into Victory
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              This isn't a static playbook—it's a rocket-powered toolkit designed for immediate impact. Tailored for high-growth sectors, the LLMO Strategy Package equips you with:
+              This isn&apos;t a static playbook—it&apos;s a rocket-powered toolkit designed for immediate impact. Tailored for high-growth sectors, the LLMO Strategy Package equips you with:
             </p>
             <ul className="list-disc list-inside text-gray-700 mt-4 space-y-2">
               <li>
@@ -183,7 +183,7 @@ export default function LLMOStrategy() {
               Ready to Conquer the AI-Powered Future?
             </h2>
             <p className="text-gray-700 mb-6">
-              Don't just compete—dominate. Grab the LLMO Strategy Package now and unlock a world of freedom, growth, and market leadership. The clock's ticking—seize your 12-18 month advantage today!
+              Don&apos;t just compete—dominate. Grab the LLMO Strategy Package now and unlock a world of freedom, growth, and market leadership. The clock&apos;s ticking—seize your 12-18 month advantage today!
             </p>
             {/* TODO: Replace with actual Lemon Squeezy button code */}
             <a

@@ -19,8 +19,8 @@
   b  ^B  ESC-v      *  Backward one window (or _N lines).
   z                 *  Forward  one window (and set window to _N).
   w                 *  Backward one window (and set window to _N).
-  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
-  ESC-b             *  Backward one window, but don't stop at beginning-of-file.
+  ESC-SPACE         *  Forward  one window, but don&apos;t stop at end-of-file.
+  ESC-b             *  Backward one window, but don&apos;t stop at beginning-of-file.
   d  ^D             *  Forward  one half-window (and set half-window to _N).
   u  ^U             *  Backward one half-window (and set half-window to _N).
   ESC-)  RightArrow *  Right one half screen width (or _N positions).
@@ -56,8 +56,8 @@
         ^N or !  Search for NON-matching lines.
         ^E or *  Search multiple files (pass thru END OF FILE).
         ^F or @  Start search at FIRST file (for /) or last file (for ?).
-        ^K       Highlight matches, but don't move (KEEP position).
-        ^R       Don't use REGULAR EXPRESSIONS.
+        ^K       Highlight matches, but don&apos;t move (KEEP position).
+        ^R       Don&apos;t use REGULAR EXPRESSIONS.
         ^S _n     Search for match in _n-th parenthesized subpattern.
         ^W       WRAP search if no match found.
         ^L       Enter next character literally into pattern.
@@ -137,7 +137,7 @@
   -b [_N]  ....  --buffers=[_N]
                   Number of buffers.
   -B  ........  --auto-buffers
-                  Don't automatically allocate buffers for pipes.
+                  Don&apos;t automatically allocate buffers for pipes.
   -c  ........  --clear-screen
                   Repaint by clearing rather than scrolling.
   -d  ........  --dumb
@@ -153,7 +153,7 @@
   -g  ........  --hilite-search
                   Highlight only last match for searches.
   -G  ........  --HILITE-SEARCH
-                  Don't highlight any matches for searches.
+                  Don&apos;t highlight any matches for searches.
   -h [_N]  ....  --max-back-scroll=[_N]
                   Backward scroll limit.
   -i  ........  --ignore-case
@@ -207,7 +207,7 @@
   -x [_N[,...]]  --tabs=[_N[,...]]
                   Set tab stops.
   -X  ........  --no-init
-                  Don't use termcap init/deinit strings.
+                  Don&apos;t use termcap init/deinit strings.
   -y [_N]  ....  --max-forw-scroll=[_N]
                   Forward scroll limit.
   -z [_N]  ....  --window=[_N]
@@ -215,7 +215,7 @@
   -" [_c[_c]]  .  --quotes=[_c[_c]]
                   Set shell quote characters.
   -~  ........  --tilde
-                  Don't display tildes after end of file.
+                  Don&apos;t display tildes after end of file.
   -# [_N]  ....  --shift=[_N]
                   Set horizontal scroll amount (0 = one half screen width).
 
@@ -246,13 +246,13 @@
                 --mouse
                   Enable mouse input.
                 --no-edit-warn
-                  Don't warn when using v command on a file opened via LESSOPEN.
+                  Don&apos;t warn when using v command on a file opened via LESSOPEN.
                 --no-keypad
-                  Don't send termcap keypad init/deinit strings.
+                  Don&apos;t send termcap keypad init/deinit strings.
                 --no-histdups
                   Remove duplicates from command history.
                 --no-number-headers
-                  Don't give line numbers to header lines.
+                  Don&apos;t give line numbers to header lines.
                 --no-paste
                   Ignore pasted input.
                 --no-search-header-lines
@@ -262,7 +262,7 @@
                 --no-search-headers
                   Searches do not include header lines or columns.
                 --no-vbell
-                  Disable the terminal's visual bell.
+                  Disable the terminal&apos;s visual bell.
                 --redraw-on-quit
                   Redraw final screen when quitting.
                 --rscroll=[_C]

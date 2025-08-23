@@ -124,7 +124,7 @@ export default function RemoteWorkProductivityTools() {
             {/* Call to Action Section */}
             <section className="mt-8 p-6 bg-cyan-50 rounded-lg text-center">
               <h2 className="text-2xl font-semibold text-cyan-700 mb-4">
-                Ready to Shape Remote Work's Future?
+                Ready to Shape Remote Work&apos;s Future?
               </h2>
               <p className="text-gray-700 mb-6">
                 Get the LLMO Remote Work Package now and lead the charge in the $127 billion remote work revolution. Turn rapid evolution into your lasting dominance!

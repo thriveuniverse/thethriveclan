@@ -93,7 +93,7 @@ export default function ElectricVehicleAccessories() {
                 <li>Step into a robust $308 billion market, projected to grow from $67.74 billion in 2022 to this powerhouse figure by 2030, with a steady 20.7% CAGR.</li>
                 <li>Tap into a sector backed by global investment and unshakable demand, poised to lead the electrification wave for decades.</li>
                 <li>Gain the upper hand with tailored LLMO frameworks, ensuring compliance with international standards like FCC, CE, and RoHS, while tackling high-voltage risks and charging infrastructure needs.</li>
-                <li>Feel the certainty: this guide positions you to lead with precision in a market that's here to stay.</li>
+                <li>Feel the certainty: this guide positions you to lead with precision in a market that&apos;s here to stay.</li>
               </ul>
             </section>
 
@@ -103,7 +103,7 @@ export default function ElectricVehicleAccessories() {
               </h2>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Master a complex regulatory landscape with strategies for FCC radio emissions, CE safety marking, RoHS restrictions, and UL electrical standards.</li>
-                <li>Build trust and expertise with E-A-T optimization, tailored for voice search and regional dynamics—think North America's NACS and Europe's electrification mandates.</li>
+                <li>Build trust and expertise with E-A-T optimization, tailored for voice search and regional dynamics—think North America&apos;s NACS and Europe&apos;s electrification mandates.</li>
                 <li>Capture high-intent queries in emerging niches like wireless charging and smart grid integration, outpacing competitors in a fragmented field.</li>
                 <li>Establish your brand as the go-to authority with proven, region-specific tactics.</li>
               </ul>
