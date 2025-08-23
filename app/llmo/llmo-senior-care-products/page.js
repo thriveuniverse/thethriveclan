@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { createProductSchema } from "../../../lib/schemas/product";
 
 // Centralized data for sectors (not used here but kept for consistency)
 const sectors = [
@@ -48,50 +49,114 @@ const sectors = [
 
 export const metadata = {
   title: "The Thrive Clan | LLMO Senior Care & Products",
-  description: "Elevate the $2.8 trillion senior care market with tailored LLMO strategies.",
+  description: "Elevate the $2.63 trillion senior care market with compliant LLMO strategies.",
 };
 
 export default function SeniorCareProducts() {
+  // Product Schema Component
+  function ProductSchema() {
+    const schema = createProductSchema({
+      name: "LLMO Senior Care & Products Strategic Implementation Guide",
+      description: "Elevate the $2.63 trillion senior care market with compliant LLMO strategies. Includes WCAG accessibility compliance, HIPAA frameworks, elder safety protocols, and family-centered marketing approaches.",
+      image: "https://thethriveclan.com/images/senior-care.jpg",
+      url: "https://thethriveclan.com/llmo/senior-care-products",
+      category: "Senior Care Marketing Guide",
+      sku: "LLMO-SENIOR-001",
+      // price: "699.00", // Uncomment when pricing is finalized - premium for massive market opportunity
+      brand: "The Thrive Clan",
+      aggregateRating: null, // Add reviews later if available
+    });
+
+    return (
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+    );
+  }
+
   return (
-    <div className="min-h-screen bg-gray-50 py-16">
-      <div className="max-w-3xl mx-auto px-4">
-        <h1 className="text-3xl font-bold mb-6 text-cyan-700">LLMO Senior Care & Products Strategic Implementation Guide</h1>
-        <p className="text-lg text-gray-700 leading-relaxed">
-          <strong>Pioneer a New Era of Senior Care Excellence</strong>
-          <ul className="list-disc pl-6 mb-6">
-            <li>Step into a thriving $2.8 trillion market, soaring from $1.2 trillion in 2026 to this peak by 2030 with a robust 15.2% CAGR.</li>
-            <li>Empower the aging population—over 10,000 Americans turning 65 daily—with innovative solutions backed by healthcare tech growth to $847.6 billion.</li>
-            <li>Gain a compliance edge with LLMO frameworks tailored for elder safety, WCAG accessibility, and regulations like ADA, Elder Justice Act, and CMS guidelines.</li>
-            <li>Seize the pride of leading a transformative industry—your moment to make a difference!</li>
-          </ul>
+    <>
+      <ProductSchema />
+      <div className="min-h-screen bg-gray-50 py-16">
+        <div className="max-w-3xl mx-auto px-4">
+          <h1 className="text-3xl font-bold mb-6 text-cyan-700">
+            LLMO Senior Care & Products Strategic Implementation Guide
+          </h1>
+          
+          <div className="space-y-8 text-lg text-gray-700 leading-relaxed">
+            <section>
+              <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+                Pioneer a New Era of Senior Care Excellence
+              </h2>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Step into a thriving <strong>$1.93 trillion market in 2025</strong>, growing to a <strong>$2.63 trillion powerhouse by 2029</strong> with a robust 8.1% CAGR.</li>
+                <li>Empower the aging population—over <strong>10,000 Americans turning 65 daily</strong>—with innovative solutions backed by healthcare tech growing to <strong>$847.6 billion by 2030</strong>.</li>
+                <li>Gain a compliance edge with LLMO frameworks tailored for elder safety, WCAG accessibility, and regulations like ADA, Elder Justice Act, and CMS guidelines.</li>
+                <li>Seize the pride of leading a transformative industry—your moment to make a difference in the largest healthcare market segment!</li>
+              </ul>
+            </section>
 
-          <strong>Build Trust and Authority with Cutting-Edge Tools</strong>
-          <ul className="list-disc pl-6 mb-6">
-            <li>Master five pillars: elder safety with E-A-T optimization, regulatory compliance, systematic refinement, scalable infrastructure, and family-centered focus.</li>
-            <li>Outshine 77% of competitors with poor content (average 6.2/10) using HIPAA-aligned strategies, professional credentialing, and schema markup (LocalBusiness, ProfessionalService).</li>
-            <li>Capture high-intent queries on aging-in-place trends across North America, Europe, and Asia-Pacific, with citation times slashed to 18-24 days.</li>
-            <li>Position your brand as a leader in a market ripe for innovation.</li>
-          </ul>
+            <section>
+              <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+                Build Trust and Authority with Cutting-Edge Tools
+              </h2>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Master five pillars: elder safety with E-A-T optimization, regulatory compliance, systematic refinement, scalable infrastructure, and family-centered focus.</li>
+                <li>Outshine 77% of competitors with poor content (average 6.2/10) using <strong>HIPAA-aligned strategies</strong>, professional credentialing, and schema markup (LocalBusiness, ProfessionalService).</li>
+                <li>Capture high-intent queries on aging-in-place trends across North America, Europe, and Asia-Pacific, with citation times slashed to <strong>18-24 days</strong>.</li>
+                <li>Position your brand as a leader in the world's fastest-growing healthcare segment.</li>
+              </ul>
+            </section>
 
-          <strong>Drive Impact and Growth in 90 Days</strong>
-          <ul className="list-disc pl-6 mb-6">
-            <li>Launch with a 90-day plan boosting 60-85% organic traffic, 35-50% more family inquiries, and top-5 answer engine citations.</li>
-            <li>Enhance family trust with 3-5% consultation conversions, WCAG AA compliance, and powerful testimonials.</li>
-            <li>Track success with KPI dashboards targeting 15+ monthly citations in 90 days, scaling to 50+ in 12 months, and dominating local SEO.</li>
-            <li>Secure a 12-18 month first-mover advantage, turning care into a profitable, sustainable legacy.</li>
-          </ul>
+            <section>
+              <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+                Drive Impact and Growth in 90 Days
+              </h2>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Launch with a 90-day plan boosting <strong>60-85% organic traffic</strong>, 35-50% more family inquiries, and top-5 answer engine citations.</li>
+                <li>Enhance family trust with <strong>3-5% consultation conversions</strong>, WCAG AA compliance, and powerful testimonials.</li>
+                <li>Track success with KPI dashboards targeting <strong>15+ monthly citations</strong> in 90 days, scaling to 50+ in 12 months, and dominating local SEO.</li>
+                <li>Secure a <strong>12-18 month first-mover advantage</strong> in a market growing by <strong>$700 billion in just 4 years</strong>.</li>
+              </ul>
+            </section>
 
-          <strong>Why This Guide Wins</strong>
-          <ul className="list-disc pl-6 mb-6">
-            <li>Fill the gap where 23% of platforms lack LLMO, giving you an edge in a high-stakes market.</li>
-            <li>Deliver measurable outcomes with optimized content that families and providers trust.</li>
-            <li>Lead with purpose in a growing sector—your chance to elevate senior care worldwide!</li>
-          </ul>
-          {/* TODO: Add Lemon Squeezy purchase button and blurb */}
-          {/* Example blurb: Ready to elevate senior care? Get the LLMO Guide now and lead the market. */}
-          {/* Lemon Squeezy integration will go here once set up */}
-        </p>
+            <section>
+              <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+                Why This Guide Wins in the Trillion-Dollar Market
+              </h2>
+              <ul className="list-disc pl-6 space-y-2 mb-4">
+                <li>Fill the gap where <strong>23% of platforms lack LLMO</strong>, giving you an edge in a $2.63 trillion market opportunity.</li>
+                <li>Capitalize on demographic inevitability: by 2050, approximately <strong>80% of older adults will reside in low- and middle-income countries</strong> (WHO), creating unprecedented global demand.</li>
+                <li>Lead with purpose in the world's most impactful industry—your chance to elevate senior care while building substantial wealth!</li>
+              </ul>
+              
+              <div className="bg-cyan-50 p-4 rounded-lg">
+                <p className="font-semibold text-cyan-800">
+                  💡 Market Reality: This is the largest addressable market in healthcare, growing faster than most tech sectors. The aging boom is unstoppable—position yourself now or watch others capture this massive opportunity.
+                </p>
+              </div>
+            </section>
+
+            {/* Call to Action Section */}
+            <section className="mt-8 p-6 bg-gradient-to-r from-cyan-50 to-blue-50 rounded-lg text-center border border-cyan-200">
+              <h2 className="text-2xl font-semibold text-cyan-700 mb-4">
+                Ready to Dominate the $2.63 Trillion Senior Care Market?
+              </h2>
+              <p className="text-gray-700 mb-6">
+                Get the LLMO Senior Care Strategic Guide now and position yourself in the world's largest healthcare opportunity. Turn demographic change into your competitive advantage and build a legacy that truly matters!
+              </p>
+              {/* TODO: Replace with actual Lemon Squeezy button code */}
+              <a
+                href="https://lemonsqueezy.com/your-senior-care-guide-link"
+                className="inline-block bg-cyan-600 text-white font-semibold py-4 px-8 rounded-full hover:bg-cyan-700 transition shadow-lg"
+              >
+                Get the Senior Care Guide Now
+              </a>
+            </section>
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 }

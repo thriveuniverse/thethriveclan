@@ -14,8 +14,9 @@ const navItems = [
   { href: "/blog", label: "Blog" },
 ];
 
-// Metadata (back to the simple approach)
+// Metadata with metadataBase
 export const metadata = {
+  metadataBase: new URL('https://thethriveclan.com'), // ← Add this line
   title: "The Thrive Clan",
   description: "Sector-specific resources curated by The Thrive Clan.",
 };
