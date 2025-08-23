@@ -3,12 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { createOrganizationSchema } from "../lib/schemas/organization";
 
-// Metadata
-export const metadata = {
-  title: "The Thrive Clan",
-  description: "Sector-specific resources curated by The Thrive Clan.",
-};
-
 // Navigation items
 const navItems = [
   { href: "/", label: "Home" },
@@ -20,20 +14,24 @@ const navItems = [
   { href: "/blog", label: "Blog" },
 ];
 
+// Generate metadata including schema
+export async function generateMetadata() {
+  const organizationSchema = createOrganizationSchema();
+  
+  return {
+    title: "The Thrive Clan",
+    description: "Sector-specific resources curated by The Thrive Clan.",
+    other: {
+      // Add the schema as a script tag
+      'script:ld+json': JSON.stringify(organizationSchema),
+    },
+  };
+}
+
 // Root Layout (Server Component)
 export default function RootLayout({ children }) {
-  const organizationSchema = createOrganizationSchema();
-
   return (
     <html lang="en" className="h-full">
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(organizationSchema),
-          }}
-        />
-      </head>
       <body className="min-h-full flex flex-col">
         <Header />
         <main className="flex-1">{children}</main>
