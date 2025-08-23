@@ -99,7 +99,7 @@ export default function HealthWellnessSpecializations() {
                 Imagine tapping into a transformative <strong>$1.28 trillion market</strong>—the complementary and alternative medicine sector is set to explode from $193.36 billion in 2025 to this jaw-dropping figure by 2033, fueled by a staggering 23.9% annual growth. This isn&apos;t just a trend; it&apos;s a global revolution driven by aging populations, rising health demands, and limited resources stretching practitioners thin.
               </p>
               <p>
-                Our LLMO Strategic Guide is your key to mastering this explosive landscape, blending cutting-edge healthcare technology ($659.8 billion by 2030), a wellness industry soaring 9.9% yearly, and the rise of answer engines as patients' go-to health discovery tools. Ready to turn scarcity into opportunity? This guide lights the way.
+                Our LLMO Strategic Guide is your key to mastering this explosive landscape, blending cutting-edge healthcare technology ($659.8 billion by 2030), a wellness industry soaring 9.9% yearly, and the rise of answer engines as patients go-to health discovery tools. Ready to turn scarcity into opportunity? This guide lights the way.
               </p>
             </section>
 

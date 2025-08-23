@@ -87,7 +87,7 @@ export default function AIAutomationTools() {
                 <strong>15 Ready-to-Deploy Content Templates</strong>: Product pages, case studies, and more, optimized for voice and visual search.
               </li>
               <li>
-                <strong>20 Detailed Blog Outlines</strong>: 3,000-4,500-word guides on hot topics like "Zapier vs. Power Automate" or industry-specific automation strategies.
+                <strong>20 Detailed Blog Outlines</strong>: 3,000-4,500-word guides on hot topics like &quotZapier vs. Power Automate&quot or industry-specific automation strategies.
               </li>
               <li>
                 <strong>Automated Schema Setups</strong>: SoftwareApplication, FAQ, and How-To schemas to dominate featured snippets and boost rankings.
