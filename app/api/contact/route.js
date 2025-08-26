@@ -1,22 +1,15 @@
-import { Resend } from 'resend';
-
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(req) {
   try {
     const { name, email, message } = await req.json();
 
-    const data = await resend.emails.send({
-      from: 'The Thrive Clan <onboarding@resend.dev>', // ✅ or your verified domain sender
-      to: 'mirriekelly@gmail.com', // Replace with your destination (personal for now, later change to @thethriveclan.com)
-      subject: `New message from ${name}`,
-      reply_to: email, // So you can reply directly to the sender
-      text: message,
-    });
+    // Log the submission for now
+    console.log("Contact form submitted:", { name, email, message });
 
-    return new Response(JSON.stringify({ message: 'Message sent', data }), {
-      status: 200,
-    });
+    // Return a success response
+    return new Response(
+      JSON.stringify({ message: 'Message received (Resend removed)' }),
+      { status: 200, headers: { 'Content-Type': 'application/json' } }
+    );
   } catch (error) {
     console.error(error);
     return new Response(JSON.stringify({ message: 'Error', error }), {
