@@ -1,5 +1,5 @@
-// lib/slugify.js
-export default function slugify(str) {
+// app/lib/slugify.ts
+export default function slugify(str: string): string {
   return str
     .toLowerCase()
     .replace(/&/g, "and")
