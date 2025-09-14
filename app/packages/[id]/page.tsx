@@ -20,59 +20,29 @@ export default function PackagePage({ params }: { params: { id: string } }) {
   }, [productId, product]);
 
   const handleCheckout = async () => {
-    if (!email || !email.includes("@")) {
-      setError("Please enter a valid email address.");
-      return;
+  if (!email || !email.includes("@")) {
+    setError("Please enter a valid email address.");
+    return;
+  }
+  setError("");
+  try {
+    console.log("Sending checkout request:", { packageId: productId, userEmail: email, customerType });
+    const response = await fetch("/api/checkout", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ packageId: productId, userEmail: email, customerType }),
+    });
+    console.log("Fetch response:", response);
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+    const { id } = await response.json();
+    console.log("Received session ID:", id);
+    setSessionId(id);
+    if (id) {
+      const publishableKey = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
+      window.location.href = `https://checkout.stripe.com/pay/${id}?key=${publishableKey}`;
     }
-    setError("");
-    try {
-      console.log("Sending checkout request:", { packageId: productId, userEmail: email, customerType });
-      const response = await fetch("/api/checkout", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ packageId: productId, userEmail: email, customerType }),
-      });
-      console.log("Fetch response:", response);
-      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-      const { id } = await response.json();
-      console.log("Received session ID:", id);
-      setSessionId(id);
-      if (id) window.location.href = `https://checkout.stripe.com/pay/${id}`;
-    } catch (error) {
-      console.error("Checkout error:", error);
-      setError("Failed to start checkout. Check console for details.");
-    }
-  };
-
-  if (error || !product) return <div className="p-4">{error || "Loading..."}</div>;
-
-  return (
-    <div className="p-4">
-      <h1>{product.title}</h1>
-      <p>{product.description}</p>
-      <input
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="Enter your email"
-        className="border p-2 mb-2 w-full"
-      />
-      {error && <p className="text-red-500">{error}</p>}
-      <select
-        value={customerType}
-        onChange={(e) => setCustomerType(e.target.value as OptionId)}
-        className="border p-2 mb-2 w-full"
-      >
-        {Object.entries(product.options).map(([key, value]) => (
-          <option key={key} value={key}>
-            {value.name} (${(value.amount / 100).toFixed(2)})
-          </option>
-        ))}
-      </select>
-      <button onClick={handleCheckout} className="bg-blue-500 text-white p-2 rounded">
-        Buy Now
-      </button>
-      {sessionId && <p>Redirecting to payment... Session ID: {sessionId}</p>}
-    </div>
-  );
-}
+  } catch (error) {
+    console.error("Checkout error:", error);
+    setError("Failed to start checkout. Check console for details.");
+  }
+};
