@@ -19,7 +19,7 @@ export default function PackagePage({ params }: { params: { id: string } }) {
     }
   }, [productId, product]);
 
-  const handleCheckout = async () => {
+ const handleCheckout = async () => {
   if (!email || !email.includes("@")) {
     setError("Please enter a valid email address.");
     return;
@@ -46,3 +46,4 @@ export default function PackagePage({ params }: { params: { id: string } }) {
     setError("Failed to start checkout. Check console for details.");
   }
 };
+}
