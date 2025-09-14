@@ -3,7 +3,8 @@ import { useState, useEffect } from "react";
 import { products, ProductId, OptionId } from "../../lib/products";
 
 export default function PackagePage({ params }: { params: { id: string } }) {
-  const productId = params.id as ProductId;
+  // Safely cast string to ProductId via unknown
+  const productId = (params.id as unknown) as ProductId;
   const product = products[productId];
   const [email, setEmail] = useState("");
   const [customerType, setCustomerType] = useState<OptionId>("standard");

@@ -1,4 +1,9 @@
 // app/lib/products.ts
+export interface ProductOption {
+  name: string;
+  amount: number; // In cents
+}
+
 export const products = {
   1: {
     slug: "ai-automation-tools-for-small-business",
