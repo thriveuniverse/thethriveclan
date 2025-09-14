@@ -1,0 +1,28 @@
+{
+  "cacheItemsMap": {
+    "posts/first-post.md": {
+      "document": {
+        "title": "My First Post",
+        "date": "2025-08-28T00:00:00.000Z",
+        "description": "A test post to verify Contentlayer.\r",
+        "body": {
+          "raw": "This is a test post.",
+          "html": "<p>This is a test post.</p>"
+        },
+        "_id": "posts/first-post.md",
+        "_raw": {
+          "sourceFilePath": "posts/first-post.md",
+          "sourceFileName": "first-post.md",
+          "sourceFileDir": "posts",
+          "contentType": "markdown",
+          "flattenedPath": "posts/first-post"
+        },
+        "type": "Post",
+        "slug": "first-post"
+      },
+      "documentHash": "1756402383035",
+      "hasWarnings": false,
+      "documentTypeName": "Post"
+    }
+  }
+}

@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",          // 👈 tells the resolver “project root”
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["*"]          // no leading "./" needed when baseUrl is set
+      "contentlayer/generated": ["./.contentlayer/generated"]
     }
   }
 }

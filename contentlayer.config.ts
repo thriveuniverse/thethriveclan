@@ -7,6 +7,8 @@ export const Post = defineDocumentType(() => ({
     title: { type: 'string', required: true },
     date: { type: 'date', required: true },
     description: { type: 'string', required: true },
+    series: { type: 'string', required: false },
+    seriesPart: { type: 'number', required: false },
   },
   computedFields: {
     slug: {
@@ -19,4 +21,5 @@ export const Post = defineDocumentType(() => ({
 export default makeSource({
   contentDirPath: 'content',
   documentTypes: [Post],
+    disableImportAliasWarning: true  
 });
