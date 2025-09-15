@@ -1,6 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
+import { loadStripe } from "@stripe/stripe-js";
 import { products, ProductId, OptionId } from "../../lib/products";
+
+// Initialize Stripe outside the component
+const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
 
 export default function PackagePage({ params }: { params: { id: string } }) {
   const productId = (params.id as unknown) as ProductId;
@@ -36,7 +40,16 @@ export default function PackagePage({ params }: { params: { id: string } }) {
       const { id } = await response.json();
       console.log("Received session ID:", id);
       setSessionId(id);
-      if (id) window.location.href = `https://checkout.stripe.com/pay/${id}`; // Let Stripe handle the key
+      if (id) {
+        const stripe = await stripePromise;
+        if (!stripe) {
+          throw new Error("Stripe failed to initialize. Check your publishable key.");
+        }
+        const { error } = await stripe.redirectToCheckout({ sessionId: id });
+        if (error) {
+          setError(error.message || "Stripe checkout failed.");
+        }
+      }
     } catch (error) {
       console.error("Checkout error:", error);
       setError("Failed to start checkout. Check console for details.");
