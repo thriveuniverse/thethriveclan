@@ -9,6 +9,7 @@ const navItems = [
   { href: "/llmo", label: "LLMO" },
   { href: "/sector-seo", label: "Sector SEO" },
   { href: "/emerging-opportunities", label: "Emerging Opportunities" },
+  { href: "/securedoc-ai-search", label: "SecrureDoc AI Search" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
   { href: "/blog", label: "Blog" },
