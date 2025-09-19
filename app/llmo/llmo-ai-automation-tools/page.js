@@ -1,18 +1,39 @@
 import Image from "next/image";
 import { createProductSchema } from "../../../lib/schemas/product";
 
-// Add your metadata here
+// Metadata
+export const metadata = {
+  title: "The Thrive Clan | Build, Grow, and Defend AI Automation Tools",
+  description:
+    "A strategic resource for those who want to lead—not chase—the future of online business with AI automation tools.",
+  keywords:
+    "AI automation, LLMO, workflow automation, answer engine optimization, hyperautomation, AI tools, business growth",
+  openGraph: {
+    title: "The Thrive Clan | Build, Grow, and Defend AI Automation Tools",
+    description:
+      "Lead the AI automation revolution with our strategic tools bundle. Get resources to dominate a $3.68T market.",
+    images: ["/images/ai-automation.jpg"],
+    url: "https://thethriveclan.com/llmo/ai-automation-tools",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Thrive Clan | Build, Grow, and Defend AI Automation Tools",
+    description:
+      "Join the $3.68T AI automation boom with our strategic tools bundle.",
+    images: ["/images/ai-automation.jpg"],
+  },
+};
 
 export default function AIAutomationTools() {
   const INDIVIDUAL_VARIANT_ID = "967071";
   const BUSINESS_VARIANT_ID = "967095";
   const STORE_ID = "203055";
-  
+
   function ProductSchema() {
     const schema = createProductSchema({
-      name: "LLMO AI Automation Tools Package",
+      name: "Build, Grow, and Defend AI Automation Tools Bundle",
       description:
-        "Unleash your potential in the $3.68 trillion AI automation market with our comprehensive LLMO package. Includes 150+ keywords, implementation guide, content templates, and monitoring tools.",
+        "A strategic resource for those who want to lead—not chase—the future of online business with our comprehensive AI automation tools. Includes strategic keywords, content templates, playbooks, and more.",
       image: "https://thethriveclan.com/images/ai-automation.jpg",
       url: "https://thethriveclan.com/llmo/ai-automation-tools",
       category: "Digital Marketing Package",
@@ -31,8 +52,8 @@ export default function AIAutomationTools() {
   return (
     <>
       <ProductSchema />
-      
-      {/* Hero Section */}
+
+      {/* Hero Section with Parallax */}
       <div className="relative w-full h-64 md:h-96 overflow-hidden">
         <div
           className="absolute inset-0 parallax"
@@ -50,13 +71,14 @@ export default function AIAutomationTools() {
         <div className="relative z-10 flex items-center justify-center h-full">
           <div className="text-center max-w-4xl mx-auto px-4 hero-text">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-              Ignite Your Future
+              Build, Grow, and Defend
             </h1>
             <h2 className="text-xl md:text-2xl font-semibold mb-6 text-gray-100">
-              with LLMO AI Automation Tools
+              The AI Automation Tools Bundle
             </h2>
             <p className="text-lg md:text-xl mb-6 text-gray-200 leading-relaxed">
-              Unleash the Power of a $3.68 Trillion Revolution
+              A strategic resource for those who want to lead—not chase—the future
+              of online business.
             </p>
           </div>
         </div>
@@ -65,155 +87,148 @@ export default function AIAutomationTools() {
       {/* Main Content */}
       <div className="min-h-screen bg-gray-50 py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          <section className="mb-12" id="package-details">
+
+          <section className="mb-12" id="problem">
             <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
-              Why This Package Is Your Game-Changer
+              The Problem with Most “SEO Packs”
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              Say goodbye to endless manual workflows and hello to a world where AI
-              and automation unlock your potential. The market is screaming for
-              solutions—70% of searches are high-commercial-intent queries, yet most
-              businesses are stuck in the slow lane, unoptimized for answer engines.
-              With our package, you'll leap ahead, capturing attention, driving
-              leads, and building a brand that shines in enterprise, SMB, and
-              developer spaces. From hyperautomation to RPA (Robotic Process
-              Automation), you'll ride the wave of a tech revolution that's
-              reshaping industries like healthcare, finance, and beyond.
+              In today’s AI-driven world, most “SEO” content packs are hastily
+              assembled and quickly obsolete. They chase short-term algorithms
+              instead of delivering real business outcomes—leaving companies
+              exposed to shifts in Google, AI disruption, or plain old digital
+              fatigue. What’s missing? A resource designed for lasting
+              impact—shaped for a world of LLMO (Large Language Model
+              Optimization), authority, and true defensibility.
             </p>
           </section>
 
-          <section className="mb-12">
+          <section className="mb-12" id="difference">
             <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
-              Your All-in-One Toolkit for Market Domination
+              What Makes This Different
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              This isn't just a package—it's a launchpad. Every tool is
-              designed to simplify complexity, accelerate growth, and make you a
-              thought leader in months, not years:
+              Built for the Future: Every template, guide, and asset is engineered
+              for a business environment where search and content are shaped by
+              generative AI. Not “Plug and Pray”: You get strategy, not just
+              keywords; real differentiation, not repackaged scraping. We’ve Used
+              the Tools, We Know the Gaps: Our pack is the product of comparing
+              every leading alternative—then filling what’s missing for serious
+              companies.
             </p>
+          </section>
+
+          <section className="mb-12" id="included">
+            <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+              What’s Included?
+            </h2>
             <ul className="list-disc list-inside text-gray-700 mt-4 space-y-2">
               <li>
-                <strong>150+ Keyword CSV with Intent Analysis</strong>: Pinpoint
-                high-value searches to capture leads across answer engines.
+                <strong>Strategic Keyword Set</strong>: 150+ keywords for real
+                business opportunities—not just high-volume, but high-value and
+                future-proof.
               </li>
               <li>
-                <strong>50+ Page Strategic Implementation Guide</strong>: A 90-day
-                roadmap with entity-strength scoring and calendars to skyrocket
-                visibility.
+                <strong>Prebuilt Content Templates</strong>: 20+ blog post
+                templates designed to serve both human audiences and AI assistants
+                (giving you multi-channel traction).
               </li>
               <li>
-                <strong>15 Ready-to-Deploy Content Templates</strong>: Product
-                pages, case studies, and more, optimized for voice and visual
-                search.
+                <strong>Go-to-Market Playbooks</strong>: Practical guides,
+                checklist workflows, and scalable systems for repeatable
+                campaigns.
               </li>
               <li>
-                <strong>20 Detailed Blog Outlines</strong>: 3,000-4,500-word guides
-                on hot topics like "Zapier vs. Power Automate" or
-                industry-specific automation strategies.
+                <strong>Competitive Benchmarking and ROI Tools</strong>: Instant
+                value calculation and clear benchmarking so you can measure,
+                adapt, and communicate wins.
               </li>
               <li>
-                <strong>Automated Schema Setups</strong>: SoftwareApplication, FAQ,
-                and How-To schemas to dominate featured snippets and boost rankings.
+                <strong>Schema & Technical SEO Assets</strong>: LLMO-ready
+                technical templates (schema, site structures) to dominate in AI
+                and traditional search.
               </li>
               <li>
-                <strong>Free Monitoring Tools</strong>: Google Analytics and Search
-                Console setups for real-time performance tracking.
+                <strong>Ongoing Updates and Founder Support</strong>: For every
+                1.0 client—continuous improvements, new playbooks, and direct
+                access to the authors for success/strategy calls.
               </li>
             </ul>
           </section>
 
-          {/* Pricing Section with Variants */}
-          <section className="mb-12">
-            <h2 className="text-2xl font-semibold text-cyan-600 mb-6 text-center">
-              Choose Your License
-            </h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              
-              {/* Individual License */}
-              <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">Individual License</h3>
-                <p className="text-gray-600 mb-6">Perfect for solo entrepreneurs, consultants, and individual marketers building their AI automation expertise.</p>
-                <ul className="text-sm text-gray-700 mb-6 space-y-2">
-                  <li>✓ Personal use only</li>
-                  <li>✓ All package components included</li>
-                  <li>✓ 90-day implementation roadmap</li>
-                  <li>✓ Email support</li>
-                </ul>
-                <a
-                  href={`https://thethriveclan.lemonsqueezy.com/checkout/buy/${INDIVIDUAL_VARIANT_ID}?utm_source=thethriveclan&utm_medium=website&utm_campaign=llmo`}
-                  className="w-full inline-block text-center bg-cyan-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-cyan-700 transition"
-                  aria-label="Purchase Individual License"
-                >
-                  Get Individual License
-                </a>
-              </div>
-
-              {/* Business License */}
-              <div className="bg-white rounded-lg shadow-lg p-8 border-2 border-cyan-500 relative">
-                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-cyan-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
-                    Most Popular
-                  </span>
-                </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-4">Business License</h3>
-                <p className="text-gray-600 mb-6">Ideal for agencies, teams, and businesses implementing AI automation across multiple projects and clients.</p>
-                <ul className="text-sm text-gray-700 mb-6 space-y-2">
-                  <li>✓ Commercial use rights</li>
-                  <li>✓ Use for client projects</li>
-                  <li>✓ All package components included</li>
-                  <li>✓ Priority support</li>
-                  <li>✓ White-label options</li>
-                </ul>
-                <a
-                  href={`https://thethriveclan.lemonsqueezy.com/checkout/buy/${BUSINESS_VARIANT_ID}?utm_source=thethriveclan&utm_medium=website&utm_campaign=llmo`}
-                  className="w-full inline-block text-center bg-cyan-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-cyan-700 transition"
-                  aria-label="Purchase Business License"
-                >
-                  Get Business License
-                </a>
-              </div>
-            </div>
-          </section>
-
-          <section className="mb-12">
+          <section className="mb-12" id="why-now">
             <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
-              Skyrocketing Results in 90-180 Days
+              Why Now?
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              This package isn't about small wins—it's about massive,
-              life-changing breakthroughs. Our proven roadmap delivers:
+              Companies who rely on “standard” SEO content will be left behind as
+              AI disrupts what works. This bundle is your shield and your growth
+              engine.
             </p>
-            <ul className="list-disc list-inside text-gray-700 mt-4 space-y-2">
-              <li>
-                <strong>200-300% Answer Engine Traffic Growth</strong> in just 3-6
-                months, capturing high-intent leads.
-              </li>
-              <li>
-                <strong>3-5x Organic Visibility</strong> within a year, making your
-                brand a go-to authority.
-              </li>
-              <li>
-                <strong>25-35% Customer Acquisition Cost Reduction</strong> through
-                optimized, automated workflows.
-              </li>
-              <li>
-                <strong>50+ Monthly Citations</strong> by month 12, fueled by KPI
-                dashboards and ROI calculators.
-              </li>
-              <li>
-                <strong>12-18 Month Competitive Edge</strong> by acting now, before
-                the market saturates.
-              </li>
-            </ul>
+          </section>
+
+          <section className="mb-12" id="pricing">
+            <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+              Pricing & Licensing
+            </h2>
+            <p className="text-gray-700 leading-relaxed">
+              Solo License: €2,997 one-time<br />
+              Team License: €4,997 up to 5 users<br />
+              Agency/Consultancy: €7,997 for client delivery<br />
+              Early-adopter rate: -30% for first 50 purchases. All 1.0 buyers get
+              free updates for first year.
+            </p>
+          </section>
+
+          <section className="mb-12" id="guarantee">
+            <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+              No Reviews? Here’s Our Guarantee
+            </h2>
+            <p className="text-gray-700 leading-relaxed">
+              We’re new. That means our first customers get our undivided
+              attention, the best deal, and direct access to us (the creators). If
+              this doesn’t deliver value for your business, we refund—no hoops.
+              And if you want to be featured as a case study, we’ll offer
+              done-with-you onboarding at no cost.
+            </p>
+          </section>
+
+          <section className="mb-12" id="deciding">
+            <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+              Still Deciding?
+            </h2>
+            <p className="text-gray-700 leading-relaxed">
+              Download a free sample worksheet<br />
+              View our full competitor and value breakdown (transparent
+              spreadsheet link)<br />
+              Book a discovery call to talk through use-cases
+            </p>
           </section>
 
           <section className="text-center bg-cyan-50 p-8 rounded-lg">
             <h2 className="text-2xl font-semibold text-cyan-700 mb-4">
-              Ready to Conquer the AI Automation Frontier?
+              Your business, re-armed for the AI era. Ready to stop chasing, and
+              start leading?
             </h2>
             <p className="text-gray-700 mb-6">
-              Don't just join the revolution—lead it. Choose your license above and unlock a future of limitless growth, freedom, and impact. The clock's ticking—seize your 12-18 month advantage today!
+              <a
+                href={`https://thethriveclan.lemonsqueezy.com/checkout/buy/${INDIVIDUAL_VARIANT_ID}?utm_source=thethriveclan&utm_medium=website&utm_campaign=llmo`}
+                className="inline-block bg-cyan-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-cyan-700 mr-4"
+              >
+                Buy Now
+              </a>
+              <a
+                href="#package-details"
+                className="inline-block bg-gray-300 text-gray-800 font-semibold py-3 px-6 rounded-lg hover:bg-gray-400 mr-4"
+              >
+                See the Bundle
+              </a>
+              <a
+                href="mailto:support@thethriveclan.com"
+                className="inline-block bg-gray-300 text-gray-800 font-semibold py-3 px-6 rounded-lg hover:bg-gray-400"
+              >
+                Contact
+              </a>
             </p>
           </section>
         </div>
