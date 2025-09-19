@@ -1,11 +1,6 @@
-"use client"; // Add this line at the very top
+import Link from "next/link";
+import { createProductSchema } from "../../../lib/schemas/product";  // ✅ Fixed path
 
-import Image from "next/image";
-import { Disclosure } from "@headlessui/react";
-import { ChevronUpIcon } from "@heroicons/react/24/solid";
-import { createProductSchema } from "../../../lib/schemas/product";
-
-// ...metadata/schema code unchanged
 export const metadata = {
   title: "The Thrive Clan | LLMO AI Automation Tools Package",
   description:
@@ -27,6 +22,7 @@ export const metadata = {
     images: ["/images/ai-automation.jpg"],
   },
 };
+
 export default function AIAutomationTools() {
   // Product Schema Component
   function ProductSchema() {
@@ -41,7 +37,8 @@ export default function AIAutomationTools() {
       brand: "The Thrive Clan",
       aggregateRating: null, // Add reviews later if available
     });
-   return (
+
+    return (
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -52,50 +49,29 @@ export default function AIAutomationTools() {
   return (
     <>
       <ProductSchema />
-
-      {/* Hero Section */}
-      <div className="relative w-full h-64 md:h-96 overflow-hidden">
-        <div
-          className="absolute inset-0 parallax"
-          style={{
-            backgroundImage: "url('/images/ai-automation-hero.jpg')",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundAttachment: "fixed",
-          }}
-          aria-hidden="true"
-        >
-          <div className="hero-overlay bg-black bg-opacity-50"></div>
-        </div>
-        <div className="relative z-10 flex items-center justify-center h-full">
-          <div className="text-center max-w-4xl mx-auto px-4 hero-text">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-              Build. Grow. Defend.
-            </h1>
-            <h2 className="text-xl md:text-2xl font-semibold mb-6 text-gray-100">
-              LLMO AI Automation Tools for the Next Era
-            </h2>
-            <p className="text-lg md:text-xl mb-6 text-gray-200 leading-relaxed">
-              A strategic suite for real-world authority, growth, and future-proofing in an AI-driven business landscape.
-            </p>
-          </div>
-        </div>
-      </div>
-
       <div className="min-h-screen bg-gray-50 py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h1 className="text-4xl font-extrabold text-cyan-700 mb-6">
+            Ignite Your Future with the LLMO AI Automation Tools Package
+          </h1>
+          <p className="text-lg text-gray-700 leading-relaxed mb-8">
+            <strong>Unleash the Power of a $3.68 Trillion Revolution</strong>
+            <br />
+            Imagine a world where repetitive tasks vanish, your business scales effortlessly, and you&apos;re leading a market exploding toward $3.68 trillion by 2034. That&apos;s the AI automation boom, growing at a jaw-dropping 23.68% annually, and it&apos;s yours to conquer. Our LLMO (Large Language Model Optimization) Package is your rocket fuel—a dynamic toolkit crafted for developers, consultants, and businesses ready to dominate answer engines like ChatGPT, Claude, Perplexity, and Gemini. This isn&apos;t just a toolset; it&apos;s your ticket to freedom, creativity, and unstoppable success in a hyperautomated future.
+          </p>
 
-          {/* ACCORDION SECTIONS */}
           <section className="mb-12">
-            <h2 className="text-2xl font-semibold text-cyan-700 mb-6">Why Choose This Bundle?</h2>
-            <Accordion />
+            <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+              Why This Package Is Your Game-Changer
+            </h2>
+            <p className="text-gray-700 leading-relaxed">
+              Say goodbye to endless manual workflows and hello to a world where AI and automation unlock your potential. The market is screaming for solutions—70% of searches are high-commercial-intent queries, yet most businesses are stuck in the slow lane, unoptimized for answer engines. With our package, you&apos;ll leap ahead, capturing attention, driving leads, and building a brand that shines in enterprise, SMB, and developer spaces. From hyperautomation to RPA (Robotic Process Automation), you&apos;ll ride the wave of a tech revolution that&apos;s reshaping industries like healthcare, finance, and beyond.
+            </p>
           </section>
 
-          {/* Pricing Section with Variants */}
- <section className="mb-12">
+          <section className="mb-12">
             <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
-              Your All-in-One Toolkit 
+              Your All-in-One Toolkit for Market Domination
             </h2>
             <p className="text-gray-700 leading-relaxed">
               This isn&apos;t just a package—it&apos;s a launchpad. Every tool is designed to simplify complexity, accelerate growth, and make you a thought leader in months, not years:
@@ -124,97 +100,53 @@ export default function AIAutomationTools() {
               Whether it&apos;s Q1 planning spikes (45% search volume surge) or year-round growth, this package aligns your content with market trends, ensuring you&apos;re always a step ahead.
             </p>
           </section>
-          {/* Call to Action */}
-          <section className="text-center bg-cyan-50 p-8 rounded-lg mt-12">
+
+          <section className="mb-12">
+            <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+              Skyrocketing Results in 90-180 Days
+            </h2>
+            <p className="text-gray-700 leading-relaxed">
+              This package isn&apos;t about small wins—it&apos;s about massive, life-changing breakthroughs. Our proven roadmap delivers:
+            </p>
+            <ul className="list-disc list-inside text-gray-700 mt-4 space-y-2">
+              <li>
+                <strong>200-300% Answer Engine Traffic Growth</strong> in just 3-6 months, capturing high-intent leads.
+              </li>
+              <li>
+                <strong>3-5x Organic Visibility</strong> within a year, making your brand a go-to authority.
+              </li>
+              <li>
+                <strong>25-35% Customer Acquisition Cost Reduction</strong> through optimized, automated workflows.
+              </li>
+              <li>
+                <strong>50+ Monthly Citations</strong> by month 12, fueled by KPI dashboards and ROI calculators.
+              </li>
+              <li>
+                <strong>12-18 Month Competitive Edge</strong> by acting now, before the market saturates.
+              </li>
+            </ul>
+            <p className="text-gray-700 mt-4">
+              Picture this: You&apos;re not just keeping up—you&apos;re setting the pace, building a scalable empire that frees you to focus on innovation, not grunt work.
+            </p>
+          </section>
+
+          <section className="text-center bg-cyan-50 p-8 rounded-lg">
             <h2 className="text-2xl font-semibold text-cyan-700 mb-4">
               Ready to Conquer the AI Automation Frontier?
             </h2>
             <p className="text-gray-700 mb-6">
-              Don't just join the revolution—lead it. Choose your license above and unlock a future of limitless growth, freedom, and impact. The clock's ticking—seize your 12-18 month advantage today!
+              Don&apos;t just join the revolution—lead it. Grab the LLMO AI Automation Tools Package now and unlock a future of limitless growth, freedom, and impact. The clock&apos;s ticking—seize your 12-18 month advantage today!
             </p>
+            {/* TODO: Replace with actual Lemon Squeezy button code */}
+            <a
+              href="https://lemonsqueezy.com/your-product-link"
+              className="inline-block bg-cyan-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-cyan-700 transition"
+            >
+              Get the LLMO Package Now
+            </a>
           </section>
         </div>
       </div>
     </>
-  );
-}
-
-// --- Accordion Component ---
-function Accordion() {
-  const sections = [
-    {
-      title: "The Problem With Most 'SEO Packs'",
-      content: (
-        <p className="text-gray-700">
-          In today's AI-first world, most packs are designed for yesterday's search engines, not tomorrow's business reality.
-          This bundle helps you build assets and expertise that last—beyond hacks or fleeting algorithm tweaks.
-        </p>
-      ),
-    },
-    {
-      title: "What Makes This Different",
-      content: (
-        <ul className="list-disc list-inside text-gray-700 space-y-2">
-          <li>Every template and asset is future-proofed for LLMO (Large Language Model Optimization) and enterprise-class content strategy.</li>
-          <li>Industry benchmarks and ROI calculators bring hard data to every decision.</li>
-          <li>Competitive comparison so you always know “why ours,” not just “why now.”</li>
-        </ul>
-      ),
-    },
-    {
-      title: "What's Inside?",
-      content: (
-        <ul className="list-disc list-inside text-gray-700 space-y-2">
-          <li><strong>150+ strategic keywords</strong> researched for long-term value.</li>
-          <li><strong>20 in-depth blog outlines & templates</strong>, optimized for human + AI visibility.</li>
-          <li>Full Go-to-Market & 90-day implementation guide.</li>
-          <li>ROI, monitoring, and analytics tools.</li>
-          <li>Nextgen schema assets for instant AI visibility.</li>
-        </ul>
-      ),
-    },
-    {
-      title: "Pricing & Early Access Guarantee",
-      content: (
-        <ul className="space-y-2 text-gray-700">
-          <li><strong>Solo License:</strong> €2,997 (single use)</li>
-          <li><strong>Business License:</strong> €4,997 (up to 5 users/projects)</li>
-          <li><strong>Consultancy/Agency:</strong> €7,997 (unlimited use/client delivery)</li>
-          <li>Founding buyer? Lock in a -30% lifetime discount and free major updates.</li>
-        </ul>
-      ),
-    },
-    {
-      title: "Our Guarantee (No Reviews Yet)",
-      content: (
-        <p className="text-gray-700">
-          We're new—and that means our founding buyers get early access pricing, direct product input, and our undivided support. Use the bundle, try it out, and if it doesn't deliver at least the value promised, we refund—period.
-        </p>
-      ),
-    },
-  ];
-
-  return (
-    <div className="w-full mx-auto rounded-2xl bg-white p-2">
-      {sections.map((item, idx) => (
-        <Disclosure as="div" key={item.title} defaultOpen={idx < 1}>
-          {({ open }) => (
-            <>
-              <Disclosure.Button className="flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-left text-cyan-800 bg-cyan-100 rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-cyan-500 focus-visible:ring-opacity-75 my-1">
-                <span>{item.title}</span>
-                <ChevronUpIcon
-                  className={`
-                    ${open ? 'transform rotate-180' : ''}
-                    w-5 h-5 text-cyan-600 transition-transform`}
-                />
-              </Disclosure.Button>
-              <Disclosure.Panel className="px-4 pt-3 pb-6 text-base">
-                {item.content}
-              </Disclosure.Panel>
-            </>
-          )}
-        </Disclosure>
-      ))}
-    </div>
   );
 }
