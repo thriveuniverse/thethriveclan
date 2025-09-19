@@ -50,7 +50,7 @@ export default function AIAutomationTools() {
   return (
     <>
       <ProductSchema />
-      
+
       {/* Hero Section */}
       <div className="relative w-full h-64 md:h-96 overflow-hidden">
         <div
@@ -91,8 +91,37 @@ export default function AIAutomationTools() {
           </section>
 
           {/* Pricing Section with Variants */}
-          {/* ...Keep your pricing cards code here unchanged */}
-
+ <section className="mb-12">
+            <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
+              Your All-in-One Toolkit 
+            </h2>
+            <p className="text-gray-700 leading-relaxed">
+              This isn&apos;t just a package—it&apos;s a launchpad. Every tool is designed to simplify complexity, accelerate growth, and make you a thought leader in months, not years:
+            </p>
+            <ul className="list-disc list-inside text-gray-700 mt-4 space-y-2">
+              <li>
+                <strong>150+ Keyword CSV with Intent Analysis</strong>: Pinpoint high-value searches to capture leads across answer engines.
+              </li>
+              <li>
+                <strong>50+ Page Strategic Implementation Guide</strong>: A 90-day roadmap with entity-strength scoring and calendars to skyrocket visibility.
+              </li>
+              <li>
+                <strong>15 Ready-to-Deploy Content Templates</strong>: Product pages, case studies, and more, optimized for voice and visual search.
+              </li>
+              <li>
+                <strong>20 Detailed Blog Outlines</strong>: 3,000-4,500-word guides on hot topics like &quotZapier vs. Power Automate&quot or industry-specific automation strategies.
+              </li>
+              <li>
+                <strong>Automated Schema Setups</strong>: SoftwareApplication, FAQ, and How-To schemas to dominate featured snippets and boost rankings.
+              </li>
+              <li>
+                <strong>Free Monitoring Tools</strong>: Google Analytics and Search Console setups for real-time performance tracking.
+              </li>
+            </ul>
+            <p className="text-gray-700 mt-4">
+              Whether it&apos;s Q1 planning spikes (45% search volume surge) or year-round growth, this package aligns your content with market trends, ensuring you&apos;re always a step ahead.
+            </p>
+          </section>
           {/* Call to Action */}
           <section className="text-center bg-cyan-50 p-8 rounded-lg mt-12">
             <h2 className="text-2xl font-semibold text-cyan-700 mb-4">
