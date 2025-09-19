@@ -4,14 +4,53 @@ import { ChevronUpIcon } from "@heroicons/react/24/solid";
 import { createProductSchema } from "../../../lib/schemas/product";
 
 // ...metadata/schema code unchanged
-
+export const metadata = {
+  title: "The Thrive Clan | LLMO AI Automation Tools Package",
+  description:
+    "Unleash your potential in the $3.68 trillion AI automation market with our LLMO package—your all-in-one toolkit for dominating answer engines and scaling success.",
+  keywords:
+    "AI automation, LLMO, workflow automation, answer engine optimization, hyperautomation, AI tools, business growth",
+  openGraph: {
+    title: "The Thrive Clan | LLMO AI Automation Tools Package",
+    description:
+      "Seize the AI automation revolution with our LLMO package. Get tools, strategies, and content to dominate a $3.68T market with 300-500% ROI in 90-180 days.",
+    images: ["/images/ai-automation.jpg"],
+    url: "https://thethriveclan.com/llmo/ai-automation-tools",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Thrive Clan | LLMO AI Automation Tools Package",
+    description:
+      "Join the $3.68T AI automation boom with our LLMO package—keywords, strategies, and content to lead the market in 90 days.",
+    images: ["/images/ai-automation.jpg"],
+  },
+};
 export default function AIAutomationTools() {
-  // ...IDs and schema code unchanged
+  // Product Schema Component
+  function ProductSchema() {
+    const schema = createProductSchema({
+      name: "LLMO AI Automation Tools Package",
+      description: "Unleash your potential in the $3.68 trillion AI automation market with our comprehensive LLMO package. Includes 150+ keywords, implementation guide, content templates, and monitoring tools.",
+      image: "https://thethriveclan.com/images/ai-automation.jpg",
+      url: "https://thethriveclan.com/llmo/ai-automation-tools",
+      category: "Digital Marketing Package",
+      sku: "LLMO-AI-AUTO-001",
+      // price: "299.00", // Uncomment when pricing is finalized
+      brand: "The Thrive Clan",
+      aggregateRating: null, // Add reviews later if available
+    });
+   return (
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+    );
+  }
 
   return (
     <>
       <ProductSchema />
-
+      
       {/* Hero Section */}
       <div className="relative w-full h-64 md:h-96 overflow-hidden">
         <div
