@@ -1,3 +1,5 @@
+"use server"; // Add this line at the very top
+
 import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/24/solid";
