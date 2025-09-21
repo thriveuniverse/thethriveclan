@@ -2,19 +2,19 @@
 import { useState, useEffect } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import Image from "next/image";
-import { products } from "../../lib/products"; // No type import needed yet
+import { products } from "../../lib/products";
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
 
-// Define types locally based on your data
-type ProductId = "1"; // Extend with all possible IDs (e.g., "1" | "2")
-type OptionId = "solo" | "team" | "agency"; // Match options keys
+// Define types locally
+type ProductId = "1"; // Extend with other IDs as needed
+type OptionId = "solo" | "team" | "agency";
 
 export default function PackagePage({ params }: { params: { id: string } }) {
-  const productId = params.id as ProductId; // Cast with explicit type
-  const product = products[productId]; // Access as object property
+  const productId = params.id as ProductId;
+  const product = products[productId];
   const [email, setEmail] = useState("");
-  const [customerType, setCustomerType] = useState<OptionId>("solo"); // Match options
+  const [customerType, setCustomerType] = useState<OptionId>("solo");
   const [sessionId, setSessionId] = useState("");
   const [error, setError] = useState("");
 
@@ -23,6 +23,7 @@ export default function PackagePage({ params }: { params: { id: string } }) {
       setError(`Product ID ${productId} not found.`);
     } else {
       console.log("Loaded product:", product);
+      console.log("Default customerType:", customerType);
     }
   }, [productId, product]);
 
@@ -32,8 +33,8 @@ export default function PackagePage({ params }: { params: { id: string } }) {
       return;
     }
     setError("");
+    console.log("Checkout triggered with:", { packageId: productId, userEmail: email, customerType });
     try {
-      console.log("Sending checkout request:", { packageId: productId, userEmail: email, customerType });
       const response = await fetch("/api/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
