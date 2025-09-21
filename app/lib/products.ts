@@ -1,4 +1,4 @@
-// app/lib/products.js
+// app/lib/products.ts
 export const products = {
   "1": {
     id: "1",
@@ -14,3 +14,8 @@ export const products = {
     },
   },
 };
+
+export interface ProductOption {
+  name: string;
+  amount: number;
+}

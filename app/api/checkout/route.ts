@@ -1,7 +1,8 @@
 // app/api/checkout/route.ts
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
-import { products } from "../../lib/products";
+// Update the import path below to the correct location of your products file
+import { products } from "../lib/products";
 
 // Define the shape of a product
 interface Product {

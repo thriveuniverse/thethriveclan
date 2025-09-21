@@ -36,7 +36,7 @@
     "**/*.tsx",
     "app/lib/**/*.ts",
     ".next/types/**/*.ts"
-, "app/lib/products.js"  ],
+, "app/lib/products.ts"  ],
   "exclude": [
     "node_modules"
   ]
