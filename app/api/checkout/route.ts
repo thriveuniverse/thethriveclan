@@ -1,7 +1,14 @@
 // app/api/checkout/route.ts
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
-import { products } from "../lib/products.ts"; // Revert to named import
+
+let products;
+try {
+  products = (await import("../../lib/products")).products;
+} catch (error) {
+  console.error("Failed to load products:", error);
+  products = {}; // Fallback
+}
 
 interface Product {
   id: string;
@@ -15,7 +22,7 @@ interface Product {
   };
 }
 
-const typedProducts: { [key: string]: Product } = products || {}; // Fallback to empty object if import fails
+const typedProducts: { [key: string]: Product } = products;
 
 type ProductId = keyof typeof typedProducts;
 type OptionKey = keyof Product["options"];
@@ -63,8 +70,8 @@ export async function POST(request: Request) {
       },
     ],
     mode: "payment",
-success_url: `${request.headers.get("origin") || "http://localhost:3000"}/success?session_id=\{CHECKOUT_SESSION_ID\}`,
-cancel_url: `${request.headers.get("origin") || "http://localhost:3000"}/cancel`,
+    success_url: (request.headers.get("origin") || "http://localhost:3000") + "/success?session_id={CHECKOUT_SESSION_ID}",
+    cancel_url: (request.headers.get("origin") || "http://localhost:3000") + "/cancel",
     customer_email: userEmail,
   });
 
