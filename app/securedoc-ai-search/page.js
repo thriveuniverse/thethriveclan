@@ -1,6 +1,6 @@
 // app/securedoc-ai-search/page.js
 import slugify from "@/lib/slugify";          // use "../../lib/slugify" if you don’t have the alias
-import ProductGrid from "@/components/ProductGrid";
+import ProductGrid from "../components/ProductGrid";
 
 export const metadata = {
   title: "Secure Document AI Analysis | The Thrive Clan",

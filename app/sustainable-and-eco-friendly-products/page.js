@@ -1,6 +1,6 @@
 // app/sustainable-and-eco-friendly-products/page.js
 import slugify from "@/lib/slugify";          // use "../../lib/slugify" if no alias
-import ProductGrid from "@/components/ProductGrid";
+import ProductGrid from "../components/ProductGrid";
 
 export const metadata = {
   title: "Sustainable & Eco‑Friendly Products | The Thrive Clan",

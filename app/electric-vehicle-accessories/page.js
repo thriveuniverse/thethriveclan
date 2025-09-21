@@ -1,6 +1,6 @@
 // app/electric-vehicle-accessories/page.js
 import slugify from "@/lib/slugify";         // switch to "../../lib/slugify" if no alias
-import ProductGrid from "@/components/ProductGrid";
+import ProductGrid from "../components/ProductGrid";
 
 export const metadata = {
   title: "Electric Vehicle Accessories | The Thrive Clan",

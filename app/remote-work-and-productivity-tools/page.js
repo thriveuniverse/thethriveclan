@@ -1,6 +1,6 @@
 // app/remote-work-and-productivity-tools/page.js
 import slugify from "@/lib/slugify";
-import ProductGrid from "@/components/ProductGrid";
+import ProductGrid from "../components/ProductGrid";
 
 export const metadata = {
   title: "Remote Work and Productivity Tools | The Thrive Clan",

@@ -1,6 +1,6 @@
 // app/health-and-wellness-specializations/page.js
 import slugify from "@/lib/slugify";          // use "../../lib/slugify" if you don’t have the alias
-import ProductGrid from "@/components/ProductGrid";
+import ProductGrid from "../components/ProductGrid";
 
 export const metadata = {
   title: "Health & Wellness Specializations | The Thrive Clan",

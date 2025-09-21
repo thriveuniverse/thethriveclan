@@ -1,5 +1,5 @@
 // app/components/ProductGrid.tsx
-import { ProductOption } from "./lib/products";
+import { ProductOption } from "../lib/products";
 
 interface Product {
   slug: string;

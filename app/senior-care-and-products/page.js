@@ -1,4 +1,4 @@
-import ProductGrid from "@/components/ProductGrid";
+import ProductGrid from "../components/ProductGrid";
 
 export const metadata = {
   title: "Senior Care & Products | The Thrive Clan",
