@@ -275,34 +275,30 @@ export default function AIAutomationTools() {
           </section>
 
           <section className="text-center bg-cyan-50 p-8 rounded-lg">
-            <h2 className="text-2xl font-semibold text-cyan-700 mb-4">
-              Ready to Stop Chasing and Start Leading?
-            </h2>
-            <p className="text-gray-700 mb-6">
-              Your business, re-armed for the AI era. Choose your license and
-              unlock a future of limitless growth, freedom, and impact.
-            </p>
-            <p className="text-gray-700 mb-6">
-              <a
-                href={`https://thethriveclan.lemonsqueezy.com/checkout/buy/${INDIVIDUAL_VARIANT_ID}?utm_source=thethriveclan&utm_medium=website&utm_campaign=llmo`}
-                className="inline-block bg-cyan-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-cyan-700 mr-4"
-              >
-                Buy Now
-              </a>
-              <a
-                href="#included"
-                className="inline-block bg-gray-300 text-gray-800 font-semibold py-3 px-6 rounded-lg hover:bg-gray-400 mr-4"
-              >
-                See the Bundle
-              </a>
-              <a
-                href="mailto:support@thethriveclan.com"
-                className="inline-block bg-gray-300 text-gray-800 font-semibold py-3 px-6 rounded-lg hover:bg-gray-400"
-              >
-                Contact
-              </a>
-            </p>
-          </section>
+  <h2 className="text-2xl font-semibold text-cyan-700 mb-4">
+    Ready to Stop Chasing and Start Leading?
+  </h2>
+  <p className="text-gray-700 mb-6">
+    <a
+      href="/packages/1" // Use the product.id from lib/products.js
+      className="inline-block bg-cyan-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-cyan-700 mr-4"
+    >
+      Buy Now
+    </a>
+    <a
+      href="#included"
+      className="inline-block bg-gray-300 text-gray-800 font-semibold py-3 px-6 rounded-lg hover:bg-gray-400 mr-4"
+    >
+      See the Bundle
+    </a>
+    <a
+      href="mailto:support@thethriveclan.com"
+      className="inline-block bg-gray-300 text-gray-800 font-semibold py-3 px-6 rounded-lg hover:bg-gray-400"
+    >
+      Contact
+    </a>
+  </p>
+</section>
         </div>
       </div>
     </>
