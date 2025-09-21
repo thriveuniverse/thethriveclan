@@ -3,15 +3,25 @@ import { NextResponse } from "next/server";
 import Stripe from "stripe";
 import { products } from "../../lib/products";
 
-// Define the shape of product options
-interface Option {
-  name: string;
-  amount: number;
+// Define the shape of a product
+interface Product {
+  id: string;
+  slug: string;
+  sector: string;
+  title: string;
+  description: string;
+  img: string;
+  options: {
+    [key: string]: { name: string; amount: number };
+  };
 }
 
-// Assume ProductId and option keys are based on your data
-type ProductId = keyof typeof products;
-type OptionKey = keyof typeof products[ProductId]["options"];
+// Explicitly type the products object
+const typedProducts: { [key: string]: Product } = products;
+
+// Type for product IDs (keys of products object)
+type ProductId = keyof typeof typedProducts;
+type OptionKey = keyof Product["options"];
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2025-08-27.basil" as const,
@@ -24,26 +34,31 @@ export async function POST(request: Request) {
     customerType: OptionKey;
   };
 
+  console.log("Received data:", { packageId, userEmail, customerType });
+  console.log("Available products:", typedProducts);
+
   // Type guard for product existence
-  const product = products[packageId];
+  const product = typedProducts[packageId];
   if (!product) {
     return NextResponse.json({ error: "Invalid package ID" }, { status: 400 });
   }
 
   // Validate customerType against available options
   const optionKeys = Object.keys(product.options) as OptionKey[];
+  console.log("Available option keys:", optionKeys);
   if (!optionKeys.includes(customerType)) {
-    return NextResponse.json({ error: "Invalid customer type" }, { status: 400 });
+    return NextResponse.json({ error: `Invalid customer type. Options are: ${optionKeys.join(", ")}` }, { status: 400 });
   }
 
   const priceData = product.options[customerType];
+  console.log("Selected price data:", priceData);
 
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ["card"],
     line_items: [
       {
         price_data: {
-          currency: "eur", // Matches your euro pricing
+          currency: "eur",
           product_data: {
             name: product.title,
           },

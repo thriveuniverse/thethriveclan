@@ -1,26 +1,16 @@
-// app/lib/products.ts
-export interface ProductOption {
-  name: string;
-  amount: number; // In cents
-}
-
+// app/lib/products.js
 export const products = {
-  1: {
-    slug: "ai-automation-tools-for-small-business",
-    sector: "ai-and-automation-tools",
-    title: "AI Automation Mastery Bundle",
+  "1": {
+    id: "1",
+    slug: "ai-automation-tools",
+    sector: "llmo",
+    title: "Build, Grow, and Defend AI Automation Tools",
+    description: "A strategic resource for leading the AI automation future...",
+    img: "/images/ai-automation.jpg",
     options: {
-      standard: {
-        name: "Standard Package",
-        amount: 49000, // $490.00 in cents
-      },
-      // Add more options (e.g., premium) later if needed
+      solo: { name: "Solo License", amount: 299700 },    // €2,997.00
+      team: { name: "Team License", amount: 499700 },    // €4,997.00
+      agency: { name: "Agency License", amount: 799700 }, // €7,997.00
     },
-    description: "150 keywords, 35 templates, 20 blog outlines—done for you.",
-    img: "/images/products/ai-automation-bundle-og.jpg",
   },
-  // Add more products (e.g., ID 2) later
 };
-
-export type ProductId = keyof typeof products;
-export type OptionId = keyof (typeof products)[ProductId]["options"];
