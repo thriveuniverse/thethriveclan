@@ -1,10 +1,8 @@
 // app/api/checkout/route.ts
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
-// Update the import path below to the correct location of your products file
-import { products } from "../lib/products";
+import { products } from "../lib/products.ts"; // Revert to named import
 
-// Define the shape of a product
 interface Product {
   id: string;
   slug: string;
@@ -17,10 +15,8 @@ interface Product {
   };
 }
 
-// Explicitly type the products object
-const typedProducts: { [key: string]: Product } = products;
+const typedProducts: { [key: string]: Product } = products || {}; // Fallback to empty object if import fails
 
-// Type for product IDs (keys of products object)
 type ProductId = keyof typeof typedProducts;
 type OptionKey = keyof Product["options"];
 
@@ -38,13 +34,11 @@ export async function POST(request: Request) {
   console.log("Received data:", { packageId, userEmail, customerType });
   console.log("Available products:", typedProducts);
 
-  // Type guard for product existence
   const product = typedProducts[packageId];
   if (!product) {
     return NextResponse.json({ error: "Invalid package ID" }, { status: 400 });
   }
 
-  // Validate customerType against available options
   const optionKeys = Object.keys(product.options) as OptionKey[];
   console.log("Available option keys:", optionKeys);
   if (!optionKeys.includes(customerType)) {
@@ -69,8 +63,8 @@ export async function POST(request: Request) {
       },
     ],
     mode: "payment",
-    success_url: `${request.headers.get("origin") || "http://localhost:3000"}/success?session_id={CHECKOUT_SESSION_ID}`,
-    cancel_url: `${request.headers.get("origin") || "http://localhost:3000"}/cancel`,
+success_url: `${request.headers.get("origin") || "http://localhost:3000"}/success?session_id=\{CHECKOUT_SESSION_ID\}`,
+cancel_url: `${request.headers.get("origin") || "http://localhost:3000"}/cancel`,
     customer_email: userEmail,
   });
 
