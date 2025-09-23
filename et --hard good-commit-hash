@@ -1,0 +1,266 @@
+[33mcommit 05e2b0c0fa9f21aa1ad9eb4a2fd786b3123c64ee[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Tue Sep 23 22:44:59 2025 +0200
+
+    v3
+
+[33mcommit b93626491e2004cfab57d6e7aebbbdfd06a5fa48[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Tue Sep 23 22:43:22 2025 +0200
+
+    removal of api
+
+[33mcommit 760733821b117da3d4be2737a651a729bea6babf[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Tue Sep 23 22:32:09 2025 +0200
+
+    webhooks/stripe/route.ts
+
+[33mcommit 6c0cffac91506bb48b3ede598486b8af4b7922a2[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Tue Sep 23 21:02:48 2025 +0200
+
+    colours for contact and thank you
+
+[33mcommit 588be204366d51abeb555fdebbc7a3e3137f8196[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Tue Sep 23 20:09:59 2025 +0200
+
+    contact and thank-you to .html versions
+
+[33mcommit 5b0eda7dcb63668d46bcfdf9c83f9b6292a71e1f[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Tue Sep 23 19:16:43 2025 +0200
+
+    new thank you page
+
+[33mcommit 05d93afe4c7679482dd8d3eec1b718d917bd1828[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Tue Sep 23 18:51:53 2025 +0200
+
+    tsconfig.json updated with @
+
+[33mcommit df1bb570a4c8a226904a19e7438badeec1fb920f[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Mon Sep 22 22:46:24 2025 +0200
+
+    corrected contact form
+
+[33mcommit b32546b2760a08bcc8f950a5a49f3ed36f12e5a0[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Mon Sep 22 22:35:28 2025 +0200
+
+    new contact form and thank you page
+
+[33mcommit ced5f06d47d3005ce9f367ff91bb5cd09e914b8d[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Mon Sep 22 22:07:12 2025 +0200
+
+    updated contact page.js to  static html
+
+[33mcommit 5ccbc6b454b0ec12fe3ff536d889462a63beb750[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Mon Sep 22 19:16:52 2025 +0200
+
+    webhooks/stripe/route.ts
+
+[33mcommit 40dddf6a58d4013c3d03554d8f0edb8f1051b668[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Sun Sep 21 20:40:44 2025 +0200
+
+    changes from perplexity 2
+
+[33mcommit 12d2201d02f0dd057acd8b2e12eda48bc561fcd3[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Sun Sep 21 20:33:01 2025 +0200
+
+    perplexity changes
+
+[33mcommit 97cc4df30ba9bd47351746a97710d9c24e87000a[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Sun Sep 21 20:32:41 2025 +0200
+
+    changes from perplexity
+
+[33mcommit 899558cb982f1d02fd13f7a4f1239fdceefb8036[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Sun Sep 21 19:10:17 2025 +0200
+
+    changed products to ts and other changes in ../ before lib
+
+[33mcommit acd4c438af666c715dde37672cfcf810ab2eb68b[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Sun Sep 21 18:10:38 2025 +0200
+
+    changed product from ts to js
+
+[33mcommit 8748302adb73af982221d72aea1e7723bd7bdfd0[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Sun Sep 21 18:03:39 2025 +0200
+
+    changed route, products
+
+[33mcommit 5dcee6586e73190b9a16a7f151a576c64a47b121[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Sun Sep 21 17:36:22 2025 +0200
+
+    changed checkout page
+
+[33mcommit 304f83a6508b1e50b569268c910b165295fd9d5d[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Sun Sep 21 17:01:03 2025 +0200
+
+    new packages page
+
+[33mcommit 5420f6a857a4090a8c5668b64818337f40c94733[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Sun Sep 21 14:43:18 2025 +0200
+
+    buy button changed from products to packages
+
+[33mcommit 46eb32d8a63c802ad9f41dddc83a977496dcc47d[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Sat Sep 20 17:32:08 2025 +0200
+
+    new words with format changes
+
+[33mcommit c25bea876677e5f743b25e4684f98a657cc9462b[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Fri Sep 19 23:24:21 2025 +0200
+
+    without accordion
+
+[33mcommit 1321ad88d5d7c4c8ae92fd55fc5a9a0ea36be688[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Fri Sep 19 23:17:16 2025 +0200
+
+    reverted with hero?
+
+[33mcommit d3952d38fb9ae83a63130ba83e4759645296b468[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Fri Sep 19 23:13:12 2025 +0200
+
+    reverted to old version of the file
+
+[33mcommit 49677458c03c47c93aff5b16eda2e6bc42364d05[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Fri Sep 19 23:10:55 2025 +0200
+
+    trying use client instead
+
+[33mcommit ef609f6d3bee92a8a013495c941dc65fb6ae7065[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Fri Sep 19 23:07:25 2025 +0200
+
+    added use server for accordion
+
+[33mcommit 3600c35162c41b14131c5f370c34bf322996a8cd[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Fri Sep 19 23:00:01 2025 +0200
+
+    another version of page.jsx
+
+[33mcommit 0feeecb8616d62b69a66ff223708a97236c4471b[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Fri Sep 19 22:48:31 2025 +0200
+
+    added product schema
+
+[33mcommit 1a8ca44601ac1ceb0e8572fb4d5e482e4c5d4000[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Fri Sep 19 22:37:57 2025 +0200
+
+    Add @headlessui/react and @heroicons/react for accordion
+
+[33mcommit fc6bf11cd1f4af2074c5f8ff4b1cde57229db2a6[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Fri Sep 19 22:34:03 2025 +0200
+
+    llmo ai automation new words and changed to jsx
+
+[33mcommit 0fe3d018bc4b2cd1167630a7ca68fa2429da22f1[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Tue Sep 16 18:41:06 2025 +0200
+
+    new page securedoc-ai-search
+
+[33mcommit 7792ff82ca508a8f6e00910edf67017fcf6b9f45[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Mon Sep 15 20:48:04 2025 +0200
+
+    success and cancel pages
+
+[33mcommit 9825f719247bffacbfcabd1cf94275f599f94c98[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Mon Sep 15 20:14:51 2025 +0200
+
+    Add SECRETS_SCAN_OMIT_KEYS to exempt publishable key
+
+[33mcommit 2553ae40b831e577268781d28cf3568bc225ed4f[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Mon Sep 15 19:53:15 2025 +0200
+
+    stripe redirecttocheckout
+
+[33mcommit f4c8f5d708bdf25f8b18a526b3f9f9edf898b614[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Sun Sep 14 21:41:51 2025 +0200
+
+    page update removed secret key
+
+[33mcommit dec563305aefeca489a6a3e4f61b2ff1ebae9100[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Sun Sep 14 21:38:16 2025 +0200
+
+    page updated
+
+[33mcommit ea794ed98a48e933b95233bc32da63262f5aff6b[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Sun Sep 14 21:37:55 2025 +0200
+
+    page updated
+
+[33mcommit 69a4d1f0464fd0d5ba264c07330dec1c27b3e2a6[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Sun Sep 14 20:09:02 2025 +0200
+
+    changed productgrid and product options
+
+[33mcommit 256f2fbab8882a53c1d4a4d4e93aee0d364b7c70[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Sun Sep 14 19:42:34 2025 +0200
+
+    stripe with corrected slufigy.ts
+
+[33mcommit 1b81c2e96087fdd80e7519e4efc0df6879cbe9a7[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Sun Sep 14 19:34:26 2025 +0200
+
+    stripe again
+
+[33mcommit 468fc9e122bf564c4a0e64838e559b90a8b2b442[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Sun Sep 14 19:22:54 2025 +0200
+
+    stripe test
+
+[33mcommit 4e9d91eaef42cbd2d01d9fc43a41c3a2fb5885f1[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Tue Aug 26 19:40:57 2025 +0200
+
+    removed ' '
+
+[33mcommit c853c531113ea2c93ecace57561dedb1fb008a7f[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Tue Aug 26 19:34:33 2025 +0200
+
+    changed ai automation
+
+[33mcommit 247322075067098080f81757e5ec2e9a8813939d[m
+Author: thriveuniverse <littlehousefrance@gmail.com>
+Date:   Tue Aug 26 17:19:18 2025 +0200
+
+    removal of resend
+
+[33mcommit eea122f48aa31711daa85347d9ede1c4476a219f[m
+Author: thriveunive
