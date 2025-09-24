@@ -43,3 +43,6 @@ export async function POST(request: Request) {
   // If not the right event, ignore but respond
   return NextResponse.json({ ok: true });
 }
+if (!endpointSecret) {
+  throw new Error("STRIPE_WEBHOOK_SECRET is not set!");
+}
