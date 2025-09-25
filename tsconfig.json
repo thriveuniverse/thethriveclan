@@ -20,11 +20,11 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "app/*"
-
-      ]
-    },
+  "@/*": [
+    "./*",
+    "app/*"
+  ]
+},
     "plugins": [
       {
         "name": "next"
