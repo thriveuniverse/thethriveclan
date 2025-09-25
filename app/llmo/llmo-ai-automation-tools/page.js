@@ -280,7 +280,7 @@ export default function AIAutomationTools() {
   </h2>
   <p className="text-gray-700 mb-6">
     <a
-      href="/packages/1" // Use the product.id from lib/products.js
+      href="/packages/1" // Or /products/ai-automation-tools for slug-based
       className="inline-block bg-cyan-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-cyan-700 mr-4"
     >
       Buy Now

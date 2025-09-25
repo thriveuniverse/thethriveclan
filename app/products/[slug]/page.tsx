@@ -1,34 +1,36 @@
-// app/packages/[id]/page.tsx
-"use client";
-
+// app/products/[slug]/page.tsx
+import { notFound } from "next/navigation";
 import { useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import Image from "next/image";
-import { getProductById } from "../../lib/products"; // Relative path to app/lib/products.ts
-
-// Edit these as you add more packages:
-type ProductId = "1";
-type OptionId = "solo" | "team" | "agency";
+import Link from "next/link";
+import { getProductBySlug } from "../../lib/products"; // Relative path to app/lib/products.ts
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
 
-export default function PackagePage({ params }: { params: { id: ProductId } }) {
-  const productId = params.id;
-  const product = getProductById(productId);
+export const dynamicParams = false; // unknown slugs -> 404
+
+export async function generateStaticParams() {
+  // Use array from products.ts for SSG
+  const { products } = await import("../../lib/products");
+  return products.map((p) => ({ slug: p.slug }));
+}
+
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const p = getProductBySlug(params.slug);
+  return p
+    ? { title: `${p.title} | The Thrive Clan`, description: p.description || "" }
+    : {};
+}
+
+export default function ProductPage({ params }: { params: { slug: string } }) {
+  const product = getProductBySlug(params.slug);
+  if (!product) return notFound();
 
   const [email, setEmail] = useState("");
-  const [customerType, setCustomerType] = useState<OptionId>("solo");
+  const [customerType, setCustomerType] = useState<keyof typeof product.options>("solo");
   const [sessionId, setSessionId] = useState("");
   const [error, setError] = useState("");
-
-  if (!product) {
-    return (
-      <div className="p-8">
-        <h1 className="text-xl font-bold mb-4">Error</h1>
-        <p>Product ID {productId} not found.</p>
-      </div>
-    );
-  }
 
   const handleCheckout = async () => {
     if (!email || !email.includes("@")) {
@@ -40,7 +42,7 @@ export default function PackagePage({ params }: { params: { id: ProductId } }) {
       const response = await fetch("/api/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ packageId: productId, userEmail: email, customerType }),
+        body: JSON.stringify({ packageId: product.id, userEmail: email, customerType }),
       });
 
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
@@ -61,12 +63,25 @@ export default function PackagePage({ params }: { params: { id: ProductId } }) {
   };
 
   return (
-    <div className="p-8 max-w-lg mx-auto">
-      <h1 className="text-2xl font-bold mb-4">{product.title}</h1>
+    <main className="mx-auto max-w-3xl px-4 py-16">
+      <nav className="mb-6 text-sm text-gray-500">
+        <Link href={`/${product.sector}`} className="hover:underline">
+          ← Back to sector
+        </Link>
+      </nav>
+
+      <h1 className="text-3xl font-semibold mb-4">{product.title}</h1>
+
       {product.img && (
-        <Image src={product.img} alt={product.title} width={540} height={280} className="mb-4 rounded" />
+        <div className="relative w-full h-64 mb-8">
+          <Image src={product.img} alt={product.title} fill className="object-cover rounded-lg" />
+        </div>
       )}
-      <p className="mb-4">{product.description}</p>
+
+      {product.description && (
+        <p className="mb-6 text-gray-700 dark:text-gray-300 leading-relaxed">{product.description}</p>
+      )}
+
       <input
         type="email"
         value={email}
@@ -74,6 +89,7 @@ export default function PackagePage({ params }: { params: { id: ProductId } }) {
         placeholder="Enter your email"
         className="border p-2 mb-4 w-full"
       />
+
       <div className="mb-4">
         {Object.entries(product.options).map(([key, value]) => {
           const option = value;
@@ -83,7 +99,7 @@ export default function PackagePage({ params }: { params: { id: ProductId } }) {
                 type="radio"
                 value={key}
                 checked={customerType === key}
-                onChange={(e) => setCustomerType(e.target.value as OptionId)}
+                onChange={(e) => setCustomerType(e.target.value as keyof typeof product.options)}
                 className="mr-2"
                 name="customerType"
               />
@@ -92,15 +108,18 @@ export default function PackagePage({ params }: { params: { id: ProductId } }) {
           );
         })}
       </div>
+
       {error && <div className="text-red-600 mb-4">{error}</div>}
+
       <button
         onClick={handleCheckout}
-        className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 disabled:opacity-50"
+        className="inline-block rounded-md px-6 py-3 font-medium bg-black text-white hover:opacity-90 transition disabled:opacity-50"
         disabled={!email || sessionId.length > 0}
       >
         Buy Now
       </button>
+
       {sessionId && <div className="mt-4 text-green-600">Redirecting to payment... Session ID: {sessionId}</div>}
-    </div>
+    </main>
   );
 }
