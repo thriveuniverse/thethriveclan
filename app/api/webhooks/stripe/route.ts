@@ -1,7 +1,9 @@
 // app/api/webhooks/stripe/route.ts
 import { NextResponse } from 'next/server';
 import Stripe from 'stripe';
-import { sendPurchaseEmail } from '@/lib/sendEmail'; // Adjust path if lib/ is elsewhere (e.g., '../../../lib/sendEmail')
+import { sendPurchaseEmail } from '@/lib/sendEmail';
+import { getProductById } from '@/lib/products'; // For fetching filePath
+import { generateSignedUrl } from '@/lib/googleStorage'; // GCS signed URL
 
 // SECRET from Stripe dashboard—put in your .env!
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
@@ -42,10 +44,20 @@ export async function POST(request: Request) {
     const session = event.data.object as Stripe.Checkout.Session;
     const email = session.customer_email;
     const productId = session.metadata?.productId || 'unknown';
-    const productName = session.metadata?.productName || 'Your Product'; // We'll enhance in Step 5
+    const product = getProductById(productId);
+    const productName = product?.title || session.metadata?.productName || 'Your Product';
 
-    // TODO: Generate signed URL here (e.g., const signedUrl = await getSignedUrl(productId);)
-    const signedUrl = undefined; // Placeholder until Google Cloud ready
+    // Generate signed URL
+    let signedUrl: string | undefined;
+    if (product && email) {
+      try {
+        signedUrl = await generateSignedUrl(product.filePath);
+        console.log('Signed URL generated for:', product.filePath); // Debug
+      } catch (urlError) {
+        console.error('Signed URL failed:', urlError);
+        // Fallback: No link in email, but webhook succeeds
+      }
+    }
 
     // Send email
     try {
@@ -57,7 +69,7 @@ export async function POST(request: Request) {
       // Don't fail the webhook—Stripe expects 200 OK anyway
     }
 
-    console.log('Payment complete for:', email, 'Product:', productId);
+    console.log('Payment complete for:', email, 'Product:', productId, 'URL generated:', !!signedUrl);
 
     // Must respond fast—don’t do slow work here, or use queues for email, etc.
     return NextResponse.json({ ok: true });
