@@ -1,79 +1,59 @@
 // app/api/checkout/route.ts
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
-
-let products;
-try {
-  products = (await import("../../lib/products")).products;
-} catch (error) {
-  console.error("Failed to load products:", error);
-  products = {}; // Fallback
-}
-
-interface Product {
-  id: string;
-  slug: string;
-  sector: string;
-  title: string;
-  description: string;
-  img: string;
-  options: {
-    [key: string]: { name: string; amount: number };
-  };
-}
-
-const typedProducts: { [key: string]: Product } = products;
-
-type ProductId = keyof typeof typedProducts;
-type OptionKey = keyof Product["options"];
+import { getProductById } from "@/lib/products"; // Import helper for array
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2025-08-27.basil" as const,
+  apiVersion: "2025-08-27.basil", // Or your version
 });
 
 export async function POST(request: Request) {
-  const { packageId, userEmail, customerType } = await request.json() as {
-    packageId: ProductId;
-    userEmail: string;
-    customerType: OptionKey;
-  };
+  const { packageId, userEmail, customerType } = await request.json();
 
-  console.log("Received data:", { packageId, userEmail, customerType });
-  console.log("Available products:", typedProducts);
-
-  const product = typedProducts[packageId];
+  // Get product using helper (works with array)
+  const product = getProductById(packageId);
   if (!product) {
-    return NextResponse.json({ error: "Invalid package ID" }, { status: 400 });
+    return NextResponse.json({ error: "Product not found" }, { status: 404 });
   }
 
-  const optionKeys = Object.keys(product.options) as OptionKey[];
-  console.log("Available option keys:", optionKeys);
-  if (!optionKeys.includes(customerType)) {
-    return NextResponse.json({ error: `Invalid customer type. Options are: ${optionKeys.join(", ")}` }, { status: 400 });
+  // Get option amount
+  const option = product.options[customerType];
+  if (!option) {
+    return NextResponse.json({ error: "Invalid customer type" }, { status: 400 });
   }
 
-  const priceData = product.options[customerType];
-  console.log("Selected price data:", priceData);
-
-  const session = await stripe.checkout.sessions.create({
-    payment_method_types: ["card"],
-    line_items: [
-      {
-        price_data: {
-          currency: "eur",
-          product_data: {
-            name: product.title,
+  try {
+    const session = await stripe.checkout.sessions.create({
+      payment_method_types: ["card"],
+      line_items: [
+        {
+          price_data: {
+            currency: "eur",
+            product_data: {
+              name: `${product.title} - ${option.name}`,
+              metadata: {
+                productId: product.id,
+                productName: product.title,
+              },
+            },
+            unit_amount: option.amount,
           },
-          unit_amount: priceData.amount,
+          quantity: 1,
         },
-        quantity: 1,
+      ],
+      mode: "payment",
+      customer_email: userEmail,
+      success_url: `${process.env.NEXT_PUBLIC_SITE_URL}/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${process.env.NEXT_PUBLIC_SITE_URL}/cancel`,
+      metadata: {
+        productId: product.id,
+        productName: product.title,
       },
-    ],
-    mode: "payment",
-    success_url: (request.headers.get("origin") || "http://localhost:3000") + "/success?session_id={CHECKOUT_SESSION_ID}",
-    cancel_url: (request.headers.get("origin") || "http://localhost:3000") + "/cancel",
-    customer_email: userEmail,
-  });
+    });
 
-  return NextResponse.json({ id: session.id });
+    return NextResponse.json({ id: session.id });
+  } catch (error) {
+    console.error("Stripe session creation error:", error);
+    return NextResponse.json({ error: "Failed to create checkout session" }, { status: 500 });
+  }
 }
