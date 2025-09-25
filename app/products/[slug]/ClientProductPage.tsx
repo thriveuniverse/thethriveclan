@@ -5,15 +5,11 @@ import { useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import Image from "next/image";
 import Link from "next/link";
-import { getProductBySlug } from "@/lib/products"; // Absolute import
-import type { Product, ProductOption } from "@/lib/products"; // Import types
+import type { Product, ProductOption } from "@/lib/products";
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
 
-export default function ClientProductPage({ params }: { params: { slug: string } }) {
-  const product = getProductBySlug(params.slug);
-  if (!product) return <div>Product not found.</div>;
-
+export default function ClientProductPage({ product }: { product: Product }) {
   const [email, setEmail] = useState("");
   const [customerType, setCustomerType] = useState<keyof typeof product.options>("solo");
   const [sessionId, setSessionId] = useState("");

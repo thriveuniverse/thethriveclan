@@ -1,5 +1,5 @@
 // app/products/[slug]/generateStaticParams.ts
-import { getProductBySlug } from "@/lib/products"; // Absolute import
+import { getProductBySlug } from "@/lib/products";
 
 export async function generateStaticParams() {
   // Use array from products.ts for SSG

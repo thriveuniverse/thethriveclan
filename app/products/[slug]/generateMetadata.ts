@@ -1,5 +1,5 @@
 // app/products/[slug]/generateMetadata.ts
-import { getProductBySlug } from "@/lib/products"; // Absolute import
+import { getProductBySlug } from "@/lib/products";
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const p = getProductBySlug(params.slug);
