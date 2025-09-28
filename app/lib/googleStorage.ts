@@ -4,7 +4,7 @@ import { Storage } from '@google-cloud/storage';
 const storage = new Storage();
 
 export async function generateSignedUrl(filePath: string): Promise<string> {
-  const bucketName = 'thriveclan-products-2025'; // Update with your real bucket
+  const bucketName = 'thriveclan-products-1'; // Update with your real bucket
 
   const [url] = await storage
     .bucket(bucketName)

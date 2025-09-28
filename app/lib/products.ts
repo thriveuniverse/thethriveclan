@@ -23,7 +23,7 @@ export const products: Product[] = [
     title: "Build, Grow, and Defend AI Automation Tools",
     description: "A strategic resource for leading the AI automation future...",
     img: "/images/ai-automation.jpg",
-    filePath: "ai-automation-tools.pdf", // GCS path—update to your uploaded file
+    filePath: "zips/ai-and-automation-tools-final.zip", // GCS path—update to your uploaded file
     options: {
       solo: { name: "Solo License", amount: 299700 },
       team: { name: "Team License", amount: 499700 },
