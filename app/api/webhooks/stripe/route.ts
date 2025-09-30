@@ -30,7 +30,10 @@ export async function POST(request: Request) {
   } catch (err: any) {
     // Signature failed, possible spoof or misconfiguration
     console.error('Webhook signature error:', err.message);
-    return NextResponse.json({ error: 'Webhook signature failed', details: err.message }, { status: 400 });
+    return NextResponse.json(
+      { error: 'Webhook signature failed', details: err.message },
+      { status: 400 }
+    );
   }
 
   // Guard: If no event after try (shouldn't happen, but TS safety)
@@ -47,29 +50,46 @@ export async function POST(request: Request) {
     const product = getProductById(productId);
     const productName = product?.title || session.metadata?.productName || 'Your Product';
 
-    // Generate signed URL
+    // Generate signed URL with explicit debug logs
     let signedUrl: string | undefined;
     if (product && email) {
       try {
         signedUrl = await generateSignedUrl(product.filePath);
-        console.log('Signed URL generated for:', product.filePath); // Debug
-      } catch (urlError) {
-        console.error('Signed URL failed:', urlError);
+        console.log(
+          '*** SUCCESS: Signed URL generated for',
+          product.filePath,
+          '***'
+        );
+      } catch (urlError: any) {
+        console.error(
+          '*** FAILED: Signed URL error for',
+          product.filePath,
+          ':',
+          urlError.message,
+          '***'
+        );
         // Fallback: No link in email, but webhook succeeds
       }
     }
 
     // Send email
     try {
-      if (email) { // Extra safety: Only send if email exists
+      if (email) {
         await sendPurchaseEmail(email, productName, signedUrl);
       }
     } catch (emailError) {
       console.error('Email failed:', emailError);
-      // Don't fail the webhook—Stripe expects 200 OK anyway
+      // Don’t fail the webhook—Stripe expects 200 OK anyway
     }
 
-    console.log('Payment complete for:', email, 'Product:', productId, 'URL generated:', !!signedUrl);
+    console.log(
+      'Payment complete for:',
+      email,
+      'Product:',
+      productId,
+      'URL generated:',
+      !!signedUrl
+    );
 
     // Must respond fast—don’t do slow work here, or use queues for email, etc.
     return NextResponse.json({ ok: true });
