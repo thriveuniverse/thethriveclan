@@ -1,8 +1,10 @@
 // app/lib/googleStorage.ts
 import { Storage } from '@google-cloud/storage';
 
-// Auto-uses GOOGLE_APPLICATION_CREDENTIALS JSON
-const storage = new Storage();
+// Parse JSON from env var (no file path needed)
+const credentials = JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS || '{}');
+
+const storage = new Storage({ credentials });
 
 export async function generateSignedUrl(filePath: string): Promise<string> {
   const bucketName = 'thriveclan-products-1'; // Your bucket
@@ -15,6 +17,6 @@ export async function generateSignedUrl(filePath: string): Promise<string> {
       action: 'read',
       expires: Date.now() + 24 * 60 * 60 * 1000, // 24h
     });
-
+console.log('*** DEBUG: Signed URL generated:', url, '***'); // Add this
   return url;
 }
