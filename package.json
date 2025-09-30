@@ -21,6 +21,7 @@
     "contentlayer": "^0.3.4",
     "critters": "^0.0.23",
     "encoding": "^0.1.13",
+    "google-auth-library": "^10.3.0",
     "next": "^13.5.11",
     "next-contentlayer": "^0.3.4",
     "next-sitemap": "^4.2.3",

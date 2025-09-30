@@ -1,10 +1,11 @@
+// app/lib/googleStorage.ts
 import { Storage } from '@google-cloud/storage';
 
-// This will use default application credentials as long as your ENV is set correctly (e.g., GOOGLE_APPLICATION_CREDENTIALS).
+// Auto-uses GOOGLE_APPLICATION_CREDENTIALS JSON
 const storage = new Storage();
 
 export async function generateSignedUrl(filePath: string): Promise<string> {
-  const bucketName = 'thriveclan-products-1'; // Update with your real bucket
+  const bucketName = 'thriveclan-products-1'; // Your bucket
 
   const [url] = await storage
     .bucket(bucketName)
