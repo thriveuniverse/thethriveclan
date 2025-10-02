@@ -18,6 +18,7 @@
     "@netlify/plugin-nextjs": "^5.12.1",
     "@react-email/render": "^1.3.1",
     "@stripe/stripe-js": "^7.9.0",
+    "@upstash/redis": "^1.35.4",
     "contentlayer": "^0.3.4",
     "critters": "^0.0.23",
     "encoding": "^0.1.13",
