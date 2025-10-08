@@ -52,23 +52,28 @@ export async function POST(request: Request) {
     const email = session.customer_email;
     const productId = session.metadata?.productId || 'unknown';
     const customerType = session.metadata?.customerType || 'solo';
-    const maxDownloads = customerType === 'solo' ? 1 : customerType === 'team' ? 5 : Infinity;
-    const sessionId = session.id;
+    const maxDownloads = customerType === 'solo' ? 3 : customerType === 'team' ? 5 : Infinity;
+    const windowDays = 7; // Time window for retries/devices
 
     const product = getProductById(productId);
     const productName = product?.title || session.metadata?.productName || 'Your Product';
 
-    // Generate signed URL with Redis download tracking
+    // Generate signed URL with hybrid time + count tracking
     let signedUrl: string | undefined;
     if (product && email) {
       try {
-        const downloads = (await redis.get<number>(`downloads:${sessionId}`)) || 0;
-        if (downloads < maxDownloads) {
+        const key = `downloads:${email}:${productId}`; // Per buyer/product
+        const downloads = (await redis.get<number>(key)) || 0;
+        const expiry = (await redis.get<number>(`${key}:expiry`)) || Date.now() + (windowDays * 24 * 60 * 60 * 1000);
+        
+        if (Date.now() > expiry) {
+          console.log(`Window expired for ${key}`);
+        } else if (downloads < maxDownloads) {
           signedUrl = await generateSignedUrl(product.filePath);
-          await redis.incr(`downloads:${sessionId}`);
-          console.log('Download', downloads + 1, 'of', maxDownloads, 'for', sessionId);
+          await redis.incr(key);
+          console.log(`Download ${downloads + 1}/${maxDownloads} for ${key} (expires ${new Date(expiry)})`);
         } else {
-          console.error('Max downloads reached for', sessionId);
+          console.log(`Max downloads reached for ${key}`);
         }
       } catch (urlError: any) {
         console.error(
