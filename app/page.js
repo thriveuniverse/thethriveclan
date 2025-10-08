@@ -140,7 +140,9 @@ export default function Home() {
                   href="/sector-seo"
                   className="inline-block bg-slate-600 text-white px-6 py-2 rounded-lg hover:bg-slate-700 transition-colors duration-300 font-medium"
                 >
-                  Explore Sector SEO Reports
+                  IN DEVELOPMENT - 
+                    Explore Sector SEO Reports           
+
                 </Link>
               </div>
             </div>
@@ -155,6 +157,7 @@ export default function Home() {
                 </div>
                 <h4 className="text-2xl font-bold mb-4 text-gray-800 text-left">
                   Emerging Opportunities
+
                 </h4>
               </div>
               <p className="text-gray-700 mb-6 leading-relaxed">
@@ -165,6 +168,7 @@ export default function Home() {
                   href="/emerging-opportunities"
                   className="inline-block bg-emerald-600 text-white px-6 py-2 rounded-lg hover:bg-emerald-700 transition-colors duration-300 font-medium"
                 >
+                  IN DEVELOPMENT - 
                   Discover Emerging Opportunities
                 </Link>
               </div>
