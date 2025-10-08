@@ -3,21 +3,24 @@ import Image from "next/image";
 import Link from "next/link";
 import { createOrganizationSchema } from "../lib/schemas/organization";
 
-// Navigation items
+// --- CHANGE 1: Added a 'published' property to each navigation item ---
 const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/llmo", label: "LLMO" },
-  { href: "/sector-seo", label: "Sector SEO" },
-  { href: "/emerging-opportunities", label: "Emerging Opportunities" },
-  { href: "/securedoc-ai-search", label: "SecrureDoc AI Search" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
-  { href: "/blog", label: "Blog" },
+  { href: "/", label: "Home", published: true },
+  { href: "/llmo", label: "LLMO", published: true },
+  { href: "/sector-seo", label: "Sector SEO", published: false },
+  { href: "/emerging-opportunities", label: "Emerging Opportunities", published: false },
+  { href: "/securedoc-ai-search", label: "SecureDoc AI Search", published: false },
+  { href: "/about", label: "About", published: true },
+  { href: "/contact", label: "Contact", published: true },
+  { href: "/blog", label: "Blog", published: true },
 ];
+
+// --- CHANGE 2: Create a new array with only the published items ---
+const visibleNavItems = navItems.filter((item) => item.published);
 
 // Metadata with metadataBase
 export const metadata = {
-  metadataBase: new URL('https://thethriveclan.com'), // ← Add this line
+  metadataBase: new URL('https://thethriveclan.com'),
   title: "The Thrive Clan",
   description: "Sector-specific resources curated by The Thrive Clan.",
 };
@@ -64,9 +67,9 @@ function Header() {
           </span>
         </Link>
 
-        {/* Desktop Navigation */}
+        {/* --- CHANGE 3: Use 'visibleNavItems' for Desktop Navigation --- */}
         <nav className="hidden md:flex space-x-6 items-center h-full">
-          {navItems.map((item) => (
+          {visibleNavItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
@@ -96,7 +99,8 @@ function Header() {
             </svg>
           </summary>
           <div className="absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 py-2 z-50">
-            {navItems.map((item) => (
+            {/* --- CHANGE 3: Use 'visibleNavItems' for Mobile Navigation --- */}
+            {visibleNavItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
@@ -122,7 +126,8 @@ function Footer() {
 
         {/* Sitemap */}
         <nav className="flex flex-wrap justify-center gap-4">
-          {navItems.map((item) => (
+          {/* --- CHANGE 3: Use 'visibleNavItems' for Footer Navigation --- */}
+          {visibleNavItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
