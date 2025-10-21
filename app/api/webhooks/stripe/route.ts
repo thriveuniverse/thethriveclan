@@ -2,27 +2,26 @@
 import { NextResponse } from 'next/server';
 import Stripe from 'stripe';
 import { sendPurchaseEmail } from '@/lib/sendEmail';
-import { getProductById } from '@/lib/products'; // For fetching filePath
-import { generateSignedUrl } from '@/lib/googleStorage'; // GCS signed URL
-import { Redis } from '@upstash/redis'; // Redis import
+import { getProductById } from '@/lib/products';
+import { generateSignedUrl } from '@/lib/googleStorage';
+import { Redis } from '@upstash/redis';
 
-// Stripe secret from dashboard—put in .env
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: '2025-08-27.basil',
 });
 
-// Webhook secret from Stripe dashboard
 const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET;
 
-// Redis client
 const redis = new Redis({
   url: process.env.UPSTASH_REDIS_REST_URL!,
   token: process.env.UPSTASH_REDIS_REST_TOKEN!,
 });
 
 export async function POST(request: Request) {
-  const body = await request.text(); // Raw payload
+  console.log('Webhook received - starting processing'); // Log entry
+
   const sig = request.headers.get('stripe-signature') as string;
+  const body = await request.text();
 
   if (!endpointSecret) {
     console.error('STRIPE_WEBHOOK_SECRET is not set!');
@@ -33,6 +32,7 @@ export async function POST(request: Request) {
 
   try {
     event = stripe.webhooks.constructEvent(body, sig, endpointSecret);
+    console.log('Webhook event parsed:', event.type); // Log event type
   } catch (err: any) {
     console.error('Webhook signature error:', err.message);
     return NextResponse.json(
@@ -48,6 +48,7 @@ export async function POST(request: Request) {
 
   // Only act on successful payments
   if (event.type === 'checkout.session.completed') {
+    console.log('Processing checkout.session.completed'); // Log start
     const session = event.data.object as Stripe.Checkout.Session;
     const email = session.customer_email;
     const productId = session.metadata?.productId || 'unknown';
@@ -55,8 +56,12 @@ export async function POST(request: Request) {
     const maxDownloads = customerType === 'solo' ? 3 : customerType === 'team' ? 5 : Infinity;
     const windowDays = 7; // Time window for retries/devices
 
+    console.log('Session details:', { email, productId, customerType }); // Log session
+
     const product = getProductById(productId);
     const productName = product?.title || session.metadata?.productName || 'Your Product';
+
+    console.log('Product found:', productName); // Log product
 
     // Generate signed URL with hybrid time + count tracking
     let signedUrl: string | undefined;
@@ -66,11 +71,14 @@ export async function POST(request: Request) {
         const downloads = (await redis.get<number>(key)) || 0;
         const expiry = (await redis.get<number>(`${key}:expiry`)) || Date.now() + (windowDays * 24 * 60 * 60 * 1000);
         
+        console.log('Redis check:', { key, downloads, expiry, maxDownloads }); // Log Redis
+
         if (Date.now() > expiry) {
           console.log(`Window expired for ${key}`);
         } else if (downloads < maxDownloads) {
           signedUrl = await generateSignedUrl(product.filePath);
           await redis.incr(key);
+          await redis.set(`${key}:expiry`, expiry, { ex: windowDays * 24 * 60 * 60 }); // Set expiry
           console.log(`Download ${downloads + 1}/${maxDownloads} for ${key} (expires ${new Date(expiry)})`);
         } else {
           console.log(`Max downloads reached for ${key}`);
@@ -90,6 +98,7 @@ export async function POST(request: Request) {
     try {
       if (email) {
         await sendPurchaseEmail(email, productName, signedUrl);
+        console.log('Email sent to:', email); // Log success
       }
     } catch (emailError) {
       console.error('Email failed:', emailError);
