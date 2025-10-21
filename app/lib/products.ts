@@ -23,22 +23,22 @@ export const products: Product[] = [
     title: "Build, Grow, and Defend AI Automation Tools",
     description: "A strategic resource for leading the AI automation future...",
     img: "/images/ai-automation.jpg",
-    filePath: "zips/ai-and-automation-tools-final.zip", // GCS path—update to your uploaded file
+    filePath: "zips/ai-and-automation-tools-final.zip",
     options: {
       solo: { name: "Solo License", amount: 299700 },
       team: { name: "Team License", amount: 499700 },
       agency: { name: "Agency License", amount: 799700 },
     },
   },
-  // Add more: { id: "2", slug: "next-product", filePath: "next.pdf", ... }
+  // ... your id "2" and "3" entries
 ];
 
 // Helper for webhook/UI: Get by ID (for Stripe metadata)
 export function getProductById(id: string): Product | undefined {
-  return products.find(p => p.id === id);
+  return products.find((p: Product) => p.id === id); // Type p as Product
 }
 
 // Helper for slug-based routes: Get by slug (for /products/[slug])
 export function getProductBySlug(slug: string): Product | undefined {
-  return products.find(p => p.slug === slug);
+  return products.find((p: Product) => p.slug === slug); // Type p as Product
 }
