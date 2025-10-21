@@ -41,25 +41,29 @@ export async function POST(request: Request) {
   const priceData = product.options[customerType];
   console.log("Selected price data:", priceData);
 
-  const session = await stripe.checkout.sessions.create({
-    payment_method_types: ["card"],
-    line_items: [
-      {
-        price_data: {
-          currency: "eur",
-          product_data: {
-            name: product.title,
-          },
-          unit_amount: priceData.amount,
+ const session = await stripe.checkout.sessions.create({
+  payment_method_types: ["card"],
+  line_items: [
+    {
+      price_data: {
+        currency: "eur",
+        product_data: {
+          name: product.title,
         },
-        quantity: 1,
+        unit_amount: priceData.amount,
       },
-    ],
-    mode: "payment",
-    success_url: `${request.headers.get("origin") || "http://localhost:3000"}/success?session_id={CHECKOUT_SESSION_ID}`,
-    cancel_url: `${request.headers.get("origin") || "http://localhost:3000"}/cancel`,
-    customer_email: userEmail,
-  });
+      quantity: 1,
+    },
+  ],
+  mode: "payment",
+  success_url: `${request.headers.get("origin") || "http://localhost:3000"}/success?session_id={CHECKOUT_SESSION_ID}`,
+  cancel_url: `${request.headers.get("origin") || "http://localhost:3000"}/cancel`,
+  customer_email: userEmail,
+  metadata: {
+    productId: packageId,
+    customerType: customerType
+  } // <-- Replace ) with }
+});
 
   return NextResponse.json({ id: session.id });
 }
