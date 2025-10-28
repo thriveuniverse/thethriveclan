@@ -2,6 +2,7 @@ import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
 import { createOrganizationSchema } from "../lib/schemas/organization";
+import { useRef } from 'react';
 
 // --- CHANGE 1: Added a 'published' property to each navigation item ---
 const navItems = [
@@ -81,7 +82,7 @@ function Header() {
         </nav>
 
         {/* Mobile Menu */}
-        <details className="relative md:hidden">
+        <details ref={detailsRef} className="relative md:hidden">  {/* NEW: ref here */}
           <summary className="list-none cursor-pointer p-2 -mr-2">
             <span className="sr-only">Open main menu</span>
             <svg
@@ -105,6 +106,7 @@ function Header() {
                 key={item.href}
                 href={item.href}
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                onClick={() => { if (detailsRef.current) detailsRef.current.open = false; }}
               >
                 {item.label}
               </Link>

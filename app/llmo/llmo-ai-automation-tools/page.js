@@ -214,9 +214,7 @@ export default function AIAutomationTools() {
             <p className="text-gray-700 leading-relaxed">
               Solo License: €2,997 one-time<br />
               Team License: €4,997 up to 5 users<br />
-              Agency/Consultancy: €7,997 for client delivery<br />
-              Early-adopter rate: -30% for first 50 purchases. All 1.0 buyers get
-              free updates for first year.
+              Agency/Consultancy: €7,997 for client delivery
             </p>
           </section>
 
@@ -228,8 +226,6 @@ export default function AIAutomationTools() {
               We’re new. That means our first customers get our undivided
               attention, the best deal, and direct access to us (the creators).
               If this doesn’t deliver value for your business, we refund—no hoops.
-              And if you want to be featured as a case study, we’ll offer
-              done-with-you onboarding at no cost.
             </p>
           </section>
 
@@ -248,7 +244,7 @@ export default function AIAutomationTools() {
               </li>
               <li>
                 <strong>What if my team finds it overwhelming?</strong> You’ll get
-                a quickstart guide, “first campaign” video, and a roadmap for
+                a quickstart guide, “first campaign” steps, and a roadmap for
                 automating manual steps (updates will be free).
               </li>
               <li>
@@ -268,9 +264,8 @@ export default function AIAutomationTools() {
               Still Deciding?
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              Download a free sample worksheet<br />
-              View our full competitor and value breakdown<br />
-              Book a quick discovery call (contact support@thethriveclan.com)
+              Check out our blog for more information on the evolving internet environment <br />
+              Email us any questions you have (contact support@thethriveclan.com)
             </p>
           </section>
 
