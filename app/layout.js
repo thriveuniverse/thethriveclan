@@ -1,23 +1,11 @@
 import "./globals.css";
-import Image from "next/image";
-import Link from "next/link";
 import { createOrganizationSchema } from "../lib/schemas/organization";
-import { useRef } from 'react';
+import Header from './components/Header'; // NEW
+import Link from 'next/link';
+import { visibleNavItems } from './lib/nav'; // NEW: Pulls the filtered list
 
-// --- CHANGE 1: Added a 'published' property to each navigation item ---
-const navItems = [
-  { href: "/", label: "Home", published: true },
-  { href: "/llmo", label: "LLMO", published: true },
-  { href: "/sector-seo", label: "Sector SEO", published: false },
-  { href: "/emerging-opportunities", label: "Emerging Opportunities", published: false },
-  { href: "/securedoc-ai-search", label: "SecureDoc AI Search", published: false },
-  { href: "/about", label: "About", published: true },
-  { href: "/contact", label: "Contact", published: true },
-  { href: "/blog", label: "Blog", published: true },
-];
+// navItems moved to header.jsx
 
-// --- CHANGE 2: Create a new array with only the published items ---
-const visibleNavItems = navItems.filter((item) => item.published);
 
 // Metadata with metadataBase
 export const metadata = {
@@ -41,7 +29,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="min-h-full flex flex-col">
-        <Header />
+        <Header /> {/* CHANGED: Use the imported component */}
         <main className="flex-1">{children}</main>
         <Footer />
       </body>
@@ -49,74 +37,8 @@ export default function RootLayout({ children }) {
   );
 }
 
-// Header Component
-function Header() {
-  return (
-    <header className="shadow-md bg-white">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-        {/* Logo + Brand */}
-        <Link href="/" className="flex items-center space-x-2">
-          <Image
-            src="/logo.png"
-            alt="The Thrive Clan logo"
-            width={32}
-            height={32}
-            priority
-          />
-          <span className="font-semibold text-lg text-gray-800">
-            The Thrive Clan
-          </span>
-        </Link>
+// Header Component moved to header.js
 
-        {/* --- CHANGE 3: Use 'visibleNavItems' for Desktop Navigation --- */}
-        <nav className="hidden md:flex space-x-6 items-center h-full">
-          {visibleNavItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors py-1"
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
-
-        {/* Mobile Menu */}
-        <details ref={detailsRef} className="relative md:hidden">  {/* NEW: ref here */}
-          <summary className="list-none cursor-pointer p-2 -mr-2">
-            <span className="sr-only">Open main menu</span>
-            <svg
-              className="h-6 w-6 text-gray-700"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </summary>
-          <div className="absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 py-2 z-50">
-            {/* --- CHANGE 3: Use 'visibleNavItems' for Mobile Navigation --- */}
-            {visibleNavItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                onClick={() => { if (detailsRef.current) detailsRef.current.open = false; }}
-              >
-                {item.label}
-              </Link>
-            ))}
-          </div>
-        </details>
-      </div>
-    </header>
-  );
-}
 
 // Footer Component
 function Footer() {
