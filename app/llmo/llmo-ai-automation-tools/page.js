@@ -53,37 +53,48 @@ export default function AIAutomationTools() {
     <>
       <ProductSchema />
 
-      {/* Hero Section with Parallax */}
-      <div className="relative w-full h-64 md:h-96 overflow-hidden">
-        <div
-          className="absolute inset-0 parallax"
-          style={{
-            backgroundImage: "url('/images/ai-automation-hero.jpg')",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundAttachment: "fixed",
-          }}
-          aria-hidden="true"
-        >
-          <div className="hero-overlay bg-black bg-opacity-50"></div>
-        </div>
-        <div className="relative z-10 flex items-center justify-center h-full">
-          <div className="text-center max-w-4xl mx-auto px-4 hero-text">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-              Build, Grow, and Defend
-            </h1>
-            <h2 className="text-xl md:text-2xl font-semibold mb-6 text-gray-100">
-              The AI Automation Tools Bundle
-            </h2>
-            <p className="text-lg md:text-xl mb-6 text-gray-200 leading-relaxed">
-              A strategic resource for those who want to lead—not chase—the future
-              of online business and digital marketing.
-            </p>
-          </div>
+ {/* Hero Section with Parallax */}
+    <div className="relative w-full h-64 md:h-96 overflow-hidden">
+      <div
+        className="absolute inset-0 parallax"
+        style={{
+          backgroundImage: "url('/images/ai-automation-hero.jpg')",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundAttachment: "fixed",
+        }}
+        aria-hidden="true"
+      >
+        <div className="hero-overlay bg-black bg-opacity-50"></div>
+      </div>
+      <div className="relative z-10 flex items-center justify-center h-full">
+        <div className="text-center max-w-4xl mx-auto px-4 hero-text">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+            Build, Grow, and Defend
+          </h1>
+          <h2 className="text-xl md:text-2xl font-semibold mb-6 text-gray-100">
+            The AI Automation Tools Bundle
+          </h2>
+          <p className="text-lg md:text-xl mb-6 text-gray-200 leading-relaxed">
+            A strategic resource for those who want to lead—not chase—the future
+            of online business and digital marketing.
+          </p>
         </div>
       </div>
+    </div>
 
+    {/* FIXED: Floating CTA Pill - Now viewport-anchored, always floats on scroll */}
+    <div className="fixed bottom-4 right-4 z-50 md:bottom-6 md:right-6">
+      <a
+        href="/packages/1"
+        className="inline-flex items-center px-3 py-2 md:px-4 md:py-3 bg-cyan-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:bg-cyan-700 transition-all duration-300 text-xs md:text-sm backdrop-blur-sm"
+        aria-label="Claim Your AI Automation Bundle"
+      >
+        Claim Bundle → 
+        <span className="ml-1 md:ml-2 text-xs opacity-90">(€2,997)</span>
+      </a>
+    </div>
       {/* Main Content */}
       <div className="min-h-screen bg-gray-50 py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
