@@ -77,7 +77,8 @@ export default function AIAutomationTools() {
         The Thrive Clan Toolkit: Lead the Automation Revolution
           </h2>
           <p className="text-lg md:text-xl mb-6 text-gray-200 leading-relaxed">
-                   In a world where AI isn't optional—it's oxygen for growth—you're not just chasing trends. You're claiming your place in the $3.68T boom. No tech wizardry required: Our bundle equips you with proven playbooks to automate, optimize, and outpace competitors. Ready to journey from overwhelm to ownership?
+            A strategic resource for those who want to lead—not chase—the future
+            of online business and digital marketing.
           </p>
         </div>
       </div>
@@ -96,8 +97,22 @@ export default function AIAutomationTools() {
     </div>
       {/* Main Content */}
       <div className="min-h-screen bg-gray-50 py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-
+  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    {/* NEW: Journey Intro – Your Moved Paragraph, Polished */}
+    <section className="mb-12 bg-white p-8 rounded-lg shadow-sm border border-gray-100"> {/* Removed text-center */}
+  <h2 className="text-center text-2xl md:text-3xl font-semibold text-cyan-600 mb-6"> {/* Kept centered for header punch */}
+    Your Path to AI Mastery Starts Here
+  </h2>
+  <p className="text-left text-base text-gray-700 leading-relaxed max-w-3xl mx-auto">
+  In a world where AI isn't optional—it's <em>oxygen for growth</em>—you're not just chasing trends. You're claiming your place in the $3.68T boom. No tech wizardry required: Our bundle equips you with proven playbooks to automate, optimize, and outpace competitors. Ready to journey from overwhelm to ownership? Let's map the way: Spot your gaps, arm your team, and scale with confidence.
+</p>
+  <div className="mt-8 flex justify-center"> {/* CTA stays centered */}
+    <a href="#imperative" className="inline-flex items-center px-6 py-3 bg-cyan-600 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition-all">
+      Begin the Journey →
+    </a>
+  </div>
+</section>
           <section className="mb-12 bg-white p-6 rounded-lg shadow-sm" id="problem">
             <h2 className="text-2xl font-semibold text-cyan-600 mb-4">
               The Problem with Most “SEO Packs”
