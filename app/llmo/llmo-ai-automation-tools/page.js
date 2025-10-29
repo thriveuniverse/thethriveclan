@@ -71,14 +71,13 @@ export default function AIAutomationTools() {
       <div className="relative z-10 flex items-center justify-center h-full">
         <div className="text-center max-w-4xl mx-auto px-4 hero-text">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-            Build, Grow, and Defend
+            Build, Grow, and Defend Your AI Edge 
           </h1>
           <h2 className="text-xl md:text-2xl font-semibold mb-6 text-gray-100">
-            The AI Automation Tools Bundle
+        The Thrive Clan Toolkit: Lead the Automation Revolution
           </h2>
           <p className="text-lg md:text-xl mb-6 text-gray-200 leading-relaxed">
-            A strategic resource for those who want to lead—not chase—the future
-            of online business and digital marketing.
+                   In a world where AI isn't optional—it's oxygen for growth—you're not just chasing trends. You're claiming your place in the $3.68T boom. No tech wizardry required: Our bundle equips you with proven playbooks to automate, optimize, and outpace competitors. Ready to journey from overwhelm to ownership?
           </p>
         </div>
       </div>
