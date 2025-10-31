@@ -87,13 +87,15 @@ export default function AIAutomationTools() {
     {/* FIXED: Floating CTA Pill - Now viewport-anchored, always floats on scroll */}
     <div className="fixed bottom-4 right-4 z-50 md:bottom-6 md:right-6">
       <a
-        href="/packages/1"
-        className="inline-flex items-center px-3 py-2 md:px-4 md:py-3 bg-cyan-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:bg-cyan-700 transition-all duration-300 text-xs md:text-sm backdrop-blur-sm"
-        aria-label="Claim Your AI Automation Bundle"
-      >
-        Claim Bundle → 
-        <span className="ml-1 md:ml-2 text-xs opacity-90">(€2,997)</span>
-      </a>
+  href={`https://thethriveclan.gumroad.com/l/ai-automation-tools/checkout?quantity=1&variant_id=${INDIVIDUAL_VARIANT_ID}`} // FIXED: Gumroad cart for solo
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center px-3 py-2 md:px-4 md:py-3 bg-cyan-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:bg-cyan-700 transition-all duration-300 text-xs md:text-sm backdrop-blur-sm"
+  aria-label="Buy AI Automation Bundle - Solo License"
+>
+  Buy Bundle → 
+  <span className="ml-1 md:ml-2 text-xs opacity-90">(€2,997 Solo)</span>
+</a>
     </div>
       {/* Main Content */}
       <div className="min-h-screen bg-gray-50 py-16">
@@ -118,7 +120,29 @@ export default function AIAutomationTools() {
   <p className="text-base text-gray-700 leading-relaxed mb-6">
     Enterprise maturation demands not adaptation, but optimization—addressing the 55-65% resource allocation to legacy execution that constrains innovation and client equity (Forrester, 2025). In the $150B AI automation sector (40-60% YoY trajectory), unaddressed bottlenecks manifest as 22% opportunity costs in market expansion and retention.
   </p>
-  
+<div className="grid md:grid-cols-3 gap-6 mb-12 p-6 bg-gray-50 rounded-lg">
+  <div className="text-center">
+    <div className="mx-auto w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center mb-3">
+      <svg className="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" /></svg>
+    </div>
+    <h3 className="text-lg font-semibold text-gray-900 mb-1">Keyword Dossiers</h3>
+    <p className="text-sm text-gray-600">150+ spreadsheets with search volumes and ideas—import and deploy in minutes.</p>
+  </div>
+  <div className="text-center">
+    <div className="mx-auto w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center mb-3">
+      <svg className="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+    </div>
+    <h3 className="text-lg font-semibold text-gray-900 mb-1">Playbooks & Guides</h3>
+    <p className="text-sm text-gray-600">Step-by-step docs for 30/60/90-day rollout—quickstarts included.</p>
+  </div>
+  <div className="text-center">
+    <div className="mx-auto w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center mb-3">
+      <svg className="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+    </div>
+    <h3 className="text-lg font-semibold text-gray-900 mb-1">ROI Calculators</h3>
+    <p className="text-sm text-gray-600">Plug in your numbers for instant payback projections—4-6 months typical.</p>
+  </div>
+</div>  
   <div className="grid md:grid-cols-2 gap-8 mb-8">
     <div>
       <h3 className="font-semibold text-cyan-600 mb-3">Vulnerabilities: Capacity Constraints</h3>
