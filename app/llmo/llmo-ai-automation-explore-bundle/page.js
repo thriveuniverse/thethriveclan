@@ -52,35 +52,34 @@ export default function BundleExplore() {
       <ProductSchema />  {/* RENDERED: Now active in <head> */}
 
       {/* Hero Section with Parallax */}
-      <div className="relative w-full h-64 md:h-96 overflow-hidden">
-        <div
-          className="absolute inset-0 parallax"
-          style={{
-            backgroundImage: "url('/images/ai-automation-hero.jpg')",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundAttachment: "fixed",
-          }}
-          aria-hidden="true"
-        >
-          <div className="hero-overlay bg-black bg-opacity-50"></div>
-        </div>
-        <div className="relative z-10 flex items-center justify-center h-full">
-          <div className="text-center max-w-4xl mx-auto px-4 hero-text">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-              Inside the Bundle: Your AI Growth Arsenal
-            </h1>
-            <h2 className="text-xl md:text-2xl font-semibold mb-6 text-gray-100">
-              Explore the Tools That Turn Overwhelm into Wins
-            </h2>
-            <p className="text-lg md:text-xl mb-6 text-gray-200 leading-relaxed">
-              See why these pieces matter—and what happens if you skip them. No tech jargon, just real impact for your team.
-            </p>
-          </div>
-        </div>
-      </div>
-
+<div className="relative w-full h-72 md:h-96 overflow-hidden">  {/* Bumped h-72 for mobile fit */}
+  <div
+    className="absolute inset-0 parallax"
+    style={{
+      backgroundImage: "url('/images/ai-automation-hero.jpg')",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+      backgroundAttachment: "fixed",
+    }}
+    aria-hidden="true"
+  >
+    <div className="hero-overlay bg-black bg-opacity-50"></div>
+  </div>
+  <div className="relative z-10 flex items-center justify-center h-full">
+    <div className="text-center max-w-4xl mx-auto px-4 hero-text">
+      <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+        Inside the Bundle: Arsenal for AI Growth
+      </h1>
+      <h2 className="text-xl md:text-2xl font-semibold mb-6 text-gray-100">
+        What matters—and the consequences of skipping it
+      </h2>
+      <p className="text-lg md:text-xl mb-6 text-gray-200 leading-relaxed">
+       No tech jargon, just real impact to reclaim time and boost leads.
+      </p>
+    </div>
+  </div>
+</div>
       {/* Floating CTA Pill */}
       <div className="fixed bottom-4 right-4 z-50 md:bottom-6 md:right-6">
         <a
