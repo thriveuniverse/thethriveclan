@@ -115,34 +115,42 @@ export default function AIAutomationTools() {
     </a>
   </div>
 </section>
-<section className="mb-12 bg-white p-6 rounded-lg shadow-sm" id="imperative">
-  <h2 className="text-2xl font-semibold text-cyan-600 mb-4">Operational Diagnostics: Reclaiming Bandwidth in the AI Continuum</h2>
-  <p className="text-base text-gray-700 leading-relaxed mb-6">
-    Enterprise maturation demands not adaptation, but optimization—addressing the 55-65% resource allocation to legacy execution that constrains innovation and client equity (Forrester, 2025). In the $150B AI automation sector (40-60% YoY trajectory), unaddressed bottlenecks manifest as 22% opportunity costs in market expansion and retention.
-  </p>
+{/* Bundle at a Glance Grid – Quick Visual Teaser */}
 <div className="grid md:grid-cols-3 gap-6 mb-12 p-6 bg-gray-50 rounded-lg">
   <div className="text-center">
     <div className="mx-auto w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center mb-3">
-      <svg className="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" /></svg>
+      <svg className="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+      </svg>
     </div>
     <h3 className="text-lg font-semibold text-gray-900 mb-1">Keyword Dossiers</h3>
     <p className="text-sm text-gray-600">150+ spreadsheets with search volumes and ideas—import and deploy in minutes.</p>
   </div>
   <div className="text-center">
     <div className="mx-auto w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center mb-3">
-      <svg className="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+      <svg className="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+      </svg>
     </div>
     <h3 className="text-lg font-semibold text-gray-900 mb-1">Playbooks & Guides</h3>
     <p className="text-sm text-gray-600">Step-by-step docs for 30/60/90-day rollout—quickstarts included.</p>
   </div>
   <div className="text-center">
     <div className="mx-auto w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center mb-3">
-      <svg className="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+      <svg className="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+      </svg>
     </div>
     <h3 className="text-lg font-semibold text-gray-900 mb-1">ROI Calculators</h3>
     <p className="text-sm text-gray-600">Plug in your numbers for instant payback projections—4-6 months typical.</p>
   </div>
-</div>  
+</div>
+<section className="mb-12 bg-white p-6 rounded-lg shadow-sm" id="imperative">
+  <h2 className="text-2xl font-semibold text-cyan-600 mb-4">Operational Diagnostics: Reclaiming Bandwidth in the AI Continuum</h2>
+  <p className="text-base text-gray-700 leading-relaxed mb-6">
+    Enterprise maturation demands not adaptation, but optimization—addressing the 55-65% resource allocation to legacy execution that constrains innovation and client equity (Forrester, 2025). In the $150B AI automation sector (40-60% YoY trajectory), unaddressed bottlenecks manifest as 22% opportunity costs in market expansion and retention.
+  </p>
+
   <div className="grid md:grid-cols-2 gap-8 mb-8">
     <div>
       <h3 className="font-semibold text-cyan-600 mb-3">Vulnerabilities: Capacity Constraints</h3>
@@ -301,9 +309,17 @@ export default function AIAutomationTools() {
     One-time access, lifetime value—calibrated for your growth path.
   </p>
 </section>
-
+<section className="mb-12 bg-white p-6 rounded-lg shadow-sm" id="guarantee">
+  <h2 className="text-2xl font-semibold text-cyan-600 mb-4">Risk Mitigation: 90-Day Performance Protocol</h2>
+  <p className="text-base text-gray-700 leading-relaxed">
+    As your first-mover partners, we stand by the framework: Full principal access, priority updates, and quarterly check-ins. If the 25-35% trajectory isn't on track by day 90, full refund—no questions, no hoops.
+  </p>
+  <p className="text-base text-gray-700 italic mt-4">
+    Your dominance, assured—starting with zero downside.
+  </p>
+</section>
 <section className="mb-12 bg-white p-6 rounded-lg shadow-sm" id="faq">
-  <h2 className="text-2xl font-semibold text-cyan-600 mb-4">Clarification Matrix: Key Deployment Vectors</h2>
+  <h2 className="text-2xl font-semibold text-cyan-600 mb-4">Your Questions Answered: Clarity Before Commitment</h2>
   
   <div className="space-y-4">
     <details className="border border-gray-200 rounded-lg p-4">
@@ -319,7 +335,28 @@ export default function AIAutomationTools() {
         <p>Principal access, onboarding protocols, Year 1 updates, and ROI recalibration—ensuring 15-20% sustained gains via quarterly diagnostics.</p>
       </div>
     </details>
-   </div>
+
+    <details className="border border-gray-200 rounded-lg p-4">
+      <summary className="font-semibold text-cyan-600 cursor-pointer">Overwhelm Mitigation: For Complex Teams?</summary>
+      <div className="text-sm text-gray-700 mt-3 ml-4">
+        <p>1-hour activation guide + 30/60/90-day roadmap—smart automation for manual steps, with video walkthroughs to keep things simple and scalable.</p>
+      </div>
+    </details>
+
+    <details className="border border-gray-200 rounded-lg p-4">
+      <summary className="font-semibold text-cyan-600 cursor-pointer">Subscription Alternative: Ongoing Access?</summary>
+      <div className="text-sm text-gray-700 mt-3 ml-4">
+        <p>One-time purchase, lifetime use—no recurring fees, ideal for teams ditching the SaaS treadmill while locking in 3-5x visibility gains.</p>
+      </div>
+    </details>
+
+    <details className="border border-gray-200 rounded-lg p-4">
+      <summary className="font-semibold text-cyan-600 cursor-pointer">Non-Technical Ramp: For Business Leaders?</summary>
+      <div className="text-sm text-gray-700 mt-3 ml-4">
+        <p>Strategy-first design with video quickstarts and drag-and-drop guides—tech teams handle the scripts, you focus on 25-35% ROI outcomes.</p>
+      </div>
+    </details>
+  </div>
 </section>
 
 <section className="mb-12 bg-white p-6 rounded-lg shadow-sm" id="deciding">
@@ -333,7 +370,7 @@ export default function AIAutomationTools() {
   <h2 className="text-2xl font-semibold text-cyan-700 mb-4">Initiate Your Vector: From Assessment to Acceleration</h2>
   <div className="flex flex-col sm:flex-row gap-4 justify-center">
     <a href="/packages/1" className="flex-1 bg-cyan-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-cyan-700 transition-all">
-      Calibrate Now (€2,997 Solo)
+      Buy Bundle (€2,997 Solo)
     </a>
     <a href="#included" className="flex-1 bg-gray-300 text-gray-800 font-semibold py-3 px-6 rounded-lg hover:bg-gray-400 transition-all">
       Explore Portfolio
