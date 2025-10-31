@@ -221,6 +221,9 @@ export default function AIAutomationTools() {
       <summary className="font-semibold text-cyan-600 cursor-pointer">Strategic Leadership Score: 9/10 (Market Expansion Alignment)</summary>
       <div className="text-sm text-gray-700 mt-3 ml-4">
         <p>"Clear, data-driven instrumentation for AI niche dominance—delivered 28% Q1 lead uplift via playbook deployment." (Agency Principal, 2025 Beta)</p>
+        <blockquote className="border-l-4 border-cyan-500 pl-3 italic text-gray-600 mt-2">
+          "78% of enterprises plan to implement AI automation solutions within the next 24 months, creating massive demand for information... that answer engines increasingly provide." — From Executive Summary Market Analysis
+        </blockquote>
         <ul className="list-disc list-inside mt-2 space-y-1">
           <li>Key Lever: 60-80% qualified traffic from citation protocols.</li>
         </ul>
@@ -231,6 +234,9 @@ export default function AIAutomationTools() {
       <summary className="font-semibold text-cyan-600 cursor-pointer">Operational Execution Score: 8/10 (Resource Reallocation)</summary>
       <div className="text-sm text-gray-700 mt-3 ml-4">
         <p>"Technically robust, reclaiming 40 hours/month—manual steps noted, but phased audits mitigate." (Implementation Lead, 2025 Beta)</p>
+        <blockquote className="border-l-4 border-cyan-500 pl-3 italic text-gray-600 mt-2">
+          "Organizations implementing comprehensive LLMO strategies report 3-5x improvement in organic visibility, 60-80% increase in qualified lead generation." — From Executive Summary ROI Framework
+        </blockquote>
         <ul className="list-disc list-inside mt-2 space-y-1">
           <li>Key Lever: 2x campaign velocity post-30-day quickstart.</li>
         </ul>
@@ -243,66 +249,56 @@ export default function AIAutomationTools() {
   </p>
 </section>
 <section className="mb-12 bg-white p-6 rounded-lg shadow-sm" id="why-now">
-  <h2 className="text-2xl font-semibold text-cyan-600 mb-4">Strategic Timing: Capitalizing on the 12-18 Month Advantage Window</h2>
+  <h2 className="text-2xl font-semibold text-cyan-600 mb-4">Strategic Timing: Capitalizing on the 12-18 Month Opportunity Window</h2>
   <p className="text-base text-gray-700 leading-relaxed">
-    The AI automation continuum ($150B sector, 40-60% YoY) presents a delimited opportunity: 77% of vendors remain unoptimized for LLMO, yielding a 12-18 month vector for 3-5x visibility dominance (Forrester, 2025). Legacy reliance forfeits 22% market expansion; proactive orchestration secures 25-35% CAC reduction and 60-80% lead quality uplift. This bundle calibrates your entry—phased for immediate traction, sustained for leadership.
+    The AI automation market ($150B, growing 40-60% yearly) has a narrow opening: 77% of competitors haven't optimized for LLMO yet, leaving a 12-18 month window for 3-5x visibility gains (Forrester, 2025). Sticking with old SEO means missing 22% in market share and client retention. This bundle gets you ahead—starting with simple audits for quick traction, building to sustained leadership.
   </p>
   <p className="text-base text-gray-700 italic mt-4">
-    The imperative is not disruption, but deployment: Act within the window to architect outcomes.
+    It's not about chasing change—it's about positioning for it now, before the window closes.
   </p>
 </section>
 
 <section className="mb-12 bg-white p-6 rounded-lg shadow-sm" id="pricing">
-  <h2 className="text-2xl font-semibold text-cyan-600 mb-4">Investment Framework: Tiered Allocation for Scale Vectors</h2>
+  <h2 className="text-2xl font-semibold text-cyan-600 mb-4">Investment Framework: Tiers for Your Scale</h2>
   <p className="text-base text-gray-700 leading-relaxed mb-6">
-    Calibrated to organizational maturity, these one-time vectors yield 4-6 month payback via 25-35% CAC efficiencies—outpacing SaaS recurrence by 60% (internal modeling, 2025).
+    Tailored to your team's size, this one-time investment pays back in 4-6 months through efficiencies like 25-35% lower customer acquisition costs—beating SaaS subscriptions by avoiding ongoing fees.
   </p>
   
-  <div className="overflow-x-auto mb-6">
+  <div className="overflow-x-auto mb-6"> 
     <table className="min-w-full divide-y divide-gray-200">
       <thead className="bg-gray-50">
         <tr>
           <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tier</th>
-          <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Scope</th>
-          <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Allocation</th>
-          <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Projected Payback</th>
+          <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Best For</th>
+          <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Price</th>
+          <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Typical Payback</th>
         </tr>
       </thead>
       <tbody className="bg-white divide-y divide-gray-200">
         <tr>
           <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Solo</td>
-          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Individual orchestration</td>
+          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Individual or small team automation</td>
           <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-right">€2,997</td>
-          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-right">4-6 months (60% lead uplift)</td>
+          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-right">4-6 months (60% lead boost)</td>
         </tr>
         <tr>
           <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Team</td>
-          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Up to 5 collaborators</td>
+          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Up to 5 users collaborating</td>
           <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-right">€4,997</td>
-          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-right">3-5 months (2x velocity)</td>
+          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-right">3-5 months (2x campaign speed)</td>
         </tr>
         <tr>
           <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Agency</td>
-          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Client deployment scale</td>
+          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Client deployment at scale</td>
           <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-right">€7,997</td>
-          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-right">2-4 months (25-35% CAC drop)</td>
+          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-right">2-4 months (25-35% cost savings)</td>
         </tr>
       </tbody>
     </table>
-  </div>
+  </div>  
   
   <p className="text-base text-gray-700 italic">
-    One-time calibration, perpetual access—optimized for your trajectory.
-  </p>
-</section>
-
-<section className="mb-12 bg-white p-6 rounded-lg shadow-sm" id="guarantee">
-  <h2 className="text-2xl font-semibold text-cyan-600 mb-4">Assurance Framework: Performance Contingency Protocol</h2>
-  <p className="text-base text-gray-700 leading-relaxed">
-    As inaugural custodians, we extend undivided stewardship: Direct access to principals and priority instrumentation updates. Should the projected 25-35% trajectory remain unrealized within 90 days, full reallocation—no administrative encumbrances.
-  </p>
-  <p className="text-base text-gray-700 italic mt-4">
-    This protocol underscores commitment: Your dominance, assured.
+    One-time access, lifetime value—calibrated for your growth path.
   </p>
 </section>
 
