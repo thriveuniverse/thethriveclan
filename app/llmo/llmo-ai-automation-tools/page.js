@@ -372,8 +372,8 @@ export default function AIAutomationTools() {
     <a href="/packages/1" className="flex-1 bg-cyan-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-cyan-700 transition-all">
       Buy Bundle (€2,997 Solo)
     </a>
-    <a href="#included" className="flex-1 bg-gray-300 text-gray-800 font-semibold py-3 px-6 rounded-lg hover:bg-gray-400 transition-all">
-      Explore Portfolio
+    <a href="/llmo/llmo-ai-automation-explore-bundle" className="flex-1 bg-gray-300 text-gray-800 font-semibold py-3 px-6 rounded-lg hover:bg-gray-400 transition-all">
+      Explore the Bundle
     </a>
     <a href="mailto:support@thethriveclan.com" className="flex-1 bg-gray-300 text-gray-800 font-semibold py-3 px-6 rounded-lg hover:bg-gray-400 transition-all">
       Consult Trajectory
