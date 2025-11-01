@@ -85,18 +85,16 @@ export default function AIAutomationTools() {
     </div>
 
     {/* FIXED: Floating CTA Pill - Now viewport-anchored, always floats on scroll */}
-    <div className="fixed bottom-4 right-4 z-50 md:bottom-6 md:right-6">
-      <a
-  href={`https://thethriveclan.gumroad.com/l/ai-automation-tools/checkout?quantity=1&variant_id=${INDIVIDUAL_VARIANT_ID}`} // FIXED: Gumroad cart for solo
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-flex items-center px-3 py-2 md:px-4 md:py-3 bg-cyan-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:bg-cyan-700 transition-all duration-300 text-xs md:text-sm backdrop-blur-sm"
-  aria-label="Buy AI Automation Bundle - Solo License"
->
-  Buy Bundle → 
-  <span className="ml-1 md:ml-2 text-xs opacity-90">(€2,997 Solo)</span>
-</a>
-    </div>
+   <div className="fixed bottom-4 right-4 z-50 md:bottom-6 md:right-6">
+  <a
+    href="/packages/1"  // FIXED: Internal to your Stripe checkout page (like footer)
+    className="inline-flex items-center px-3 py-2 md:px-4 md:py-3 bg-cyan-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:bg-cyan-700 transition-all duration-300 text-xs md:text-sm backdrop-blur-sm"
+    aria-label="Buy AI Automation Bundle - Solo License"
+  >
+    Buy Bundle → 
+    <span className="ml-1 md:ml-2 text-xs opacity-90">(€2,997 Solo)</span>
+  </a>
+</div>
       {/* Main Content */}
       <div className="min-h-screen bg-gray-50 py-16">
   <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
