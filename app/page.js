@@ -93,87 +93,59 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Three Main Sectors */}
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            {/* LLMO (now using cyan) */}
-            <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-              <div className="mb-6">
-                <div className="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
-                  </svg>
-                </div>
-                <h4 className="text-2xl font-bold mb-4 text-gray-800 text-left">
-                  Large Language Model Optimization (LLMO)
-                </h4>
-              </div>
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                Master the future of AI with our Large Language Model Optimization (LLMO) insights, unlocking performance tuning and investment trends in language technologies.
-              </p>
-              <div>
-                <Link
-                  href="/llmo"
-                  className="inline-block bg-cyan-600 text-white px-6 py-2 rounded-lg hover:bg-cyan-700 transition-colors duration-300 font-medium"
-                >
-                  Unlock AI Language Insights
-                </Link>
-              </div>
-            </div>
+          <section className="py-16 bg-gray-50">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 className="text-3xl font-bold text-center mb-12">Our Core Offerings</h1>
+    
+    {/* LLMO – Vertical, Prominent, Direct Link */}
+    <div className="mb-12">
+      <div className="bg-white p-8 rounded-lg shadow-md">
+        <h2 className="text-2xl font-semibold text-cyan-600 mb-4">Large Language Model Optimization (LLMO)</h2>
+        <p className="text-gray-700 mb-6">Master AI-driven search with strategies that reclaim time and boost leads—no tech overwhelm.</p>
+        <a href="/llmo/llmo-ai-automation-tools" className="inline-block bg-cyan-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-cyan-700 transition-all">
+          Explore AI Automation Tools →
+        </a>
+      </div>
+    </div>
 
-            {/* Sector SEO (now using slate grey) */}
-            <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-              <div className="mb-6">
-                <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                  </svg>
-                </div>
-                <h4 className="text-2xl font-bold mb-4 text-gray-800 text-left">
-                  Sector SEO Intelligence
-                </h4>
-              </div>
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                Comprehensive market intelligence reports across high-growth industries including AI automation tools, health and wellness specialization, sustainable eco-friendly products, electric vehicle accessories, remote work productivity solutions, and e-learning platforms. Each report combines in-depth keyword research, content strategy blueprints, competitive analysis, and actionable blog ideas designed to dominate search rankings and capture market share.
-              </p>
-              <div>
-                <Link
-                  href="/sector-seo"
-                  className="inline-block bg-slate-600 text-white px-6 py-2 rounded-lg hover:bg-slate-700 transition-colors duration-300 font-medium"
-                >
-                  IN DEVELOPMENT - 
-                    Explore Sector SEO Reports           
+    {/* SEO & Emerging Opportunities – Horizontal Previews */}
+    <div className="grid md:grid-cols-2 gap-6 mb-12">
+      <div className="bg-white p-6 rounded-lg shadow-md text-center">
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Sector SEO</h3>
+        <p className="text-gray-700 mb-4">Coming Q1 2026: Tailored SEO for niche dominance—subscribe for early access.</p>
+        <form action="/subscribe" method="post" className="space-y-2">
+          <input type="email" placeholder="Your email" className="w-full p-2 border rounded text-sm" required />
+          <button type="submit" className="w-full bg-gray-300 text-gray-800 py-2 rounded hover:bg-gray-400 transition-all text-sm">
+            Get Early Alerts
+          </button>
+        </form>
+      </div>
 
-                </Link>
-              </div>
-            </div>
+      <div className="bg-white p-6 rounded-lg shadow-md text-center">
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Emerging Opportunities</h3>
+        <p className="text-gray-700 mb-4">Coming Q2 2026: Spot tomorrow's trends—subscribe for beta invites.</p>
+        <form action="/subscribe" method="post" className="space-y-2">
+          <input type="email" placeholder="Your email" className="w-full p-2 border rounded text-sm" required />
+          <button type="submit" className="w-full bg-gray-300 text-gray-800 py-2 rounded hover:bg-gray-400 transition-all text-sm">
+            Get Early Alerts
+          </button>
+        </form>
+      </div>
+    </div>
 
-            {/* Emerging Opportunities (unchanged) */}
-            <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-              <div className="mb-6">
-                <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                  </svg>
-                </div>
-                <h4 className="text-2xl font-bold mb-4 text-gray-800 text-left">
-                  Emerging Opportunities
+    {/* When Ready: Expand Underneath – Uncomment & Add Content */}
+    {/* 
+    <section id="seo-expansion" className="mb-12 bg-white p-6 rounded-lg shadow-sm">
+      <!-- SEO Full Content Here -->
+    </section>
+    <section id="geo-expansion" className="mb-12 bg-white p-6 rounded-lg shadow-sm">
+      <!-- Emerging Opportunities Full Content Here -->
+    </section>
+    */}
+  </div>
+</section>
 
-                </h4>
-              </div>
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                Identifying and analyzing breakthrough investment trends before they become mainstream. We track institutional pension fund investment patterns, hydrogen fuel cell vehicle (FCEV) market developments, drone technology innovations, and other disruptive technologies that are reshaping entire industries. This research-driven approach helps investors and business leaders identify lucrative opportunities in emerging sectors while understanding the underlying market forces driving growth.
-              </p>
-              <div>
-                <Link
-                  href="/emerging-opportunities"
-                  className="inline-block bg-emerald-600 text-white px-6 py-2 rounded-lg hover:bg-emerald-700 transition-colors duration-300 font-medium"
-                >
-                  IN DEVELOPMENT - 
-                  Discover Emerging Opportunities
-                </Link>
-              </div>
-            </div>
-          </div>
+
 
           {/* Why Choose Section */}
           <div className="bg-gray-800 rounded-xl p-6 text-white">
