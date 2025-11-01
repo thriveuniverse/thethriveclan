@@ -95,7 +95,7 @@ export default function Home() {
 
           <section className="py-16 bg-gray-50">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h1 className="text-3xl font-bold text-center mb-12">Our Core Offerings</h1>
+<h1 className="text-3xl font-bold text-center mb-12">Get Started with LLMO: Lead the AI Edge</h1>
     
     {/* LLMO – Vertical, Prominent, Direct Link */}
     <div className="mb-12">
