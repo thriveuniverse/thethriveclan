@@ -52,7 +52,7 @@ export default function BundleExplore() {
       <ProductSchema />  {/* RENDERED: Now active in <head> */}
 
       {/* Hero Section with Parallax */}
-<div className="relative w-full h-72 md:h-96 overflow-hidden">  {/* Bumped h-72 for mobile fit */}
+<div className="relative w-full h-72 md:h-96 overflow-hidden">
   <div
     className="absolute inset-0 parallax"
     style={{
@@ -75,7 +75,7 @@ export default function BundleExplore() {
         What matters—and the consequences of skipping it
       </h2>
       <p className="text-lg md:text-xl mb-6 text-gray-200 leading-relaxed">
-       No tech jargon, just real impact to reclaim time and boost leads.
+        No tech jargon, just real impact to reclaim time and boost leads.
       </p>
     </div>
   </div>
