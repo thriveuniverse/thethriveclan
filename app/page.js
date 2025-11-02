@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "The Thrive Clan | Future-Proof Your Business with Strategic Intelligence",
+  title: "The Thrive Clan | Future-Proof Your Business with AI Strategic Intelligence",
   description: "Discover comprehensive Sector SEO intelligence reports, Large Language Model Optimization (LLMO), and emerging investment opportunities. Expert analysis across AI, health & wellness, sustainable products, EV accessories, and breakthrough technologies.",
   keywords: "sector SEO, market intelligence, emerging opportunities, LLMO, AI automation, health wellness, sustainable products, EV accessories, remote work tools, e-learning, hydrogen fuel cells, drone technology, investment analysis",
 };
@@ -168,9 +168,9 @@ export default function Home() {
           {/* Why Choose Section */}
           <div className="bg-gray-800 rounded-xl p-6 text-white">
             <h3 className="text-3xl font-bold mb-6">Why Choose The Thrive Clan?</h3>
-            <p className="text-lg leading-relaxed max-w-4xl">
-              Our unique combination of LLMO strategies, SEO market intelligence, and emerging opportunity analysis gives you a comprehensive view of both current market dynamics and future growth potential. We don't just provide data—we deliver actionable insights that translate directly into business growth, competitive advantage, and investment success. Join The Thrive Clan community and gain access to the strategic intelligence that separates market leaders from followers.
-            </p>
+          <p className="text-lg leading-relaxed max-w-4xl">
+  Our unique combination of LLMO strategies, SEO market intelligence, and emerging opportunity analysis gives you a comprehensive view of both current market dynamics and future growth potential. We don't just provide data—we deliver actionable insights that translate directly into business growth, competitive advantage, and investment success. Join The Thrive Clan community—where 500+ leaders are seeing 3-5x visibility gains—and gain access to the strategic intelligence that separates market leaders from followers. One-time investment from €2,997, lifetime value.
+</p>
           </div>
         </div>
       </div>
