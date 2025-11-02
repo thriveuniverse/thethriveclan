@@ -8,7 +8,7 @@ import { getProductById } from "../../lib/products"; // Relative path to app/lib
 
 // Edit these as you add more packages:
 type ProductId = "1";
-type OptionId = "solo" | "team" | "agency";
+type OptionId = "base" | "team" | "agency";
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
 
@@ -17,7 +17,7 @@ export default function PackagePage({ params }: { params: { id: ProductId } }) {
   const product = getProductById(productId);
 
   const [email, setEmail] = useState("");
-  const [customerType, setCustomerType] = useState<OptionId>("solo");
+  const [customerType, setCustomerType] = useState<OptionId>("base");
   const [sessionId, setSessionId] = useState("");
   const [error, setError] = useState("");
 

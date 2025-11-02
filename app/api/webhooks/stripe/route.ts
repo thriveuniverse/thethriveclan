@@ -52,8 +52,8 @@ export async function POST(request: Request) {
     const session = event.data.object as Stripe.Checkout.Session;
     const email = session.customer_email;
     const productId = session.metadata?.productId || 'unknown';
-    const customerType = session.metadata?.customerType || 'solo';
-    const maxDownloads = customerType === 'solo' ? 3 : customerType === 'team' ? 5 : Infinity;
+    const customerType = session.metadata?.customerType || 'base';
+    const maxDownloads = customerType === 'base' ? 3 : customerType === 'team' ? 5 : Infinity;
     const windowDays = 7; // Time window for retries/devices
 
     console.log('Session details:', { email, productId, customerType }); // Log session

@@ -89,10 +89,10 @@ export default function AIAutomationTools() {
   <a
     href="/packages/1"  // FIXED: Internal to your Stripe checkout page (like footer)
     className="inline-flex items-center px-3 py-2 md:px-4 md:py-3 bg-cyan-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:bg-cyan-700 transition-all duration-300 text-xs md:text-sm backdrop-blur-sm"
-    aria-label="Buy AI Automation Bundle - Solo License"
+    aria-label="Buy AI Automation Bundle - Base License"
   >
     Buy Bundle → 
-    <span className="ml-1 md:ml-2 text-xs opacity-90">(€2,997 Solo)</span>
+    <span className="ml-1 md:ml-2 text-xs opacity-90">(€1,997 Base)</span>
   </a>
 </div>
       {/* Main Content */}
@@ -281,25 +281,31 @@ export default function AIAutomationTools() {
         </tr>
       </thead>
       <tbody className="bg-white divide-y divide-gray-200">
-        <tr>
-          <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Solo</td>
-          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Individual or small team automation</td>
-          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-right">€2,997</td>
-          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-right">4-6 months (60% lead boost)</td>
-        </tr>
-        <tr>
-          <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Team</td>
-          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Up to 5 users collaborating</td>
-          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-right">€4,997</td>
-          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-right">3-5 months (2x campaign speed)</td>
-        </tr>
-        <tr>
-          <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Agency</td>
-          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Client deployment at scale</td>
-          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-right">€7,997</td>
-          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-right">2-4 months (25-35% cost savings)</td>
-        </tr>
-      </tbody>
+  <tr>
+    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Base</td>
+    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Individual automation</td>
+    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-right">€1,997</td>
+    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-right">4-6 months (60% lead boost)</td>
+  </tr>
+  <tr>
+    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Pro</td>
+    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Small team collaboration</td>
+    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-right">€2,997</td>
+    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-right">3-5 months (2x velocity)</td>
+  </tr>
+  <tr>
+    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Team</td>
+    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Up to 5 users collaborating</td>
+    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-right">€4,997</td>
+    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-right">3-5 months (2x campaign speed)</td>
+  </tr>
+  <tr>
+    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Agency</td>
+    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Client deployment at scale</td>
+    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-right">€7,997</td>
+    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-right">2-4 months (25-35% cost savings)</td>
+  </tr>
+</tbody>
     </table>
   </div>  
   
@@ -368,7 +374,7 @@ export default function AIAutomationTools() {
   <h2 className="text-2xl font-semibold text-cyan-700 mb-4">Initiate Your Vector: From Assessment to Acceleration</h2>
   <div className="flex flex-col sm:flex-row gap-4 justify-center">
     <a href="/packages/1" className="flex-1 bg-cyan-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-cyan-700 transition-all">
-      Buy Bundle (€2,997 Solo)
+      Buy Bundle (€1,997 Base)
     </a>
     <a href="/llmo/llmo-ai-automation-explore-bundle" className="flex-1 bg-gray-300 text-gray-800 font-semibold py-3 px-6 rounded-lg hover:bg-gray-400 transition-all">
       Explore the Bundle

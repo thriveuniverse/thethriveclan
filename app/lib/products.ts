@@ -25,8 +25,9 @@ export const products: Product[] = [
     img: "/images/ai-automation.jpg",
     filePath: "zips/ai-and-automation-tools-final.zip",
     options: {
-      solo: { name: "Solo License", amount: 299700 },
-      team: { name: "Team License", amount: 499700 },
+      base: { name: "Base License", amount: 199700 },
+      pro : { name: "Pro License", amount: 299700 },
+      business: { name: "Business License", amount: 499700 },
       agency: { name: "Agency License", amount: 799700 },
     },
   },

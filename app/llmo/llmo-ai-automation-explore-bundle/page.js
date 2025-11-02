@@ -87,10 +87,10 @@ export default function BundleExplore() {
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center px-3 py-2 md:px-4 md:py-3 bg-cyan-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:bg-cyan-700 transition-all duration-300 text-xs md:text-sm backdrop-blur-sm"
-          aria-label="Buy AI Automation Bundle - Solo License"
+          aria-label="Buy AI Automation Bundle - Base License"
         >
           Buy Bundle → 
-          <span className="ml-1 md:ml-2 text-xs opacity-90">(€2,997 Solo)</span>
+          <span className="ml-1 md:ml-2 text-xs opacity-90">(€1,997 Base)</span>
         </a>
       </div>
 
@@ -154,7 +154,7 @@ export default function BundleExplore() {
             <h2 className="text-2xl font-semibold text-cyan-700 mb-4">Ready to Arm Up?</h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/packages/1" className="flex-1 bg-cyan-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-cyan-700 transition-all">
-                Buy Bundle (€2,997 Solo)
+                Buy Bundle (€1,997 Base)
               </a>
               <a href="/llmo/ai-automation-tools" className="flex-1 bg-gray-300 text-gray-800 font-semibold py-3 px-6 rounded-lg hover:bg-gray-400 transition-all">
                 Back to Journey
