@@ -73,7 +73,7 @@ export default function Home() {
                 Future-Proof Your Business
               </h1>
               <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-gray-200">
-                with Strategic Intelligence
+                with AI Strategic Intelligence
               </h2>
               <p className="text-xl md:text-lg mb-6 text-gray-300 leading-relaxed">
                 Welcome to The Thrive Clan, where expert insights drive business growth in a rapidly evolving digital world.
@@ -83,6 +83,18 @@ export default function Home() {
         </div>
 
         {/* Main Content Sections */}
+<section className="bg-white py-12 mb-12 rounded-lg shadow-sm">
+  <div className="max-w-4xl mx-auto px-4 text-center">
+    <h3 className="text-2xl font-semibold text-cyan-600 mb-4">Own Your AI Edge—Don't Lease It</h3>
+    <p className="text-lg text-gray-700 leading-relaxed mb-6">
+      In the AI boom, most tools lock you into monthly subscriptions—paying forever for tactical tweaks that keep you chasing. We take a different path: One-time investment in strategic playbooks that launch you forward, giving you control to build, grow, and defend without ongoing fees. Reclaim 50% of your time for innovation and clients, while competitors stay tethered to the lease.
+    </p>
+    <a href="/llmo/llmo-ai-automation-tools" className="inline-block bg-cyan-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-cyan-700 transition-all">
+      Start Owning Your Future →
+    </a>
+  </div>
+</section>
+
         <div className="max-w-6xl mx-auto px-4 py-16">
           <div className="mb-12">
             <h3 className="text-3xl font-bold mb-6 text-gray-800">
