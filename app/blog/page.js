@@ -1,4 +1,3 @@
-// /app/blog/page.js (List Page - Server Component)
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -6,7 +5,7 @@ import Link from 'next/link';
 
 const postsDirectory = path.join(process.cwd(), 'content/posts');
 
-export default async function BlogPage() {
+export default function BlogPage() {
   const filenames = fs.readdirSync(postsDirectory);
   const posts = filenames.map((filename) => {
     const filePath = path.join(postsDirectory, filename);
@@ -15,7 +14,7 @@ export default async function BlogPage() {
     return {
       slug: filename.replace(/\.md$/, ''),
       title: data.title,
-      date: data.date,
+      date: new Date(data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
       description: data.description,
     };
   }).sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -31,7 +30,7 @@ export default async function BlogPage() {
                 {post.title}
               </Link>
               <p className="text-gray-600 mt-2">{post.description}</p>
-              <p className="text-sm text-gray-500 mt-1">{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+              <p className="text-sm text-gray-500 mt-1">{post.date}</p>
             </li>
           ))}
         </ul>
