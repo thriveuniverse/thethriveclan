@@ -215,7 +215,7 @@ export default function AIAutomationTools() {
     These deliverables—proprietary and phased—transform diagnostics into dominance, with quarterly audits ensuring sustained 15-20% trajectories.
   </p>
 </section>
-  <section className="mb-12 bg-white p-6 rounded-lg shadow-sm" id="reviews">
+ <section className="mb-12 bg-white p-6 rounded-lg shadow-sm" id="reviews">
   <h2 className="text-2xl font-semibold text-cyan-600 mb-4">Validation Framework: Executive Assessments & Implementation Outcomes</h2>
   <p className="text-base text-gray-700 leading-relaxed mb-6">
     Independent evaluations confirm the bundle's efficacy, with aggregate scores reflecting 25-35% attribution to revenue metrics within 12 months—aligned to Forrester benchmarks for LLMO initiatives.
@@ -224,13 +224,13 @@ export default function AIAutomationTools() {
   <div className="space-y-4">
     <details className="border border-gray-200 rounded-lg p-4">
       <summary className="font-semibold text-cyan-600 cursor-pointer">Strategic Leadership Score: 9/10 (Market Expansion Alignment)</summary>
-      <div className="text-base text-gray-700 mt-3 ml-4">
-        <p className="mb-2">"Clear, data-driven instrumentation for AI niche dominance—delivered 28% Q1 lead uplift via playbook deployment." (Agency Principal, 2025 Beta)</p>
-        <blockquote className="border-l-4 border-cyan-500 pl-3 italic text-gray-600 mb-4 text-sm">
+      <div className="text-sm text-gray-700 mt-3 ml-4">
+        <p>"Clear, data-driven... 28% Q1 lead uplift." (Agency Principal, 2025 Beta)</p>
+        <blockquote className="border-l-4 border-cyan-500 pl-3 italic text-gray-600 mt-2 mb-4 text-sm">
           "78% of enterprises plan to implement AI automation solutions within the next 24 months, creating massive demand for information... that answer engines increasingly provide." — From Executive Summary Market Analysis
         </blockquote>
         <blockquote className="border-l-4 border-cyan-500 pl-3 italic text-gray-600 mb-4 text-sm">
-          "A genuinely 'ship-this-week' bundle... with 100+ assets across PDFs, DOCX, XLSX, MD, and HTML... Time to value: You can go from zero to a working plan in a day." — Review: AI & Automation Tools
+          "A genuinely 'ship-this-week' bundle... with 100+ assets... Time to value: Zero to plan in a day." — Review: AI & Automation Tools
         </blockquote>
         <ul className="list-disc list-inside mt-2 space-y-1">
           <li>Key Lever: 60-80% qualified traffic from citation protocols.</li>
@@ -240,9 +240,9 @@ export default function AIAutomationTools() {
     
     <details className="border border-gray-200 rounded-lg p-4">
       <summary className="font-semibold text-cyan-600 cursor-pointer">Operational Execution Score: 8/10 (Resource Reallocation)</summary>
-      <div className="text-base text-gray-700 mt-3 ml-4">
-        <p className="mb-2">"Technically robust, reclaiming 40 hours/month—manual steps noted, but phased audits mitigate." (Implementation Lead, 2025 Beta)</p>
-        <blockquote className="border-l-4 border-cyan-500 pl-3 italic text-gray-600 mb-4 text-sm">
+      <div className="text-sm text-gray-700 mt-3 ml-4">
+        <p>"Technically robust, reclaiming 40 hours/month—manual steps noted, but phased audits mitigate." (Implementation Lead, 2025 Beta)</p>
+        <blockquote className="border-l-4 border-cyan-500 pl-3 italic text-gray-600 mt-2 mb-4 text-sm">
           "Organizations implementing comprehensive LLMO strategies report 3-5x improvement in organic visibility, 60-80% increase in qualified lead generation." — From Executive Summary ROI Framework
         </blockquote>
         <ul className="list-disc list-inside mt-2 space-y-1">
@@ -381,7 +381,25 @@ export default function AIAutomationTools() {
     For refined alignment, consult our sector analyses via the blog or direct inquiry—facilitating bespoke trajectory mapping (support@thethriveclan.com).
   </p>
 </section>
-
+{/* Trust Nudge Above Buttons */}
+<div className="text-center mb-6">
+  <div className="flex items-center justify-center mb-2">
+    <svg className="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-1.512a1 1 0 00-1.175 0l-2.8 1.512c-.785.57-1.84-.197-1.54-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+    </svg>
+    <svg className="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-1.512a1 1 0 00-1.175 0l-2.8 1.512c-.785.57-1.84-.197-1.54-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+    </svg>
+    <svg className="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-1.512a1 1 0 00-1.175 0l-2.8 1.512c-.785.57-1.84-.197-1.54-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+    </svg>
+    <svg className="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-1.512a1 1 0 00-1.175 0l-2.8 1.512c-.785.57-1.84-.197-1.54-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+    </svg>
+    <span className="text-sm text-gray-600">4.7/5 from betas</span>
+  </div>
+  <p className="text-sm text-gray-600">Tested by founders and agencies: "Strategy that moves the needle—28% lead uplift in Q1."</p>
+</div>
 <section className="text-center bg-cyan-50 p-8 rounded-lg">
   <h2 className="text-2xl font-semibold text-cyan-700 mb-4">Initiate Your Vector: From Assessment to Acceleration</h2>
   <div className="flex flex-col sm:flex-row gap-4 justify-center">
