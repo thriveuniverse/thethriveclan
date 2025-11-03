@@ -215,20 +215,22 @@ export default function AIAutomationTools() {
     These deliverables—proprietary and phased—transform diagnostics into dominance, with quarterly audits ensuring sustained 15-20% trajectories.
   </p>
 </section>
-          
-<section className="mb-12 bg-white p-6 rounded-lg shadow-sm" id="reviews">
+  <section className="mb-12 bg-white p-6 rounded-lg shadow-sm" id="reviews">
   <h2 className="text-2xl font-semibold text-cyan-600 mb-4">Validation Framework: Executive Assessments & Implementation Outcomes</h2>
   <p className="text-base text-gray-700 leading-relaxed mb-6">
-    Independent evaluations confirm the bundle's efficacy, with aggregate scores reflecting 25-35% attribution to revenue vectors within 12 months—aligned to Forrester benchmarks for LLMO initiatives.
+    Independent evaluations confirm the bundle's efficacy, with aggregate scores reflecting 25-35% attribution to revenue metrics within 12 months—aligned to Forrester benchmarks for LLMO initiatives.
   </p>
   
   <div className="space-y-4">
     <details className="border border-gray-200 rounded-lg p-4">
       <summary className="font-semibold text-cyan-600 cursor-pointer">Strategic Leadership Score: 9/10 (Market Expansion Alignment)</summary>
-      <div className="text-sm text-gray-700 mt-3 ml-4">
-        <p>"Clear, data-driven instrumentation for AI niche dominance—delivered 28% Q1 lead uplift via playbook deployment." (Agency Principal, 2025 Beta)</p>
-        <blockquote className="border-l-4 border-cyan-500 pl-3 italic text-gray-600 mt-2">
+      <div className="text-base text-gray-700 mt-3 ml-4">
+        <p className="mb-2">"Clear, data-driven instrumentation for AI niche dominance—delivered 28% Q1 lead uplift via playbook deployment." (Agency Principal, 2025 Beta)</p>
+        <blockquote className="border-l-4 border-cyan-500 pl-3 italic text-gray-600 mb-4 text-sm">
           "78% of enterprises plan to implement AI automation solutions within the next 24 months, creating massive demand for information... that answer engines increasingly provide." — From Executive Summary Market Analysis
+        </blockquote>
+        <blockquote className="border-l-4 border-cyan-500 pl-3 italic text-gray-600 mb-4 text-sm">
+          "A genuinely 'ship-this-week' bundle... with 100+ assets across PDFs, DOCX, XLSX, MD, and HTML... Time to value: You can go from zero to a working plan in a day." — Review: AI & Automation Tools
         </blockquote>
         <ul className="list-disc list-inside mt-2 space-y-1">
           <li>Key Lever: 60-80% qualified traffic from citation protocols.</li>
@@ -238,9 +240,9 @@ export default function AIAutomationTools() {
     
     <details className="border border-gray-200 rounded-lg p-4">
       <summary className="font-semibold text-cyan-600 cursor-pointer">Operational Execution Score: 8/10 (Resource Reallocation)</summary>
-      <div className="text-sm text-gray-700 mt-3 ml-4">
-        <p>"Technically robust, reclaiming 40 hours/month—manual steps noted, but phased audits mitigate." (Implementation Lead, 2025 Beta)</p>
-        <blockquote className="border-l-4 border-cyan-500 pl-3 italic text-gray-600 mt-2">
+      <div className="text-base text-gray-700 mt-3 ml-4">
+        <p className="mb-2">"Technically robust, reclaiming 40 hours/month—manual steps noted, but phased audits mitigate." (Implementation Lead, 2025 Beta)</p>
+        <blockquote className="border-l-4 border-cyan-500 pl-3 italic text-gray-600 mb-4 text-sm">
           "Organizations implementing comprehensive LLMO strategies report 3-5x improvement in organic visibility, 60-80% increase in qualified lead generation." — From Executive Summary ROI Framework
         </blockquote>
         <ul className="list-disc list-inside mt-2 space-y-1">
@@ -307,6 +309,16 @@ export default function AIAutomationTools() {
   </tr>
 </tbody>
     </table>
+    <div className="mt-6 text-center">
+  <Image
+    src="/images/roi-timeline.jpg"  // Upload a simple 4-6 month timeline graphic
+    alt="ROI Timeline: 60% Lead Boost in 3 Months, 3-5x Visibility by Month 6"
+    width={600}
+    height={200}
+    className="rounded-lg shadow-md"
+  />
+  <p className="text-sm text-gray-600 mt-2">Typical ROI trajectory from beta implementations.</p>
+</div>
   </div>  
   
   <p className="text-base text-gray-700 italic">
