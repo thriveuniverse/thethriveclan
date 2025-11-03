@@ -13,7 +13,7 @@ export const Post = defineDocumentType(() => ({
   computedFields: {
     slug: {
       type: 'string',
-      resolve: (post) => post._raw.sourceFileName.replace(/\.md$/, ''),
+      resolve: (post) => post._raw.flattenedPath, // More robust for nested folders; fallback to yours if needed
     },
   },
 }));
@@ -21,5 +21,5 @@ export const Post = defineDocumentType(() => ({
 export default makeSource({
   contentDirPath: 'content',
   documentTypes: [Post],
-    disableImportAliasWarning: true  
+  disableImportAliasWarning: true, // Keep your alias warning disable
 });

@@ -13,7 +13,8 @@ var Post = defineDocumentType(() => ({
   computedFields: {
     slug: {
       type: "string",
-      resolve: (post) => post._raw.sourceFileName.replace(/\.md$/, "")
+      resolve: (post) => post._raw.flattenedPath
+      // More robust for nested folders; fallback to yours if needed
     }
   }
 }));
@@ -21,9 +22,10 @@ var contentlayer_config_default = makeSource({
   contentDirPath: "content",
   documentTypes: [Post],
   disableImportAliasWarning: true
+  // Keep your alias warning disable
 });
 export {
   Post,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-6VSSVJEG.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-ZCVSRTPP.mjs.map
