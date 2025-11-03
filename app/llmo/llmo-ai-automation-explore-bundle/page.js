@@ -11,7 +11,7 @@ export const metadata = {
   },
   openGraph: {
     title: "The Thrive Clan | Exploring AI Automation Tools Bundle",
-    description: "Discover the bundle's core assets: 150+ keywords, 30/60/90 playbooks, ROI calculators—your path to dominating the $3.68T AI boom.",
+    description: "Discover the bundle's core assets: 150+ keywords, 30/60/90 playbooks, ROI calculators—your path to dominating the $3.68T AI AI boom.",
     images: ["/images/ai-automation.jpg"],
     url: "https://thethriveclan.com/llmo/ai-automation-explore-bundle",
   },
@@ -49,37 +49,38 @@ export default function BundleExplore() {
 
   return (
     <>
-      <ProductSchema />  {/* RENDERED: Now active in <head> */}
+      <ProductSchema />
 
       {/* Hero Section with Parallax */}
-<div className="relative w-full h-72 md:h-96 overflow-hidden">
-  <div
-    className="absolute inset-0 parallax"
-    style={{
-      backgroundImage: "url('/images/ai-automation-hero.jpg')",
-      backgroundPosition: "center",
-      backgroundRepeat: "no-repeat",
-      backgroundSize: "cover",
-      backgroundAttachment: "fixed",
-    }}
-    aria-hidden="true"
-  >
-    <div className="hero-overlay bg-black bg-opacity-50"></div>
-  </div>
-  <div className="relative z-10 flex items-center justify-center h-full">
-    <div className="text-center max-w-4xl mx-auto px-4 hero-text">
-      <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-        Inside the Bundle: Arsenal for AI Growth
-      </h1>
-      <h2 className="text-xl md:text-2xl font-semibold mb-6 text-gray-100">
-        What matters—and the consequences of skipping it
-      </h2>
-      <p className="text-lg md:text-xl mb-6 text-gray-200 leading-relaxed">
-        No tech jargon, just real impact to reclaim time and boost leads.
-      </p>
-    </div>
-  </div>
-</div>
+      <div className="relative w-full h-72 md:h-96 overflow-hidden">
+        <div
+          className="absolute inset-0 parallax"
+          style={{
+            backgroundImage: "url('/images/ai-automation-hero.jpg')",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundAttachment: "fixed",
+          }}
+          aria-hidden="true"
+        >
+          <div className="hero-overlay bg-black bg-opacity-50"></div>
+        </div>
+        <div className="relative z-10 flex items-center justify-center h-full">
+          <div className="text-center max-w-4xl mx-auto px-4 hero-text">
+            <h1 className="text-4xl md:text-5xl font-bold mb-2 text-white">
+              Inside the Bundle: Arsenal for AI Growth
+            </h1>
+            <h2 className="text-xl md:text-2xl font-semibold mb-2 text-gray-100">
+              What matters—and the consequences of skipping it
+            </h2>
+            <p className="text-lg md:text-xl mb-6 text-gray-200 leading-relaxed">
+              No tech jargon, just real impact to reclaim time and boost leads.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Floating CTA Pill */}
       <div className="fixed bottom-4 right-4 z-50 md:bottom-6 md:right-6">
         <a
@@ -100,9 +101,12 @@ export default function BundleExplore() {
           {/* Section 1: Keyword Dossiers */}
           <section className="mb-12 bg-white p-6 rounded-lg shadow-sm">
             <h2 className="text-2xl font-semibold text-cyan-600 mb-4">Keyword Dossiers: Your Search Smarts on Demand</h2>
-            <p className="text-base text-gray-700 leading-relaxed mb-6">
-              These 150+ ready spreadsheets aren't random words—they're your map to searches that drive real business (like "AI workflow tools for teams"). Why useful? They cut guesswork, targeting high-value queries that bring in 60-80% more qualified leads without wasting ad spend.
-            </p>
+            <div className="text-base text-gray-700 leading-relaxed mb-6">
+              <p>These 150+ ready spreadsheets aren't random words—they're your map to searches that drive real business (like "AI workflow tools for teams"). Why useful? They cut guesswork, targeting high-value queries that bring in 60-80% more qualified leads without wasting ad spend.</p>
+              <blockquote className="border-l-4 border-cyan-500 pl-3 italic text-gray-600 mt-2 mb-4 text-sm">
+                "The package is a meticulously crafted, all-in-one solution... with over 120 strategically researched keywords with search volume, commercial intent analysis, and a structured URL map for pillar and cluster pages." — Product Review
+              </blockquote>
+            </div>
             <ul className="space-y-2 text-sm text-gray-700 mb-6">
               <li><strong>Without them:</strong> You chase low-hanging searches, burning 25% of your budget on traffic that ghosts—leaving competitors owning the high-ROI keywords.</li>
               <li><strong>Without them:</strong> Content feels scattered, missing the buyer journey—resulting in 22% lower conversion from mismatched messaging.</li>
