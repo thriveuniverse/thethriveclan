@@ -1,3 +1,4 @@
+// /app/blog/page.js (List Page - Server Component)
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -5,7 +6,7 @@ import Link from 'next/link';
 
 const postsDirectory = path.join(process.cwd(), 'content/posts');
 
-export default function BlogPage() {
+export default async function BlogPage() {
   const filenames = fs.readdirSync(postsDirectory);
   const posts = filenames.map((filename) => {
     const filePath = path.join(postsDirectory, filename);
@@ -25,8 +26,8 @@ export default function BlogPage() {
         <h1 className="text-3xl font-bold mb-6 text-gray-800">Blog Posts</h1>
         <ul className="space-y-6">
           {posts.map((post) => (
-<li key={post.slug} className="bg-white p-6 rounded-lg shadow-sm border-0">
-                <Link href={`/blog/${post.slug}`} className="text-2xl font-bold text-cyan-600 hover:text-cyan-700">
+            <li key={post.slug} className="bg-white p-6 rounded-lg shadow-sm">
+              <Link href={`/blog/${post.slug}`} className="text-2xl font-bold text-cyan-600 hover:text-cyan-700">
                 {post.title}
               </Link>
               <p className="text-gray-600 mt-2">{post.description}</p>
