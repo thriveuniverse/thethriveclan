@@ -1,4 +1,3 @@
-// /app/blog/[slug]/page.js (Individual Post - App Router Compatible)
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
