@@ -140,36 +140,57 @@ export default function BundleExplore() {
             </ul>
           </section>
 
-          {/* Section 4: Implementation Guides */}
-          <section className="mb-12 bg-white p-6 rounded-lg shadow-sm">
-            <h2 className="text-2xl font-semibold text-cyan-600 mb-4">Implementation Guides: From Setup to Scale, No Surprises</h2>
-            <p className="text-base text-gray-700 leading-relaxed mb-6">
-              Video walkthroughs and checklists for "plug in and go"—covering everything from keyword import to video deployment. Why useful? They make AI feel accessible, saving 40 hours/month on trial-and-error so your team focuses on clients and ideas.
-            </p>
-            <ul className="space-y-2 text-sm text-gray-700 mb-6">
-              <li><strong>Without them:</strong> Setup drags 2-3 weeks, with 28% abandonment from "too hard"—costing 18-25% in lost momentum.</li>
-              <li><strong>Without them:</strong> Inconsistent rollout erodes 30% efficiency, weakening client relationships and NPS by 15-20 points.</li>
-              <li><strong>Without them:</strong> No simple benchmarks mean guessing on progress, capping at 15% growth while others hit 25-35% ROI.</li>
-            </ul>
-          </section>
+            {/* Section 4: Implementation Guides */}
+            <section className="mb-12 bg-white p-6 rounded-lg shadow-sm">
+              <h2 className="text-2xl font-semibold text-cyan-600 mb-4">Implementation Guides: From Setup to Scale, No Surprises</h2>
+              <p className="text-base text-gray-700 leading-relaxed mb-6">
+                Video walkthroughs and checklists for "plug in and go"—covering everything from keyword import to video deployment. Why useful? They make AI feel accessible, saving 40 hours/month on trial-and-error so your team focuses on clients and ideas.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-700 mb-6">
+                <li><strong>Without them:</strong> Setup drags 2-3 weeks, with 28% abandonment from "too hard"—costing 18-25% in lost momentum.</li>
+                <li><strong>Without them:</strong> Inconsistent rollout erodes 30% efficiency, weakening client relationships and NPS by 15-20 points.</li>
+                <li><strong>Without them:</strong> No simple benchmarks mean guessing on progress, capping at 15% growth while others hit 25-35% ROI.</li>
+              </ul>
+            </section>
 
-          {/* Footer – Mirror Main */}
-          <section className="text-center bg-cyan-50 p-8 rounded-lg mt-12">
-            <h2 className="text-2xl font-semibold text-cyan-700 mb-4">Ready to Arm Up?</h2>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/packages/1" className="flex-1 bg-cyan-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-cyan-700 transition-all">
-                Buy Bundle (€1,997 Base)
-              </a>
-              <a href="/llmo/ai-automation-tools" className="flex-1 bg-gray-300 text-gray-800 font-semibold py-3 px-6 rounded-lg hover:bg-gray-400 transition-all">
-                Back to Journey
-              </a>
-              <a href="mailto:support@thethriveclan.com" className="flex-1 bg-gray-300 text-gray-800 font-semibold py-3 px-6 rounded-lg hover:bg-gray-400 transition-all">
-                Ask Us Anything
-              </a>
+{/* Trust Nudge Above Buttons */}
+          <div className="text-center mb-6">
+            <div className="flex items-center justify-center mb-2">
+              <svg className="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-1.512a1 1 0 00-1.175 0l-2.8 1.512c-.785.57-1.84-.197-1.54-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+              </svg>
+              <svg className="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-1.512a1 1 0 00-1.175 0l-2.8 1.512c-.785.57-1.84-.197-1.54-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+              </svg>
+              <svg className="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-1.512a1 1 0 00-1.175 0l-2.8 1.512c-.785.57-1.84-.197-1.54-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+              </svg>
+              <svg className="w-5 h-5 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-1.512a1 1 0 00-1.175 0l-2.8 1.512c-.785.57-1.84-.197-1.54-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+              </svg>
+              <span className="text-sm text-gray-600">4.7/5 from betas</span>
             </div>
-          </section>
+            <p className="text-sm text-gray-600">Tested by founders and agencies: "Strategy that moves the needle—28% lead uplift in Q1."</p>
+          </div>
+
+
+            {/* Footer – Mirror Main */}
+            <section className="text-center bg-cyan-50 p-8 rounded-lg mt-12">
+              <h2 className="text-2xl font-semibold text-cyan-700 mb-4">Ready to Arm Up?</h2>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/packages/1" className="flex-1 bg-cyan-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-cyan-700 transition-all">
+                  Buy Bundle (€1,997 Base)
+                </a>
+                <a href="/llmo/ai-automation-tools" className="flex-1 bg-gray-300 text-gray-800 font-semibold py-3 px-6 rounded-lg hover:bg-gray-400 transition-all">
+                  Back to Journey
+                </a>
+                <a href="mailto:support@thethriveclan.com" className="flex-1 bg-gray-300 text-gray-800 font-semibold py-3 px-6 rounded-lg hover:bg-gray-400 transition-all">
+                  Ask Us Anything
+                </a>
+              </div>
+            </section>
+          </div>
         </div>
-      </div>
-    </>
-  );
-}
+      </>
+    );
+  }
