@@ -11,30 +11,36 @@ export default function BlogPage() {
     const filePath = path.join(postsDirectory, filename);
     const fileContents = fs.readFileSync(filePath, 'utf8');
     const { data } = matter(fileContents);
+
+    // Defensive date handling:
+    let formattedDate = "No date found";
+    if (data.date) {
+      // No need to append T00:00:00Z, ISO date string is fine
+      const parsed = new Date(data.date);
+      formattedDate = isNaN(parsed) ? "Invalid date" :
+        parsed.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    }
+
     return {
       slug: filename.replace(/\.md$/, ''),
-    title: data.title,
-    date: new Date(data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),  // Format here
-    description: data.description,
-  };
+      title: data.title,
+      date: formattedDate,
+      description: data.description,
+    };
   }).sort((a, b) => new Date(b.date) - new Date(a.date));
 
   return (
-    <div className="min-h-screen bg-gray-50 py-16">
-      <div className="max-w-4xl mx-auto px-4">
-        <h1 className="text-3xl font-bold mb-6 text-gray-800">Blog Posts</h1>
-        <ul className="space-y-6">
-          {posts.map((post) => (
-            <li key={post.slug} className="bg-white p-6 rounded-lg shadow-sm">
-              <Link href={`/blog/${post.slug}`} className="text-2xl font-bold text-cyan-600 hover:text-cyan-700">
-                {post.title}
-              </Link>
-              <p className="text-gray-600 mt-2">{post.description}</p>
-              <p className="text-sm text-gray-500 mt-1">{post.date}</p>
-            </li>
-          ))}
-        </ul>
-      </div>
+    <div>
+      <h1>Blog Posts</h1>
+      <ul>
+        {posts.map(post => (
+          <li key={post.slug}>
+            <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+            <p>{post.description}</p>
+            <p>{post.date}</p>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
