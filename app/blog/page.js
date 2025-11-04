@@ -13,10 +13,10 @@ export default function BlogPage() {
     const { data } = matter(fileContents);
     return {
       slug: filename.replace(/\.md$/, ''),
-      title: data.title,
-      date: new Date(data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
-      description: data.description,
-    };
+    title: data.title,
+    date: new Date(data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),  // Format here
+    description: data.description,
+  };
   }).sort((a, b) => new Date(b.date) - new Date(a.date));
 
   return (

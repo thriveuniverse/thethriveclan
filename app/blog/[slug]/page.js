@@ -2,16 +2,14 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { serialize } from 'next-mdx-remote/serialize';
-import { MDXRemote } from 'next-mdx-remote';
 import { notFound } from 'next/navigation';
 
 const postsDirectory = path.join(process.cwd(), 'content/posts');
 
-export async function generateStaticParams() {
-  const filenames = fs.readdirSync(postsDirectory);
-  return filenames.map((filename) => ({
-    slug: filename.replace(/\.md$/, ''),
-  }));
+// Client Wrapper for MDXRemote (New File: /components/MDXRenderer.jsx)
+function MDXRenderer({ mdxSource }) {
+  'use client';
+  return <MDXRemote {...mdxSource} />;
 }
 
 export default async function PostPage({ params }) {
@@ -24,11 +22,13 @@ export default async function PostPage({ params }) {
   const { data, content } = matter(fileContents);
   const mdxSource = await serialize(content);
 
+  const formattedDate = new Date(data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
   return (
     <article className="max-w-4xl mx-auto px-4 py-16 prose prose-base">
       <h1>{data.title}</h1>
-      <p className="text-sm text-gray-500">{data.date}</p>
-      <MDXRemote {...mdxSource} />
+      <p className="text-sm text-gray-500">{formattedDate}</p>
+      <MDXRenderer mdxSource={mdxSource} />
     </article>
   );
 }
