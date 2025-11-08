@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-time, .text-gray-500, a {
-  color: var(--foreground);  /* Uses your theme var (light: #171717, dark: #ededed) for 4.5:1+ ratio */
-}
-a:hover {
-  text-decoration: underline;  /* Adds hover cue for better usability (bonus for Acc) */
-}
 
 :root {
   --background: #ffffff;
