@@ -1,6 +1,6 @@
 export const navItems = [
   { href: '/', label: 'Home', published: true },
-  { href: '/llmo', label: 'LLMO', published: true },
+  { href: '/llmo/llmo-ai-automation-tools', label: 'LLMO', published: true },
   { href: '/sector-seo', label: 'Sector SEO', published: false },
   { href: '/emerging-opportunities', label: 'Emerging Opportunities', published: false },
   { href: '/securedoc-ai-search', label: 'SecureDoc AI Search', published: false },
