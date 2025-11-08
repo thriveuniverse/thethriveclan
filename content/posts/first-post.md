@@ -4,8 +4,6 @@ date: 2025-11-01
 description: An overview of LLMO vs traditional SEO
 ---
 
-# The AI Search Revolution, Why Websites Can't Rely on Old SEO Tricks Anymore
-
 ## The Website Wake-Up Call—From Dial-Up Days to Digital Realities
 
 Sometimes it helps to remember where we've come from to navigate where we're going. Some of us remember when the “world wide web” was just getting discovered. The ideas and descriptions were baffling, and there were just **600 websites worldwide** at the beginning of 1994. By June 1995, that had exploded to **23,500**—a 40-fold increase in under two years.
