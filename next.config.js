@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'], // Enables .md/.mdx as pages
 };
 
-module.exports = nextConfig; // Remove withContentlayer wrapper
+const withMDX = require('@next/mdx')({
+  extension: /\.(md|mdx)$/,
+});
+
+module.exports = withMDX(nextConfig);

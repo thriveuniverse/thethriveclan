@@ -263,3 +263,26 @@ body {
   background-color: rgba(0, 0, 0, 0.2); /* Consistent overlay */
   z-index: 0;
 }
+h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 1.35rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}

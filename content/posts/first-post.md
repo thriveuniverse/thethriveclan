@@ -3,11 +3,16 @@ title: The AI Search Revolution, Why Websites Can't Rely on Old SEO Tricks Anymo
 date: 2025-11-01
 description: An overview of LLMO vs traditional SEO
 ---
+
+# The AI Search Revolution, Why Websites Can't Rely on Old SEO Tricks Anymore
+
 ## The Website Wake-Up Call—From Dial-Up Days to Digital Realities
 
-Sometimes it helps to remember where we've come from to navigate where we're going. Some of us remember when the “world wide web” was just getting discovered. The ideas and descriptions were baffling, and there were just **600 websites worldwide** at the beginning of 1994. By June 1995, that had exploded to **23,500**—a 40-fold increase in under two years. Our first site was pretty basic, built with a dial-up modem on an internet contract that charged by the minute. I confess it was far from stylish—I remember being mesmerized by how one could layer in endless parameters for the most garish, attention-grabbing buttons: flashing invites that screamed "Click me!" rather than whispered sophistication.
+Sometimes it helps to remember where we've come from to navigate where we're going. Some of us remember when the “world wide web” was just getting discovered. The ideas and descriptions were baffling, and there were just **600 websites worldwide** at the beginning of 1994. By June 1995, that had exploded to **23,500**—a 40-fold increase in under two years.
 
-I don’t believe anyone really knew where it was going, but it was an addiction to the boundless possibilities, a curiosity that unearthed marvel after marvel, yet left everyone perpetually unsatisfied, always chasing the next tweak.  
+Our first site was pretty basic, built with a dial-up modem on an internet contract that charged by the minute. I confess it was far from stylish—I remember being mesmerized by how one could layer in endless parameters for the most garish, attention-grabbing buttons: flashing invites that screamed *"Click me!"* rather than whispered sophistication.
+
+I don’t believe anyone really knew where it was going, but it was an addiction to the boundless possibilities, a curiosity that unearthed marvel after marvel, yet left everyone perpetually unsatisfied, always chasing the next tweak.
 
 We were all novices then, when information was scarce and the rule book was being written as we lived it. Fast-forward to 2019: **71% of U.S. small businesses had embraced the web**, while in the UK, **83% of firms with 10 or more employees were online**. As essential as a bank account, but unlike other aspects of business, the complexity meant that success measurements were like a dark art.
 
@@ -38,7 +43,7 @@ In 2025, as AI commands an increasing share of searches—with **zero-click reso
 
 ## Enter the Revolution—AI's Subtle Seismic Shift
 
-And so to the present: If we want an answer these days, we simply ask an AI—be it Google’s SGE, ChatGPT's deft web trawls, or Perplexity's quiet probes. No longer content with mere linking, it's distilling essence from the ether: Silently, unseeingly, crafting responses from scattered fragments of the web.  
+And so to the present: If we want an answer these days, we simply ask an AI—be it Google’s SGE, ChatGPT's deft web trawls, or Perplexity's quiet probes. No longer content with mere linking, it's distilling essence from the ether: Silently, unseeingly, crafting responses from scattered fragments of the web.
 
 Picture querying "best CRM for small firms"—gone is the tidy list of links; in its place, a bespoke paragraph, woven from your blog post's key insights, a competitor's FAQ, and a forum thread or two. Every relevant scrap harvested unseen, unrecorded, repackaged as if birthed anew.
 
@@ -46,7 +51,7 @@ The stark reality? **Only about 15% of these AI replies ever spur an actual visi
 
 Our task, then? To ensure it keeps feasting on your content: No barriers flung up in panic, no scraps left too obscure. Make it so your insights are the ones reshaped and resold, turning invisibility into quiet influence. I felt that chill myself last week, feeding a snippet from this very draft into Gemini—out came a polished summary, my phrasing intact but unattributed, like a whisper borrowed for a symphony.
 
-This round's casualties? The holdouts still foraging for those elusive visitors and clicks, noses buried in the old playbook's fading ink. With **78% of organisations now deploying AI in at least one function**—up from 55% just a year prior—triumph no longer rides on keyword chases alone. It rests on **structured data**: the quiet scaffolding that invites machines to truly comprehend your business—not as scattered words, but as a coherent entity worthy of respect.  
+This round's casualties? The holdouts still foraging for those elusive visitors and clicks, noses buried in the old playbook's fading ink. With **78% of organisations now deploying AI in at least one function**—up from 55% just a year prior—triumph no longer rides on keyword chases alone. It rests on **structured data**: the quiet scaffolding that invites machines to truly comprehend your business—not as scattered words, but as a coherent entity worthy of respect.
 
 Schema markup, entity links—they're the bridge, whispering to the ghost, "Tell others about us."  
 Fail that, and you're just ambient noise; nail it, and you're the source material for tomorrow's answers.
@@ -73,7 +78,7 @@ Imagine a local consultancy's "team bios" page: Pre-schema, it vanished into the
 
 ### Second, tangible worth
 
-Shift from fleeting glances to downloads, consultations, the stuff that fills diaries and coffers. In this AI haze, where automated traffic now claims **51% of the web's pulse**, track "assisted conversions"—those indirect wins where your snippet sways a decision downstream.  
+Shift from fleeting glances to downloads, consultations, the stuff that fills diaries and coffers. In this AI haze, where automated traffic now claims **51% of the web's pulse**, track "assisted conversions"—those indirect wins where your snippet sways a decision downstream.
 
 Tools like **SEMrush's AI echo tracker** reveal the hidden hand: A blog gated behind a simple lead form? It might net 3x the bookings of raw traffic alone. I saw it with a client's newsletter signup—views flatlined, but sign-ups soared as AI funnelled the curious straight to value.
 
