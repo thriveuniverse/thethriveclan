@@ -103,6 +103,7 @@ export async function POST(request: Request) {
     } catch (emailError) {
       console.error('Email failed:', emailError);
     }
+console.log("Webhook - signedUrl generated:", signedUrl);
 
     console.log(
       'Payment complete for:',

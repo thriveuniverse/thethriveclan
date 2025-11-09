@@ -11,6 +11,9 @@ export async function sendPurchaseEmail(to: string, productName: string, downloa
       <p>Best regards,<br/>The Thrive Clan Team</p>
     </div>
   `;
+  console.log("HTML Being Sent:", htmlBody);
+console.log("Download link (raw):", downloadLink);
+
   await resend.emails.send({
     from: 'downloads@thethriveclan.com',
     to: [to],
