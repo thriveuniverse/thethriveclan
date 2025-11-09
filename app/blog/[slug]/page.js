@@ -2,10 +2,8 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { serialize } from "next-mdx-remote/serialize";
-import dynamic from "next/dynamic";
 import { notFound } from "next/navigation";
-
-const PostContent = dynamic(() => import("../../components/PostContent"), { ssr: false });
+import StablePostContent from '../StablePostContent';  // FIXED: Relative path (up one folder from [slug])
 
 const postsDirectory = path.join(process.cwd(), "content/posts");
 
@@ -36,7 +34,7 @@ export default async function Page({ params }) {
   return (
     <article 
       className="max-w-4xl mx-auto px-4 py-8" 
-      style={{ minHeight: '80vh' }}  // NEW: Reserves vertical space (~80% viewport for post length, no jumps)
+      style={{ minHeight: '80vh' }}  // Reserves space for CLS
     >
       {/* Title Banner */}
       <header className="mb-8 text-center">
@@ -46,7 +44,7 @@ export default async function Page({ params }) {
           <p className="text-lg text-gray-600">{data.description}</p>
         )}
       </header>
-      <PostContent mdxSource={mdxSource} />
+      <StablePostContent mdxSource={mdxSource} />
     </article>
   );
 }
