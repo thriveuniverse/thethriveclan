@@ -1,11 +1,9 @@
 import "./globals.css";
 import { createOrganizationSchema } from "../lib/schemas/organization";
-import Header from './components/Header'; // NEW
+import Header from './components/Header';
 import Link from 'next/link';
-import { visibleNavItems } from './lib/nav'; // NEW: Pulls the filtered list
-
-// navItems moved to header.jsx
-
+import { visibleNavItems } from './lib/nav';
+import MDXWrapper from './components/MDXWrapper';  // NEW: Client wrapper for MDX styles
 
 // Metadata with metadataBase
 export const metadata = {
@@ -14,13 +12,16 @@ export const metadata = {
   description: "Sector-specific resources curated by The Thrive Clan.",
 };
 
-// Root Layout
+// Root Layout (stays server-side for perf)
 export default function RootLayout({ children }) {
   const organizationSchema = createOrganizationSchema();
 
   return (
     <html lang="en" className="h-full">
       <head>
+        {/* NEW: Preconnects—early in <head> for chain savings */}
+        <link rel="preconnect" href="https://thethriveclan.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />  {/* Optional: If Google Fonts in CSS */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -29,26 +30,24 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="min-h-full flex flex-col">
-        <Header /> {/* CHANGED: Use the imported component */}
-        <main className="flex-1">{children}</main>
+        <Header />
+        <main className="flex-1">
+          <MDXWrapper>  {/* NEW: Wraps children client-side only for MDX */}
+            {children}
+          </MDXWrapper>
+        </main>
         <Footer />
       </body>
     </html>
   );
 }
 
-// Header Component moved to header.js
-
-
-// Footer Component
+// Footer Component (unchanged)
 function Footer() {
   return (
     <footer className="bg-gray-100 py-6">
       <div className="mx-auto max-w-7xl px-4 text-center text-sm text-gray-500 space-y-4">
-        {/* Copyright */}
         <div>© {new Date().getFullYear()} The Thrive Clan · All rights reserved.</div>
-
-        {/* Sitemap */}
         <nav className="flex flex-wrap justify-center gap-4">
           {visibleNavItems.map((item) => (
             <Link
@@ -60,8 +59,6 @@ function Footer() {
             </Link>
           ))}
         </nav>
-
-        {/* Legal Links */}
         <nav className="flex flex-wrap justify-center gap-4">
           <Link href="/privacy" className="text-sm text-gray-500 hover:text-gray-700 transition-colors">
             Privacy Policy
