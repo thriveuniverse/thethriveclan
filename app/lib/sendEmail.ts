@@ -8,7 +8,7 @@ export async function sendPurchaseEmail(to: string, productName: string, downloa
       <p>Thanks for buying <b>${productName}</b>. Your download is ready:</p>
       ${downloadLink ? `<p><a href="${downloadLink}">Download here</a></p>` : "<p>Check back soon—link on its way!</p>"}
       <p>If you have questions, reply to this email.</p>
-      <p>Best,<br/>The Thrive Clan Team</p>
+      <p>Best regards,<br/>The Thrive Clan Team</p>
     </div>
   `;
   await resend.emails.send({
