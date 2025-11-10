@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Link from 'next/link';
 import { visibleNavItems } from './lib/nav';
 import MDXWrapper from './components/MDXWrapper';  // NEW: Client wrapper for MDX styles
+import CookieConsentBanner from './components/CookieConsentBanner';  // NEW: Separate client component for GDPR cookie banner
 
 // Metadata with metadataBase
 export const metadata = {
@@ -37,6 +38,8 @@ export default function RootLayout({ children }) {
           </MDXWrapper>
         </main>
         <Footer />
+        {/* NEW: Cookie Consent Banner - Now imported as a separate client component */}
+        <CookieConsentBanner />
       </body>
     </html>
   );
