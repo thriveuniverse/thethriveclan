@@ -28,7 +28,7 @@
     "encoding": "^0.1.13",
     "google-auth-library": "^10.3.0",
     "gray-matter": "^4.0.3",
-    "next": "^13.5.11",
+    "next": "^16.0.3",
     "next-mdx-remote": "^5.0.0",
     "next-sitemap": "^4.2.3",
     "react": "^18.2.0",

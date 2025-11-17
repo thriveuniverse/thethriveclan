@@ -20,9 +20,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="h-full">
       <head>
-        {/* NEW: Preconnects—early in <head> for chain savings */}
         <link rel="preconnect" href="https://thethriveclan.com" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />  {/* Optional: If Google Fonts in CSS */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />  
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
