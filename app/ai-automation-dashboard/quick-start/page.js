@@ -3,26 +3,19 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { ChevronLeftIcon, ChevronDownIcon, XMarkIcon } from '@heroicons/react/24/outline';
-import { Document, Page, pdfjs } from 'react-pdf'; // PDF viewer
 
-// PDF paths from your GCP bucket (update with exact filenames)
+// PDF paths from GCP bucket
 const pdfs = [
   {
     title: 'Start Here',
-    path: 'ai-automation/01-start-here/over-arching-guide.pdf', // From screenshot
+    path: 'ai-automation/01-start-here/over-arching-guide.pdf',
     blurb: 'Discover the blueprint or download for notes.',
   },
   {
     title: 'Package Overview',
-    path: 'ai-automation/02-package-overview/package-overview.pdf', // Adjust filename
+    path: 'ai-automation/02-package-overview/package-overview.pdf',
     blurb: 'A full "What\'s Inside" or export.',
   },
-];
-
-// Mock steps (expand with checkboxes later)
-const steps = [
-  { id: 1, title: 'Pick Low-KD Keywords', description: 'Use the CSV to select 5-10 terms.' },
-  // Add 5 more...
 ];
 
 export default function QuickStart() {
@@ -30,13 +23,14 @@ export default function QuickStart() {
   const [showModal, setShowModal] = useState(false);
   const [pdfUrl, setPdfUrl] = useState('');
   const [currentPdf, setCurrentPdf] = useState(null);
+  const [PdfViewer, setPdfViewer] = useState(null); // Lazy load
 
   // Get signed URL from API
   const getSignedUrl = async (filePath) => {
     const res = await fetch('/api/signed-url', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ filePath, userEmail: 'mirriekelly@gmail.com' }), // Use real session.email
+      body: JSON.stringify({ filePath, userEmail: 'mirriekelly@gmail.com' }), // Real session.email
     });
     if (!res.ok) throw new Error('Access denied');
     const { url } = await res.json();
@@ -47,6 +41,10 @@ export default function QuickStart() {
     const url = await getSignedUrl(pdf.path);
     setCurrentPdf(pdf);
     setPdfUrl(url);
+    // Dynamic import react-pdf (client-only)
+    const { Document, Page, pdfjs } = await import('react-pdf');
+    pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
+    setPdfViewer({ Document, Page });
     setShowModal(true);
   };
 
@@ -59,7 +57,7 @@ export default function QuickStart() {
   };
 
   const downloadBoth = async () => {
-    // ZIP stub—real: GCP signed ZIP or jsPDF multi-page
+    // Stub—real: GCP signed ZIP
     const blob = new Blob(['Download both guides ZIP—implement GCP ZIP fetch.'], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -124,7 +122,7 @@ export default function QuickStart() {
       </div>
 
       {/* PDF Modal */}
-      {showModal && (
+      {showModal && PdfViewer && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-lg p-4 max-w-4xl max-h-full overflow-auto">
             <div className="flex justify-between mb-4">
@@ -133,9 +131,9 @@ export default function QuickStart() {
                 <XMarkIcon className="h-6 w-6" />
               </button>
             </div>
-            <Document file={pdfUrl} loading={<p>Loading...</p>}>
-              <Page pageNumber={1} width={600} />
-            </Document>
+            <PdfViewer.Document file={pdfUrl} loading={<p>Loading...</p>}>
+              <PdfViewer.Page pageNumber={1} width={600} />
+            </PdfViewer.Document>
             <div className="mt-4 flex space-x-2">
               <button onClick={() => downloadPdf(currentPdf)} className="bg-cyan-600 text-white px-4 py-2 rounded-md hover:bg-cyan-700">
                 Download PDF
