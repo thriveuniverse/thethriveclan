@@ -150,6 +150,43 @@ export default function Home() {
     Choose control—trust us to empower you, not obligate you.
   </p>
 </section>
+<section className="py-20 bg-white">
+  <div className="max-w-4xl mx-auto px-6">
+    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-10">
+      We built The Thrive Clan for the people who actually have to make things work
+    </h2>
+
+    <div className="prose prose-lg text-gray-700 space-y-6 leading-relaxed">
+      <p>
+        Big consultancies are designed for boardrooms, seven-figure budgets, and 80-page slide decks that end up gathering dust.
+      </p>
+      <p className="text-cyan-700 font-medium">
+        We’re designed for founders, operators, agency owners, and specialist teams who need practical AI leverage this quarter — not in 2029.
+      </p>
+      <p>
+        You don’t rent expertise that disappears the day the invoice is paid.  
+        You walk away owning reusable assets — ROI calculators, prompt libraries, vendor matrices, governance frameworks, content bundles — that your team can clone and extend forever.
+      </p>
+      <p>
+        We stay deliberately small, fiercely opinionated, and laser-focused on the few places where AI + LLMO create unfair advantage right now.  
+        That means clearer guidance, faster results, and honest conversations about what’s worth doing today… and what’s just hype.
+      </p>
+      <p className="text-xl md:text-2xl font-medium text-gray-900">
+        If you’re looking for an AI partner who feels more like a co-founder than a corporate committee,  
+        you’ve found your people.
+      </p>
+    </div>
+
+    <div className="mt-12">
+      <a 
+        href="/llmo/llmo-ai-automation-tools" 
+        className="inline-block bg-cyan-600 text-white font-semibold text-lg py-4 px-10 rounded-lg hover:bg-cyan-700 transition-all"
+      >
+        See exactly what you’ll walk away owning →
+      </a>
+    </div>
+  </div>
+</section>
   <section className="py-16 bg-gray-50">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h1 className="text-3xl font-bold text-center mb-12">Get Started with LLMO: Lead the AI Edge</h1>
@@ -217,6 +254,7 @@ export default function Home() {
   Our unique combination of LLMO strategies, SEO market intelligence, and emerging opportunity analysis gives you a comprehensive view of both current market dynamics and future growth potential. We don't just provide data—we deliver actionable insights that translate directly into business growth, competitive advantage, and investment success. Join The Thrive Clan community—where 500+ leaders are seeing 3-5x visibility gains—and gain access to the strategic intelligence that separates market leaders from followers. One-time investment from €1,997, lifetime value.
 </p>
           </div>
+          
         </div>
       </div>
     </>

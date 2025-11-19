@@ -29,7 +29,9 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col"
+      suppressHydrationWarning={true}
+      >
         <Header />
         <main className="flex-1">
           <MDXWrapper>  {/* NEW: Wraps children client-side only for MDX */}
