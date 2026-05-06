@@ -49,28 +49,28 @@ export default function RootLayout({ children }) {
 // Footer Component (unchanged)
 function Footer() {
   return (
-    <footer className="bg-gray-100 py-6">
-      <div className="mx-auto max-w-7xl px-4 text-center text-sm text-gray-500 space-y-4">
+    <footer className="bg-[#0a0912] border-t border-[#2a2540] py-6">
+      <div className="mx-auto max-w-7xl px-4 text-center text-sm text-[#7a7598] space-y-4">
         <div>© {new Date().getFullYear()} The Thrive Clan · All rights reserved.</div>
         <nav className="flex flex-wrap justify-center gap-4">
           {visibleNavItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm text-gray-500 hover:text-gray-700 transition-colors"
+              className="text-sm text-[#7a7598] hover:text-[#b8b0d8] transition-colors"
             >
               {item.label}
             </Link>
           ))}
         </nav>
         <nav className="flex flex-wrap justify-center gap-4">
-          <Link href="/privacy" className="text-sm text-gray-500 hover:text-gray-700 transition-colors">
+          <Link href="/privacy" className="text-sm text-[#7a7598] hover:text-[#b8b0d8] transition-colors">
             Privacy Policy
           </Link>
-          <Link href="/refund" className="text-sm text-gray-500 hover:text-gray-700 transition-colors">
+          <Link href="/refund" className="text-sm text-[#7a7598] hover:text-[#b8b0d8] transition-colors">
             Refund Policy
           </Link>
-          <Link href="/terms" className="text-sm text-gray-500 hover:text-gray-700 transition-colors">
+          <Link href="/terms" className="text-sm text-[#7a7598] hover:text-[#b8b0d8] transition-colors">
             Terms of Service
           </Link>
         </nav>

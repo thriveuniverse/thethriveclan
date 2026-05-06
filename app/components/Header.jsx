@@ -19,7 +19,7 @@ export default function Header() {
   const detailsRef = useRef(null);
 
   return (
-    <header className="shadow-md bg-white">
+    <header className="bg-[#0d0b14] border-b border-[#2a2540]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         {/* Logo + Brand */}
         <Link href="/" className="flex items-center space-x-2">
@@ -30,7 +30,7 @@ export default function Header() {
             height={32}
             priority
           />
-          <span className="font-semibold text-lg text-gray-800">
+          <span className="font-semibold text-lg text-[#f0eeff]">
             The Thrive Clan
           </span>
         </Link>
@@ -41,7 +41,7 @@ export default function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors py-1"
+              className="text-sm font-medium text-[#b8b0d8] hover:text-white transition-colors py-1"
             >
               {item.label}
             </Link>
@@ -53,7 +53,7 @@ export default function Header() {
           <summary className="list-none cursor-pointer p-2 -mr-2">
             <span className="sr-only">Open main menu</span>
             <svg
-              className="h-6 w-6 text-gray-700"
+              className="h-6 w-6 text-[#b8b0d8]"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -66,12 +66,12 @@ export default function Header() {
               />
             </svg>
           </summary>
-          <div className="absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 py-2 z-50">
+          <div className="absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-[#13111e] border border-[#2a2540] py-2 z-50">
             {visibleNavItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                className="block px-4 py-2 text-sm text-[#b8b0d8] hover:bg-[#1c1930] hover:text-white transition-colors"
                 onClick={() => { if (detailsRef.current) detailsRef.current.open = false; }}
               >
                 {item.label}
