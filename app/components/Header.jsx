@@ -4,16 +4,13 @@ import { useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-// Nav data (pulled from layout.js)
 const navItems = [
   { href: '/', label: 'Home', published: true },
-  { href: '/llmo/llmo-ai-automation-tools', label: 'LLMO', published: true },
-  { href: '/sector-seo', label: 'Sector SEO', published: false },
-  { href: '/emerging-opportunities', label: 'Emerging Opportunities', published: false },
-  { href: '/securedoc-ai-search', label: 'SecureDoc AI Search', published: false },
-  { href: '/about', label: 'About', published: true },
+  { href: '/about', label: 'About Us', published: true },
+  { href: '/projects', label: 'Our Projects', published: true },
+  { href: '/the-method', label: 'The Method', published: true },
+  { href: '/blog', label: 'Chronicles', published: true },
   { href: '/contact', label: 'Contact', published: true },
-  { href: '/blog', label: 'Blog', published: true },
 ];
 
 const visibleNavItems = navItems.filter((item) => item.published);
