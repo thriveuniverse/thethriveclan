@@ -93,6 +93,14 @@ export default function TheMethodPage() {
               In Resilience Intelligence, OPH structures how regional analysis on each OilWatch
               platform is framed — each site holds a patch; none claims to hold the whole.
             </p>
+            <a
+              href="https://last-prompt.com/observer-patch-holography"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors text-sm"
+            >
+              OPH explained at last-prompt.com →
+            </a>
             <div className="bg-[#0d0b14] rounded-lg p-4 border-l-4 border-cyan-700">
               <p className="text-sm text-[#b8b0d8]">
                 <span className="font-semibold text-white">In the decision engine: </span>

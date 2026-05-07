@@ -38,6 +38,14 @@ export default function DecisionIntelligencePage() {
                 Read the methodology →
               </a>
               <a
+                href="https://last-prompt.com/engine"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors"
+              >
+                How the engine works →
+              </a>
+              <a
                 href="https://lastprompt.io"
                 target="_blank"
                 rel="noopener noreferrer"
