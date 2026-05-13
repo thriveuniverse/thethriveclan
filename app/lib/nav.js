@@ -3,7 +3,7 @@ export const navItems = [
   { href: '/about', label: 'About Us', published: true },
   { href: '/projects', label: 'Our Projects', published: true },
   { href: '/the-method', label: 'The Method', published: true },
-  { href: '/blog', label: 'Chronicles', published: true },
+  { href: '/blog', label: 'Notes', published: true },
   { href: '/contact', label: 'Contact', published: true },
 ];
 

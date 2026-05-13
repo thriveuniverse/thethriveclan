@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "About The Thrive Clan - Our Story and Mission",
-  description: "Learn about The Thrive Clan, a dedicated team with deep roots in the web era, offering tailored insights for future-proofing your business.",
+  title: "About Us | The Thrive Clan",
+  description: "Miranda and Jonathan Kelly — the people behind Decision Intelligence, Resilience Intelligence, and the methodology that connects them.",
 };
 
 export default function AboutLayout({ children }) {

@@ -11,27 +11,18 @@ export default function ContactPage() {
     setStatus('loading');
     setErrorMessage('');
 
-    const form = e.target;
-    const data = {
-      name: form.name.value,
-      email: form.email.value,
-      organisation: form.organisation.value,
-      message: form.message.value,
-    };
-
     try {
-      const res = await fetch('/api/contact', {
+      const res = await fetch('/', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(e.target)).toString(),
       });
 
       if (res.ok) {
         setStatus('success');
-        form.reset();
+        e.target.reset();
       } else {
-        const body = await res.json();
-        setErrorMessage(body.message || 'Something went wrong.');
+        setErrorMessage('Something went wrong — please try again.');
         setStatus('error');
       }
     } catch {
@@ -55,7 +46,15 @@ export default function ContactPage() {
             <p className="text-[#b8b0d8]">We&apos;ll be in touch.</p>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            onSubmit={handleSubmit}
+            className="space-y-6"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+
             <div className="grid sm:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-[#b8b0d8] mb-2">
