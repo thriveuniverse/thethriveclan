@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 export default function ContactPage() {
-  const [status, setStatus] = useState('idle'); // idle | loading | success | error
+  const [status, setStatus] = useState('idle');
   const [errorMessage, setErrorMessage] = useState('');
 
   async function handleSubmit(e) {
@@ -11,18 +11,27 @@ export default function ContactPage() {
     setStatus('loading');
     setErrorMessage('');
 
+    const form = e.target;
+    const data = {
+      name: form.name.value,
+      email: form.email.value,
+      organisation: form.organisation.value,
+      message: form.message.value,
+    };
+
     try {
-      const res = await fetch('/', {
+      const res = await fetch('/api/contact', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(new FormData(e.target)).toString(),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
       });
 
       if (res.ok) {
         setStatus('success');
-        e.target.reset();
+        form.reset();
       } else {
-        setErrorMessage('Something went wrong — please try again.');
+        const body = await res.json();
+        setErrorMessage(body.message || 'Something went wrong.');
         setStatus('error');
       }
     } catch {
@@ -46,13 +55,7 @@ export default function ContactPage() {
             <p className="text-[#b8b0d8]">We&apos;ll be in touch.</p>
           </div>
         ) : (
-          <form
-            name="contact"
-            method="POST"
-            onSubmit={handleSubmit}
-            className="space-y-6"
-          >
-            <input type="hidden" name="form-name" value="contact" />
+          <form onSubmit={handleSubmit} className="space-y-6">
 
             <div className="grid sm:grid-cols-2 gap-6">
               <div>
