@@ -49,7 +49,6 @@ export default function ContactPage() {
           <form
             name="contact"
             method="POST"
-            data-netlify="true"
             onSubmit={handleSubmit}
             className="space-y-6"
           >
