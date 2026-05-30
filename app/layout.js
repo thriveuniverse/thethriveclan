@@ -9,8 +9,20 @@ import CookieConsentBanner from './components/CookieConsentBanner';  // NEW: Sep
 // Metadata with metadataBase
 export const metadata = {
   metadataBase: new URL('https://thethriveclan.com'),
-  title: "The Thrive Clan",
-  description: "Sector-specific resources curated by The Thrive Clan.",
+  title: {
+    default: 'The Thrive Clan | Big Ideas, Rigorous Execution',
+    template: '%s | The Thrive Clan',
+  },
+  description: 'Independent research at the intersection of decision intelligence and systemic resilience. Home of Last Prompt and the Compound Cascade Systems Modelling Framework.',
+  openGraph: {
+    siteName: 'The Thrive Clan',
+    type: 'website',
+    locale: 'en_GB',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@thethriveclan',
+  },
 };
 
 // Root Layout (stays server-side for perf)
