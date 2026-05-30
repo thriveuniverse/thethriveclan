@@ -11,9 +11,34 @@ export default function ResilienceIntelligencePage() {
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-cyan-400 text-sm font-semibold uppercase tracking-wide mb-2">Pillar Two</div>
         <h1 className="text-4xl font-bold text-white mb-6">Resilience Intelligence</h1>
-        <p className="text-lg text-[#b8b0d8] leading-relaxed mb-12 max-w-2xl">
-          Full detail coming soon. The methodology is on SSRN — the applied outputs live on the OilWatch platforms.
-        </p>
+        <div className="space-y-5 text-lg text-[#b8b0d8] leading-relaxed mb-12 max-w-2xl">
+          <p>
+            Institutional risk analysis is typically additive: identify each risk factor, quantify
+            it, add the results. This is not a failure of expertise — it is a structural property
+            of how institutions are organised. Each agency models its own domain. No agency is
+            mandated to model the interactions between domains. The fiscal authority models debt.
+            The health authority models waiting lists. The energy authority models supply. None of
+            them models what happens when all three deteriorate simultaneously and start amplifying
+            each other.
+          </p>
+          <p>
+            The Compound Cascade Systems Modelling Framework addresses that gap. Rather than
+            treating risk factors as independent inputs, it maps how each chain triggers, amplifies,
+            or constrains the others — capturing the second- and third-order effects that additive
+            analysis systematically misses. The output is not a prediction and not a single number.
+            It is a scenario-weighted probability distribution that asks the question institutional
+            analysis rarely asks: what happens when the problems stop being independent?
+          </p>
+          <p>
+            The methodology has been applied to two fundamentally different systems: a
+            single-trigger external shock (Hormuz blockade → global food system collapse) and a
+            multi-vector endogenous national decline (the UK). In both cases, compound assessment
+            produced risk estimates 3–5 times higher than additive institutional projections —
+            using the same underlying data. The consistency of that divergence across two very
+            different domains suggests it is a structural property of how complex systems behave,
+            not an artefact of either specific model.
+          </p>
+        </div>
 
         <div className="space-y-6">
 

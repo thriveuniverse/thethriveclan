@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'The Method | The Thrive Clan',
-  description: 'Cascade modeling, chronosymbiosis, and Observer Patch Holography — three components that turned out to be one running system.',
+  description: 'Cascade modeling and chronosymbiosis — two frameworks that turned out to be the same insight at different scales.',
 };
 
 export default function TheMethodPage() {
@@ -17,11 +17,12 @@ export default function TheMethodPage() {
           into crisis. The method emerged when we noticed we were writing the same equations twice.
         </p>
         <p className="text-[#7a7598] mb-12 max-w-2xl leading-relaxed">
-          Three components. Two projects. One running system. Here&apos;s how they fit together.
+          Two components. Two projects. One running system. Here&apos;s how they fit together.
         </p>
 
-        {/* Component 1 */}
         <div className="space-y-6 mb-12">
+
+          {/* Component 1 */}
           <div className="bg-[#13111e] rounded-xl p-6 border border-[#2a2540]">
             <div className="text-cyan-400 text-sm font-semibold uppercase tracking-wide mb-2">Component One</div>
             <h2 className="text-xl font-bold text-white mb-3">Cascade Modeling</h2>
@@ -77,75 +78,25 @@ export default function TheMethodPage() {
             </div>
           </div>
 
-          {/* Component 3 */}
-          <div className="bg-[#13111e] rounded-xl p-6 border border-[#2a2540]">
-            <div className="text-cyan-400 text-sm font-semibold uppercase tracking-wide mb-2">Component Three</div>
-            <h2 className="text-xl font-bold text-white mb-3">Observer Patch Holography (OPH)</h2>
-            <p className="text-[#b8b0d8] leading-relaxed mb-4">
-              Bernhard Mueller&apos;s framework, drawn from holographic principles, in which each
-              observer holds a partial &lsquo;patch&rsquo; of a complex system — a bounded, coherent
-              slice of a reality too large to see whole. Rather than pretending to a god&apos;s-eye
-              view, OPH works with the patch: making its boundaries explicit, navigating from within
-              them, and understanding how patches from different observers combine to form a fuller
-              picture without ever resolving into a complete one.
-            </p>
-            <p className="text-[#b8b0d8] leading-relaxed mb-4">
-              In Resilience Intelligence, OPH structures how regional analysis on each OilWatch
-              platform is framed — each site holds a patch; none claims to hold the whole.
-            </p>
-            <a
-              href="https://last-prompt.com/observer-patch-holography"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors text-sm"
-            >
-              OPH explained at last-prompt.com →
-            </a>
-            <div className="bg-[#0d0b14] rounded-lg p-4 border-l-4 border-cyan-700">
-              <p className="text-sm text-[#b8b0d8]">
-                <span className="font-semibold text-white">In the decision engine: </span>
-                Each AI advisor in LastPrompt carries a distinct <code className="bg-[#2a2540] px-1 rounded text-xs text-cyan-300">decisionBias</code> weight
-                object — a formalised observer patch. No single advisor has the full picture. The
-                quality of a decision emerges from navigating between patches, not from finding
-                the one advisor who is right. OPH is the mechanism through which structured
-                navigation of uncertainty becomes possible.
-              </p>
-            </div>
-          </div>
         </div>
 
         {/* Synthesis */}
         <div className="bg-[#1e1b30] rounded-xl p-8 border border-[#2a2540] mb-8">
-          <h2 className="text-xl font-bold text-white mb-4">One System, Not Three Components</h2>
+          <h2 className="text-xl font-bold text-white mb-4">One System, Not Two Components</h2>
           <p className="text-[#b8b0d8] leading-relaxed mb-4">
-            The three components are not a theoretical framework waiting to be applied.
-            They are already running. The LastPrompt engine applies cascade multipliers,
-            evaluates temporal symbiosis, and routes decisions through OPH-structured
-            advisor patches — in every session, across every scenario skin.
+            Cascade modeling and chronosymbiosis are not two separate techniques. They are the
+            same insight applied at two different scales. Cascade modeling describes how shocks
+            propagate through interconnected systems. Chronosymbiosis describes how decisions
+            propagate through time — reshaping the conditions under which future decisions will
+            be made. The structural logic is identical: present state, threshold, cascade, new state.
           </p>
           <p className="text-[#b8b0d8] leading-relaxed">
-            The synthesis paper — currently in preparation — establishes the formal
-            correspondence: that institutional silo structure maps directly to professional
-            horizon (OPH); that the methodology gap between disciplines is a translation
-            gap between patches; that the interaction matrix in cascade modeling is the
-            externalised form of the cognitive feedback loops chronosymbiosis describes.
-            Same problem. Two scales. One method.
+            The discovery was that we had built both engines independently, for different problems,
+            and arrived at the same architecture. Applied to energy systems, it maps how a
+            disruption at the Strait of Hormuz reaches a UK supermarket shelf. Applied to decision
+            environments, it maps how a poor allocation in Chapter One creates the fragile landscape
+            that makes Chapter Three&apos;s crisis unavoidable. Same problem. Two scales. One method.
           </p>
-        </div>
-
-        {/* OPH attribution */}
-        <div className="bg-[#13111e] rounded-xl p-5 border border-[#2a2540] mb-8 text-sm text-[#7a7598]">
-          <span className="font-semibold text-[#b8b0d8]">OPH reference: </span>
-          Mueller, B. (2024).{' '}
-          <a
-            href="https://oph-book.floatingpragma.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-cyan-400 hover:text-cyan-300"
-          >
-            Reverse Engineering Reality: Observer Patch Holography
-          </a>
-          . FloatingPragma.
         </div>
 
         {/* Cross-links */}

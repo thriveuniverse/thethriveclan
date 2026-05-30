@@ -11,10 +11,36 @@ export default function DecisionIntelligencePage() {
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-cyan-400 text-sm font-semibold uppercase tracking-wide mb-2">Pillar One</div>
         <h1 className="text-4xl font-bold text-white mb-6">Decision Intelligence</h1>
-        <p className="text-lg text-[#b8b0d8] leading-relaxed mb-12 max-w-2xl">
-          Full detail coming soon. In the meantime, the methodology lives at last-prompt.com
-          and the academic framework is on SSRN.
-        </p>
+        <div className="space-y-5 text-lg text-[#b8b0d8] leading-relaxed mb-12 max-w-2xl">
+          <p>
+            Organisations have systematically removed the conditions under which consequential
+            decision-making capacity develops. Credentials signal readiness without conferring
+            the experience they imply. Bounce culture rewards deferral over commitment. KPI
+            architectures narrow attention to measured perimeters. The result: a professional
+            class that reaches senior positions having been consistently protected from exactly
+            the consequential failures that build real decision-making capacity.
+          </p>
+          <p>
+            Last Prompt is a decision intelligence engine built to close that gap — not by
+            teaching better frameworks, but by providing the consequence-bearing,
+            calibrated-feedback repetitions that professional structures have designed out.
+            It is consistently misclassified as a game, a simulation, or a training course.
+            It is none of those things. It is a consequence-bearing reasoning environment:
+            the world changes based on the quality of your reasoning, feedback is scored
+            against a structured rubric immediately after each decision, and what you face
+            next is determined by what you just did to the environment.
+          </p>
+          <p>
+            Every practitioner begins at the same point — same world, same starting numbers,
+            same first event. The moment you submit your first decision, that changes
+            permanently. The environment shifts based on what you wrote. The next event is
+            drawn from whichever dimension your reasoning left most exposed. By the second
+            cycle, two practitioners with identical scores are already navigating different
+            worlds — because what arrives next exists only because of what you just chose —
+            a world no one else will ever inhabit. There is no reset. What you inhabit three
+            chapters in is the world your own decisions built, layer by layer.
+          </p>
+        </div>
 
         <div className="space-y-6">
 
