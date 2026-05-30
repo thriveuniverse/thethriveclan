@@ -49,6 +49,27 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Philosophy bridge */}
+      <section className="max-w-3xl mx-auto px-4 py-12 text-center border-t border-[#2a2540]">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 leading-tight">
+          We Live in the World We Create
+        </h2>
+        <p className="text-lg text-[#b8b0d8] leading-relaxed mb-5">
+          Most environments — companies, communities, societies — aren&apos;t designed. They accumulate.
+          Each decision leaves a residue: a process, a precedent, a constraint. Over time, the residue
+          becomes the world.
+        </p>
+        <p className="text-lg text-[#b8b0d8] leading-relaxed mb-5">
+          The implication is uncomfortable: if you&apos;re not deciding deliberately, someone else&apos;s
+          decisions are shaping your reality for you.
+        </p>
+        <p className="text-lg text-[#b8b0d8] leading-relaxed">
+          Decision Intelligence and Resilience Intelligence are both attempts to answer the same
+          question — what does it look like to decide with intention, in conditions complex enough
+          to matter?
+        </p>
+      </section>
+
       {/* Two pillar cards */}
       <section className="max-w-5xl mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 gap-8">
