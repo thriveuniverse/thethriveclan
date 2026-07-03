@@ -13,8 +13,8 @@ export default function Home() {
       {/* Hero image */}
       <section className="w-full relative h-72 md:h-[480px]">
         <Image
-          src="/images/thrive_oph_mesh.png"
-          alt="Observer Patch Holography mesh — interconnected systems in flow"
+          src="/images/bridges_mesh.png"
+          alt="A mesh of bonds forming and breaking — the network structure behind both decision rehearsal and cascade risk"
           fill
           className="object-cover object-center"
           priority
@@ -70,23 +70,19 @@ export default function Home() {
         </p>
       </section>
 
-      {/* Two pillar cards */}
+      {/* Two expressions of the same idea */}
       <section className="max-w-5xl mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 gap-8">
           <Link
             href="/projects/decision-intelligence"
             className="block bg-[#13111e] rounded-xl p-8 border border-[#2a2540] hover:border-cyan-700 hover:shadow-lg transition-all group"
           >
-            <div className="text-cyan-400 text-xs font-semibold uppercase tracking-widest mb-3">
-              Pillar One
-            </div>
             <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors">
               Decision Intelligence
             </h2>
             <p className="text-[#b8b0d8] leading-relaxed">
-              AI-driven simulation for high-stakes decision rehearsal. Built on chronosymbiosis
-              and the Observer Patch Holography (OPH) framework. The mandate: help leaders think through
-              complexity before they face it.
+              AI-driven simulation for high-stakes decision rehearsal. Built on chronosymbiosis.
+              The mandate: help leaders think through complexity before they face it.
             </p>
           </Link>
 
@@ -94,9 +90,6 @@ export default function Home() {
             href="/projects/resilience-intelligence"
             className="block bg-[#13111e] rounded-xl p-8 border border-[#2a2540] hover:border-cyan-700 hover:shadow-lg transition-all group"
           >
-            <div className="text-cyan-400 text-xs font-semibold uppercase tracking-widest mb-3">
-              Pillar Two
-            </div>
             <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors">
               Resilience Intelligence
             </h2>

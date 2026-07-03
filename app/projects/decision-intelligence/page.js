@@ -9,7 +9,6 @@ export default function DecisionIntelligencePage() {
   return (
     <div className="min-h-screen bg-[#0d0b14] py-16">
       <div className="max-w-4xl mx-auto px-4">
-        <div className="text-cyan-400 text-sm font-semibold uppercase tracking-wide mb-2">Pillar One</div>
         <h1 className="text-4xl font-bold text-white mb-6">Decision Intelligence</h1>
         <div className="space-y-5 text-lg text-[#b8b0d8] leading-relaxed mb-12 max-w-2xl">
           <p>
@@ -123,7 +122,7 @@ export default function DecisionIntelligencePage() {
 
         <div className="mt-12 p-6 bg-[#0b1929] rounded-xl border border-[#1a3a4a]">
           <p className="text-[#b8b0d8] leading-relaxed">
-            <span className="font-semibold text-white">Cross-pillar connection: </span>
+            <span className="font-semibold text-white">Where it connects: </span>
             Energy supply shocks are precisely the kind of high-stakes, low-rehearsal scenarios
             this decision environment is built for. The cascade models in Resilience Intelligence
             feed directly into the scenario architecture —{' '}

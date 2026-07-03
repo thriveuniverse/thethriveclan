@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'Our Projects | The Thrive Clan',
-  description: 'Two pillars of rigorous, real-world research: Decision Intelligence and Resilience Intelligence.',
+  description: 'One idea, followed by two people to two different conclusions: Decision Intelligence and Resilience Intelligence.',
 };
 
 export default function ProjectsPage() {
@@ -11,18 +11,18 @@ export default function ProjectsPage() {
       <div className="max-w-5xl mx-auto px-4">
         <h1 className="text-4xl font-bold text-white mb-4">Our Projects</h1>
         <p className="text-lg text-[#b8b0d8] mb-12 max-w-2xl leading-relaxed">
-          Two distinct pillars, one shared discipline: rigorous thinking applied to real complexity.
-          Every project here began with an impossible-sounding idea — and ended with something that works.
+          One idea, two people who couldn&apos;t leave it alone. Everything here traces back to
+          the same insight, pushed to its conclusion twice — once as a way to train a single
+          decision, once as a way to watch a whole system come apart.
         </p>
 
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-[#13111e] rounded-xl p-8 border border-[#2a2540] flex flex-col">
-            <div className="text-cyan-400 text-sm font-semibold uppercase tracking-wide mb-3">Pillar One</div>
             <h2 className="text-2xl font-bold text-white mb-4">Decision Intelligence</h2>
             <p className="text-[#b8b0d8] leading-relaxed mb-6 flex-1">
               AI-driven simulation environments for high-stakes decision making.
-              Rooted in chronosymbiosis and the Observer Patch Holography (OPH) framework,
-              these tools help leaders rehearse complexity before they face it.
+              Rooted in chronosymbiosis, these tools help leaders rehearse complexity
+              before they face it.
             </p>
             <Link
               href="/projects/decision-intelligence"
@@ -33,7 +33,6 @@ export default function ProjectsPage() {
           </div>
 
           <div className="bg-[#13111e] rounded-xl p-8 border border-[#2a2540] flex flex-col">
-            <div className="text-cyan-400 text-sm font-semibold uppercase tracking-wide mb-3">Pillar Two</div>
             <h2 className="text-2xl font-bold text-white mb-4">Resilience Intelligence</h2>
             <p className="text-[#b8b0d8] leading-relaxed mb-6 flex-1">
               Cascade modeling of energy systems and social infrastructure.
@@ -52,7 +51,7 @@ export default function ProjectsPage() {
         <div className="mt-16 bg-[#13111e] rounded-xl p-8 border border-[#2a2540]">
           <h2 className="text-xl font-bold text-white mb-3">The Connection</h2>
           <p className="text-[#b8b0d8] leading-relaxed max-w-3xl">
-            These pillars are not parallel tracks — they feed each other.
+            These were never two separate projects running in parallel — they feed each other.
             Energy supply shocks are exactly the kind of high-stakes, low-rehearsal scenarios
             that Decision Intelligence is built to simulate. The cascade methodology that maps
             infrastructure vulnerability is the same method that structures decision rehearsal.
