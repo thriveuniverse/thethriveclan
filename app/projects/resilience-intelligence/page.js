@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import NewsletterSignup from '../../components/NewsletterSignup';
 
 export const metadata = {
   title: 'Resilience Intelligence | The Thrive Clan',
@@ -176,9 +177,13 @@ export default function ResilienceIntelligencePage() {
             are the same structural approach used to design decision rehearsal scenarios.
             See how this feeds into simulation architecture —{' '}
             <Link href="/projects/decision-intelligence" className="text-cyan-400 hover:text-cyan-300 font-medium">
-              Decision Intelligence →
+              Last Prompt →
             </Link>
           </p>
+        </div>
+
+        <div className="mt-8">
+          <NewsletterSignup />
         </div>
 
         <div className="mt-8">

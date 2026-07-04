@@ -103,7 +103,7 @@ export default function TheMethodPage() {
         {/* Cross-links */}
         <div className="mt-4 flex gap-6">
           <Link href="/projects/decision-intelligence" className="text-cyan-400 font-medium hover:text-cyan-300 transition-colors text-sm">
-            See it in Decision Intelligence →
+            See it in Last Prompt →
           </Link>
           <Link href="/projects/resilience-intelligence" className="text-cyan-400 font-medium hover:text-cyan-300 transition-colors text-sm">
             See it in Resilience Intelligence →

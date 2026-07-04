@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'About Us | The Thrive Clan',
-  description: 'Miranda and Jonathan Kelly — the people behind Decision Intelligence, Resilience Intelligence, and the methodology that connects them.',
+  description: 'Miranda and Jonathan Kelly — the people behind Last Prompt, Resilience Intelligence, and the methodology that connects them.',
 };
 
 export default function About() {
@@ -14,7 +14,7 @@ export default function About() {
             "@type": "Organization",
             name: "The Thrive Clan",
             url: "https://thethriveclan.com",
-            description: "Decision Intelligence and Resilience Intelligence — rigorous research spanning AI simulation, energy systems, and cascade modeling.",
+            description: "Last Prompt and Resilience Intelligence — rigorous research spanning AI simulation, energy systems, and cascade modeling.",
             foundingDate: "2025",
             founder: [
               {

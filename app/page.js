@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const metadata = {
   title: 'The Thrive Clan | Big Ideas, Rigorous Execution',
-  description: 'Decision Intelligence and Resilience Intelligence — rigorous, real-world research spanning AI simulation, energy systems, and cascade modeling.',
+  description: 'Last Prompt and Resilience Intelligence — rigorous, real-world research spanning AI simulation, energy systems, and cascade modeling.',
 };
 
 export default function Home() {
@@ -38,7 +38,7 @@ export default function Home() {
             href="/projects/decision-intelligence"
             className="inline-block bg-cyan-500 text-white font-semibold py-3 px-7 rounded-lg hover:bg-cyan-600 transition-colors"
           >
-            Decision Intelligence →
+            Last Prompt →
           </Link>
           <Link
             href="/projects/resilience-intelligence"
@@ -64,7 +64,7 @@ export default function Home() {
           decisions are shaping your reality for you.
         </p>
         <p className="text-lg text-[#b8b0d8] leading-relaxed">
-          Decision Intelligence and Resilience Intelligence are both attempts to answer the same
+          Last Prompt and Resilience Intelligence are both attempts to answer the same
           question — what does it look like to decide with intention, in conditions complex enough
           to matter?
         </p>
@@ -78,7 +78,7 @@ export default function Home() {
             className="block bg-[#13111e] rounded-xl p-8 border border-[#2a2540] hover:border-cyan-700 hover:shadow-lg transition-all group"
           >
             <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors">
-              Decision Intelligence
+              Last Prompt
             </h2>
             <p className="text-[#b8b0d8] leading-relaxed">
               AI-driven simulation for high-stakes decision rehearsal. Built on chronosymbiosis.
@@ -121,12 +121,11 @@ export default function Home() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6706518"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/downloads/the-development-trap-of-the-protected-generation.pdf"
+                  download
                   className="text-[#b8b0d8] hover:text-cyan-400 transition-colors text-sm leading-snug block"
                 >
-                  Decision Intelligence Framework — SSRN →
+                  The Development Trap — Working Paper →
                 </a>
               </li>
               <li>
