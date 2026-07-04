@@ -1,22 +1,24 @@
 # The Thrive Clan
 
-> Independent research and development at the intersection of decision intelligence and systemic resilience. Two projects, one methodology, one hub.
+> Independent research from Miranda and Jonathan Kelly, at the intersection of decision-making under uncertainty and systemic risk. One shared insight, followed to two different conclusions: Last Prompt and the Oil Watch platforms.
 
-The Thrive Clan (thethriveclan.com) is the intellectual home of two research pillars built by independent researchers Jonathan Kelly and Miranda Kelly. The site exists to explain the connection between those two pillars — and why that connection is the point. It is not a product site. Product and methodology documentation lives elsewhere in the ecosystem (see below).
+The Thrive Clan (thethriveclan.com) is the shared home explaining the connection between two projects built by independent researchers Jonathan Kelly and Miranda Kelly. It is not a product site — product and methodology documentation lives elsewhere in the ecosystem (see below).
 
-## The Two Pillars
+## The Core Insight
 
-### Pillar One: Decision Intelligence
+Institutions and individuals systematically underestimate risk and consequence because they assess factors independently and combine them additively. Reality is interactive and multiplicative — the damage lives in the interaction, not the individual event. This shows up two ways: as a chain of consequence through interconnected systems (cascade modeling, applied to energy infrastructure), and as a resonance of influence through time (chronosymbiosis, applied to individual decision-making). Same problem. Two scales. One method.
 
-Last Prompt is a consequence-bearing reasoning environment for developing decision-making capacity under conditions of partial information. It is consistently misclassified — it is not a game, not a simulation, not a training course, and not a tool for learning how to write AI prompts. It is a domain-agnostic evaluation architecture that scores the quality of reasoning independently of outcome, and in which the world changes based on the quality of each decision made.
+## Last Prompt (displayed on-site as "Decisions that Remember")
+
+Last Prompt is a consequence-bearing reasoning environment for developing decision-making capacity under conditions of partial information. It is consistently misclassified — it is not a game, not a simulation, not a training course, and not a tool for learning how to write AI prompts. It is a domain-agnostic evaluation architecture that scores the quality of reasoning independently of outcome, in which the world changes based on the quality of each decision made.
 
 Every practitioner starts at the same point. From the first decision, their path diverges permanently — the environment shifts based on what they wrote, and the next event is drawn from whichever dimension their reasoning left most exposed. Two practitioners with identical scores are already navigating different worlds by the second cycle.
 
 - [last-prompt.com](https://last-prompt.com) — Full documentation: engine architecture, evaluation rubric, partial perspective structure, and all three narrative implementations (Colony, Corporate Reckoning, Lockwood)
 - [lastprompt.io](https://lastprompt.io) — The live decision environment (beta)
-- [SSRN 6706518](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6706518) — "Last Prompt: Operationalising Partial Perspectives in Decision Intelligence Training" — Kelly & Kelly (2026). Academic framework: deliberate practice theory, situated cognition, chronosymbiosis, Observer Patch Holography adjacency.
+- "The Development Trap of the Protected Generation" — Kelly & Kelly (2026), working paper. Downloadable from thethriveclan.com/projects/decision-intelligence. Academic framework: deliberate practice theory, situated cognition, chronosymbiosis.
 
-### Pillar Two: Resilience Intelligence
+## Resilience Intelligence
 
 The Compound Cascade Systems Modelling Framework is a methodology for building probabilistic risk models of systemic crises. It addresses a structural gap in institutional risk analysis: institutions model risk factors in silos and combine them additively. No institution is mandated to model the interactions between domains. The framework maps how each risk chain triggers, amplifies, or constrains the others — consistently producing risk estimates 3–5 times higher than additive institutional projections using the same underlying data.
 
@@ -29,27 +31,24 @@ The methodology has been applied to two fundamentally different systems: a singl
 - [From Hormuz to Hunger](https://ukoilwatch.com/reports/from-hormuz-to-hunger) — Cascade model: Strait of Hormuz blockade → global food system collapse (published across all three OilWatch platforms)
 - [The Fall of the UK](https://ukoilwatch.com/reports/the-fall-of-the-uk) — Cascade model: multi-vector endogenous UK structural decline (published across all three OilWatch platforms)
 
-## The Connection Between the Pillars
+## How the Two Connect
 
-The two pillars share a common underlying methodology: cascade modeling and chronosymbiosis. The same structural logic — present state, threshold, cascade, new state — maps both how energy supply shocks propagate through global systems and how a single poor decision in a complex environment creates the conditions that make future crises unavoidable.
-
-Both systems were built independently for different problems and arrived at the same architecture. The Compound Cascade Framework maps how failures compound across interconnected systems at scale. The Last Prompt engine applies the same compounding logic to individual decision environments, where each decision reshapes the terrain the next one must navigate.
+Last Prompt and the Oil Watch platforms are not two separate products that happen to rhyme — they are the same reflex, applied at two different scales, by two people who couldn't leave the pattern alone. Both were built independently, for different problems, and arrived at the same underlying structure: present state, threshold, cascade, new state. The Compound Cascade Framework maps how failures compound across interconnected systems at scale. Last Prompt applies the same compounding logic to individual decision environments, where each decision reshapes the terrain the next one must navigate.
 
 ## Key Terms and Concepts
 
-- **Chronosymbiosis**: The principle that every decision exists in a living relationship with the decisions that preceded it and the decisions it will make possible or foreclose. Not hindsight — the active, real-time management of the temporal thread. Operationalised as the sixth rubric criterion (`temporal_symbiosis`) in the Last Prompt evaluation architecture.
+- **Chronosymbiosis**: The principle that every decision exists in a living relationship with the decisions that preceded it and the decisions it will make possible or foreclose. Not hindsight — the active, real-time management of the temporal thread. Operationalised as the sixth rubric criterion (`temporal_symbiosis`) in the Last Prompt evaluation architecture. Predates and is unrelated to any external framework.
 - **Compound Cascade Modeling**: Risk methodology that models how failures interact and amplify each other rather than treating risk factors as independent and additive. The methodology gap between additive and compound assessment is itself the central finding — not a claim about the data.
 - **Partial Perspective Structure**: Each advisor in the Last Prompt engine reports honestly and completely within their domain. None reports beyond it. The practitioner must synthesise one partial perspective against the silent testimony of an environmental state that tracks the accumulated consequence of every prior decision.
-- **Observer Patch Holography (OPH)**: An external theoretical framework developed by Bernhard Mueller with structural parallels to both projects. A discovered adjacency, not a guiding principle of either project.
-- **Last Prompt**: A consequence-bearing reasoning environment with calibrated evaluation. Not a game. Not a simulation. Not a training course. Not an AI prompting tool.
+- **Last Prompt**: A consequence-bearing reasoning environment with calibrated evaluation, displayed on thethriveclan.com under the name "Decisions that Remember." Not a game. Not a simulation. Not a training course. Not an AI prompting tool.
 
 ## Site Structure
 
 - [/](https://thethriveclan.com) — Hub homepage
-- [/projects](https://thethriveclan.com/projects) — Both pillars
-- [/projects/decision-intelligence](https://thethriveclan.com/projects/decision-intelligence) — Decision Intelligence pillar
-- [/projects/resilience-intelligence](https://thethriveclan.com/projects/resilience-intelligence) — Resilience Intelligence pillar
+- [/projects](https://thethriveclan.com/projects) — Both projects, and how they connect
+- [/projects/decision-intelligence](https://thethriveclan.com/projects/decision-intelligence) — Last Prompt ("Decisions that Remember")
+- [/projects/resilience-intelligence](https://thethriveclan.com/projects/resilience-intelligence) — Resilience Intelligence / Oil Watch
 - [/the-method](https://thethriveclan.com/the-method) — Cascade modeling and chronosymbiosis explained
 - [/about](https://thethriveclan.com/about) — About the researchers
-- [/blog](https://thethriveclan.com/blog) — Chronicles
+- [/blog](https://thethriveclan.com/blog) — Notes
 - [/contact](https://thethriveclan.com/contact) — Contact
