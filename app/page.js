@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const metadata = {
   title: 'The Thrive Clan | Big Ideas, Rigorous Execution',
-  description: 'Last Prompt and Resilience Intelligence — rigorous, real-world research spanning AI simulation, energy systems, and cascade modeling.',
+  description: 'Last Prompt and Resilience Intelligence — rigorous, real-world research spanning AI reasoning environments, energy systems, and cascade modeling.',
 };
 
 export default function Home() {
@@ -28,7 +28,7 @@ export default function Home() {
         </h1>
         <p className="text-xl text-[#b8b0d8] leading-relaxed">
           One of us arrives with the impossible idea. The other makes it rigorous, real, and
-          deployed. Between us we&apos;ve built AI decision simulation engines, live energy supply
+          deployed. Between us we&apos;ve built AI-evaluated reasoning engines, live energy supply
           dashboards, and published the frameworks that connect them — all because the ideas
           were too interesting to leave alone. What we didn&apos;t expect was that they would
           turn out to be the same thing.
@@ -84,7 +84,7 @@ export default function Home() {
               Decisions that Remember
             </h2>
             <p className="text-[#b8b0d8] leading-relaxed">
-              AI-driven simulation for high-stakes decision rehearsal. Built on chronosymbiosis.
+              A consequence-bearing reasoning environment for high-stakes decision rehearsal. Built on chronosymbiosis.
               The mandate: help leaders think through complexity before they face it.
             </p>
           </Link>

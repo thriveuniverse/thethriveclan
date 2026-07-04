@@ -21,7 +21,7 @@ export default function ProjectsPage() {
             <div className="text-cyan-400 text-xs font-semibold uppercase tracking-widest mb-2">Last Prompt</div>
             <h2 className="text-2xl font-bold text-white mb-4">Decisions that Remember</h2>
             <p className="text-[#b8b0d8] leading-relaxed mb-6 flex-1">
-              AI-driven simulation environments for high-stakes decision making.
+              Consequence-bearing reasoning environments for high-stakes decision making.
               Rooted in chronosymbiosis, these tools help leaders rehearse complexity
               before they face it.
             </p>
@@ -54,7 +54,7 @@ export default function ProjectsPage() {
           <p className="text-[#b8b0d8] leading-relaxed max-w-3xl">
             These were never two separate projects running in parallel — they feed each other.
             Energy supply shocks are exactly the kind of high-stakes, low-rehearsal scenarios
-            that Last Prompt is built to simulate. The cascade methodology that maps
+            that Last Prompt is built to rehearse. The cascade methodology that maps
             infrastructure vulnerability is the same method that structures decision rehearsal.
             Both are expressions of the same underlying process —{' '}
             <Link href="/the-method" className="text-cyan-400 hover:text-cyan-300 font-medium">

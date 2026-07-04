@@ -14,7 +14,7 @@ export default function About() {
             "@type": "Organization",
             name: "The Thrive Clan",
             url: "https://thethriveclan.com",
-            description: "Last Prompt and Resilience Intelligence — rigorous research spanning AI simulation, energy systems, and cascade modeling.",
+            description: "Last Prompt and Resilience Intelligence — rigorous research spanning AI reasoning environments, energy systems, and cascade modeling.",
             foundingDate: "2025",
             founder: [
               {

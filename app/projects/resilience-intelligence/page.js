@@ -175,7 +175,7 @@ export default function ResilienceIntelligencePage() {
             <span className="font-semibold text-white">Where it connects: </span>
             The cascade models built here — mapping how shocks propagate across energy and social systems —
             are the same structural approach used to design decision rehearsal scenarios.
-            See how this feeds into simulation architecture —{' '}
+            See how this feeds into the decision engine —{' '}
             <Link href="/projects/decision-intelligence" className="text-cyan-400 hover:text-cyan-300 font-medium">
               Last Prompt →
             </Link>

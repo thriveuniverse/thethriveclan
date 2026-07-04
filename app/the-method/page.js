@@ -54,7 +54,7 @@ export default function TheMethodPage() {
                 <span className="font-semibold text-white">In the decision engine: </span>
                 The LastPrompt engine applies cascade logic through interdependency multipliers —
                 when cohesion is low, diplomacy outcomes are dampened; when infrastructure is
-                weak, sustenance shocks amplify. Risk in the simulation is compound, not additive.
+                weak, sustenance shocks amplify. Risk in the engine is compound, not additive.
                 The same structure that maps energy chokepoints models organisational fragility.
               </p>
             </div>
