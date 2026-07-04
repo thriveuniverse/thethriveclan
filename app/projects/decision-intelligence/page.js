@@ -98,12 +98,12 @@ export default function LastPromptPage() {
                 How the engine works →
               </a>
               <a
-                href="https://lastprompt.io"
+                href="https://last-prompt.com/#contact"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors"
               >
-                Visit LastPrompt.io →
+                Apply for beta access →
               </a>
             </div>
           </div>

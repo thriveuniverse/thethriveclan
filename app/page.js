@@ -179,12 +179,12 @@ export default function Home() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="https://lastprompt.io"
+                  href="https://last-prompt.com/#contact"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#b8b0d8] hover:text-cyan-400 transition-colors text-sm block"
                 >
-                  LastPrompt.io →
+                  Apply for Beta Access →
                 </a>
               </li>
               <li>
