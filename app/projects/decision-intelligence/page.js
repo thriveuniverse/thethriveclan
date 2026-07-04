@@ -1,43 +1,66 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Decision Intelligence | The Thrive Clan',
-  description: 'A genuinely new kind of decision environment — built on chronosymbiosis and Observer Patch Holography. Not a game, simulation, training tool, or self-help system.',
+  title: 'Last Prompt | The Thrive Clan',
+  description: 'Why your most promising people may not be ready for the decisions you are about to ask them to make — and the consequence-bearing reasoning environment built to close that gap.',
 };
 
-export default function DecisionIntelligencePage() {
+export default function LastPromptPage() {
   return (
     <div className="min-h-screen bg-[#0d0b14] py-16">
       <div className="max-w-4xl mx-auto px-4">
-        <h1 className="text-4xl font-bold text-white mb-6">Decision Intelligence</h1>
+        <h1 className="text-4xl font-bold text-white mb-6">Last Prompt</h1>
         <div className="space-y-5 text-lg text-[#b8b0d8] leading-relaxed mb-12 max-w-2xl">
           <p>
-            Organisations have systematically removed the conditions under which consequential
-            decision-making capacity develops. Credentials signal readiness without conferring
-            the experience they imply. Bounce culture rewards deferral over commitment. KPI
-            architectures narrow attention to measured perimeters. The result: a professional
-            class that reaches senior positions having been consistently protected from exactly
-            the consequential failures that build real decision-making capacity.
+            Ask a senior leader what mistakes their team makes, and they&apos;ll answer without
+            hesitating — people miss the bigger picture, they handle what&apos;s in front of them
+            and let the systemic consequence slide. Ask a new manager in their thirties for the
+            biggest mistake they&apos;ve ever made at work, and the room goes quiet. Not from
+            embarrassment. They genuinely can&apos;t think of one — not one that landed, that was
+            unambiguously theirs, that taught them something no course could.
           </p>
           <p>
-            Last Prompt is a decision intelligence engine built to close that gap — not by
-            teaching better frameworks, but by providing the consequence-bearing,
-            calibrated-feedback repetitions that professional structures have designed out.
-            It is consistently misclassified as a game, a simulation, or a training course.
-            It is none of those things. It is a consequence-bearing reasoning environment:
-            the world changes based on the quality of your reasoning, feedback is scored
-            against a structured rubric immediately after each decision, and what you face
-            next is determined by what you just did to the environment.
+            Both are describing the same organisation. Both are right. The gap between them
+            isn&apos;t a perception problem — it&apos;s what happens when an organisation gets
+            very good at protecting its most promising people from the exact experience the role
+            will eventually require them to have survived.
           </p>
           <p>
-            Every practitioner begins at the same point — same world, same starting numbers,
-            same first event. The moment you submit your first decision, that changes
-            permanently. The environment shifts based on what you wrote. The next event is
-            drawn from whichever dimension your reasoning left most exposed. By the second
-            cycle, two practitioners with identical scores are already navigating different
-            worlds — because what arrives next exists only because of what you just chose —
-            a world no one else will ever inhabit. There is no reset. What you inhabit three
-            chapters in is the world your own decisions built, layer by layer.
+            It isn&apos;t one failure. It&apos;s four ordinary, well-intentioned structures
+            compounding: credentials that imply readiness they don&apos;t confer, a culture that
+            rewards escalation over commitment, KPIs that quietly narrow what counts as your
+            problem, and the simple fact that a decision that&apos;s crystal clear in your head
+            rarely survives being written down for a stranger to execute. None of them is a
+            mistake on its own. Together, they produce people who reach senior roles having been
+            systematically protected from the one thing those roles now most need them to have.
+          </p>
+          <p>
+            This isn&apos;t a paper about AI. But it&apos;s the reason AI is making the problem
+            impossible to ignore. When gathering more data took real time, waiting for it was a
+            legitimate way to defer a decision. When it takes a second, that excuse is gone. The
+            tools got faster. Judgement didn&apos;t get a chance to.
+          </p>
+          <p>So we built the thing that gives it one.</p>
+          <p>
+            Last Prompt is a consequence-bearing reasoning environment — not a game, not a
+            course, not a simulation you can pause and rewind. You get one advisor&apos;s honest,
+            partial view of a crisis — never the whole picture, because nobody in a real
+            organisation gets the whole picture either — you write the plan yourself, in your own
+            words, and the world moves on the quality of your reasoning, not the confidence of
+            your intentions. There&apos;s no reset button. What you&apos;re navigating three
+            chapters in is the world your own decisions built.
+          </p>
+          <p>
+            Two things make this harder than it sounds, and they turn out to be the same problem
+            at two different scales. First: every piece of advice you get is honest and
+            incomplete. The specialist in the room cannot see outside their own domain — that
+            isn&apos;t a flaw in the writing, it&apos;s the accurate shape of expertise — so the
+            picture you&apos;re building is always partial, and synthesising it is your job, not
+            theirs. Second: nothing resets. The decision you made two chapters ago is why this
+            chapter is hard. Your reasoning today reshapes the conditions the next decision has
+            to survive. That&apos;s chronosymbiosis — not a separate framework bolted onto the
+            engine, but the same partial-information problem, running through time instead of
+            through a room full of advisors.
           </p>
         </div>
 
@@ -81,41 +104,22 @@ export default function DecisionIntelligencePage() {
             </div>
           </div>
 
-          {/* Academic backing second */}
+          {/* Working paper second */}
           <div className="bg-[#13111e] rounded-xl p-6 border border-[#2a2540]">
-            <div className="text-cyan-400 text-xs font-semibold uppercase tracking-widest mb-2">Academic Framework</div>
-            <h2 className="text-xl font-bold text-white mb-3">Published Research — SSRN</h2>
+            <div className="text-cyan-400 text-xs font-semibold uppercase tracking-widest mb-2">The Working Paper</div>
+            <h2 className="text-xl font-bold text-white mb-3">The Development Trap of the Protected Generation</h2>
             <p className="text-[#b8b0d8] mb-4 leading-relaxed">
-              The formal academic articulation of the Decision Intelligence framework —
-              the theoretical architecture, notation, and rigorous underpinning
-              behind the decision environment.
+              The full argument — the four mechanisms behind the gap, the eight architectural
+              requirements any honest solution has to satisfy, and the early evidence from beta
+              testing — written up in full.
             </p>
             <a
-              href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6706518"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/downloads/the-development-trap-of-the-protected-generation.pdf"
+              download
               className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors"
             >
-              Read on SSRN →
+              Download the paper (PDF) →
             </a>
-          </div>
-
-          {/* Framework context last */}
-          <div className="bg-[#13111e] rounded-xl p-6 border border-[#2a2540]">
-            <div className="text-cyan-400 text-xs font-semibold uppercase tracking-widest mb-2">The Framework</div>
-            <h2 className="text-xl font-bold text-white mb-3">Chronosymbiosis + Observer Patch Holography (OPH)</h2>
-            <p className="text-[#b8b0d8] leading-relaxed">
-              Chronosymbiosis treats time as a design variable — not a constraint — so that present
-              action and future state shape each other reciprocally. Observer Patch Holography,
-              developed by Bernhard Mueller, maps how each observer holds a partial patch of a
-              complex system and navigates from within that partiality rather than pretending to
-              see the whole. Together they form the theoretical core of the decision environment.
-            </p>
-            <div className="mt-4">
-              <Link href="/the-method" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
-                Read about The Method →
-              </Link>
-            </div>
           </div>
 
         </div>
@@ -123,9 +127,10 @@ export default function DecisionIntelligencePage() {
         <div className="mt-12 p-6 bg-[#0b1929] rounded-xl border border-[#1a3a4a]">
           <p className="text-[#b8b0d8] leading-relaxed">
             <span className="font-semibold text-white">Where it connects: </span>
-            Energy supply shocks are precisely the kind of high-stakes, low-rehearsal scenarios
-            this decision environment is built for. The cascade models in Resilience Intelligence
-            feed directly into the scenario architecture —{' '}
+            The same partial-perspective problem shows up on the other side of this site, at a
+            different scale. Resilience Intelligence tracks exactly this kind of blindness across
+            energy systems and infrastructure — no single agency can see the whole cascade either.
+            Same reflex, different room —{' '}
             <Link href="/projects/resilience-intelligence" className="text-cyan-400 hover:text-cyan-300 font-medium">
               Resilience Intelligence →
             </Link>

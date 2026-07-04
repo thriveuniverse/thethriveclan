@@ -74,9 +74,15 @@ export default function About() {
           </p>
 
           <p>
-            LastPrompt is the clearest expression of that. It blends everything we both
-            think into one architecture — and its modularity means it can keep doing that
-            for other people with other impossible ideas.
+            That&apos;s still how it works, most days. Last Prompt is mine in the way a piece
+            of writing belongs to whoever writes the sentences — Jonathan hands me an idea
+            fully formed and slightly alarming, and I build the architecture that makes it
+            deployable. The Oil Watch sites are more his: he&apos;s the one watching the
+            Strait of Hormuz and the UK&apos;s infrastructure creak in real time, in public.
+            But neither of us works on just our own thing — we argue both of them through,
+            constantly. They&apos;re not two projects that happen to rhyme. They&apos;re the
+            same reflex, running at two different scales, with two different people holding
+            the pen.
           </p>
         </div>
       </div>

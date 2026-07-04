@@ -16,8 +16,18 @@ export default function TheMethodPage() {
           problems — how leaders rehearse high-stakes decisions, and how energy systems cascade
           into crisis. The method emerged when we noticed we were writing the same equations twice.
         </p>
+        <p className="text-lg text-[#b8b0d8] leading-relaxed mb-4 max-w-2xl">
+          Cascade Modeling is a chain of consequence — one shock forcing the next, propagating
+          outward through a system. Chronosymbiosis is a resonance through threads — the way a
+          decision made now echoes forward and reshapes what&apos;s possible later. Different
+          objects, a system and a timeline, but the same structural logic underneath: present
+          state, threshold, cascade, new state. We built both engines independently, for
+          different problems, and only noticed afterward that we&apos;d arrived at the same
+          architecture twice.
+        </p>
         <p className="text-[#7a7598] mb-12 max-w-2xl leading-relaxed">
-          Two components. Two projects. One running system. Here&apos;s how they fit together.
+          Here&apos;s each one on its own, and where you can see it running live inside the
+          decision engine.
         </p>
 
         <div className="space-y-6 mb-12">
@@ -82,20 +92,11 @@ export default function TheMethodPage() {
 
         {/* Synthesis */}
         <div className="bg-[#1e1b30] rounded-xl p-8 border border-[#2a2540] mb-8">
-          <h2 className="text-xl font-bold text-white mb-4">One System, Not Two Components</h2>
-          <p className="text-[#b8b0d8] leading-relaxed mb-4">
-            Cascade modeling and chronosymbiosis are not two separate techniques. They are the
-            same insight applied at two different scales. Cascade modeling describes how shocks
-            propagate through interconnected systems. Chronosymbiosis describes how decisions
-            propagate through time — reshaping the conditions under which future decisions will
-            be made. The structural logic is identical: present state, threshold, cascade, new state.
-          </p>
           <p className="text-[#b8b0d8] leading-relaxed">
-            The discovery was that we had built both engines independently, for different problems,
-            and arrived at the same architecture. Applied to energy systems, it maps how a
-            disruption at the Strait of Hormuz reaches a UK supermarket shelf. Applied to decision
-            environments, it maps how a poor allocation in Chapter One creates the fragile landscape
-            that makes Chapter Three&apos;s crisis unavoidable. Same problem. Two scales. One method.
+            Applied to energy systems, it maps how a disruption at the Strait of Hormuz reaches
+            a UK supermarket shelf. Applied to decision environments, it maps how a poor
+            allocation in Chapter One creates the fragile landscape that makes Chapter
+            Three&apos;s crisis unavoidable. Same problem. Two scales. One method.
           </p>
         </div>
 
