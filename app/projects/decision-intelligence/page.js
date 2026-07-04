@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Last Prompt | The Thrive Clan',
+  title: 'Decisions that Remember | The Thrive Clan',
   description: 'Why your most promising people may not be ready for the decisions you are about to ask them to make — and the consequence-bearing reasoning environment built to close that gap.',
 };
 
@@ -9,7 +9,7 @@ export default function LastPromptPage() {
   return (
     <div className="min-h-screen bg-[#0d0b14] py-16">
       <div className="max-w-4xl mx-auto px-4">
-        <h1 className="text-4xl font-bold text-white mb-6">Last Prompt</h1>
+        <h1 className="text-4xl font-bold text-white mb-6">Decisions that Remember</h1>
         <div className="space-y-5 text-lg text-[#b8b0d8] leading-relaxed mb-12 max-w-2xl">
           <p>
             Ask a senior leader what mistakes their team makes, and they&apos;ll answer without
@@ -41,6 +41,10 @@ export default function LastPromptPage() {
             tools got faster. Judgement didn&apos;t get a chance to.
           </p>
           <p>So we built the thing that gives it one.</p>
+        </div>
+
+        <h2 className="text-2xl font-bold text-white mb-4">This is Last Prompt</h2>
+        <div className="space-y-5 text-lg text-[#b8b0d8] leading-relaxed mb-12 max-w-2xl">
           <p>
             Last Prompt is a consequence-bearing reasoning environment — not a game, not a
             course, not a simulation you can pause and rewind. You get one advisor&apos;s honest,

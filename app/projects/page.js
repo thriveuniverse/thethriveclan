@@ -18,7 +18,8 @@ export default function ProjectsPage() {
 
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-[#13111e] rounded-xl p-8 border border-[#2a2540] flex flex-col">
-            <h2 className="text-2xl font-bold text-white mb-4">Last Prompt</h2>
+            <div className="text-cyan-400 text-xs font-semibold uppercase tracking-widest mb-2">Last Prompt</div>
+            <h2 className="text-2xl font-bold text-white mb-4">Decisions that Remember</h2>
             <p className="text-[#b8b0d8] leading-relaxed mb-6 flex-1">
               AI-driven simulation environments for high-stakes decision making.
               Rooted in chronosymbiosis, these tools help leaders rehearse complexity

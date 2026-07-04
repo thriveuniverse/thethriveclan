@@ -38,7 +38,7 @@ export default function Home() {
             href="/projects/decision-intelligence"
             className="inline-block bg-cyan-500 text-white font-semibold py-3 px-7 rounded-lg hover:bg-cyan-600 transition-colors"
           >
-            Last Prompt →
+            Decisions that Remember →
           </Link>
           <Link
             href="/projects/resilience-intelligence"
@@ -77,8 +77,11 @@ export default function Home() {
             href="/projects/decision-intelligence"
             className="block bg-[#13111e] rounded-xl p-8 border border-[#2a2540] hover:border-cyan-700 hover:shadow-lg transition-all group"
           >
-            <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors">
+            <div className="text-cyan-400 text-xs font-semibold uppercase tracking-widest mb-2">
               Last Prompt
+            </div>
+            <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors">
+              Decisions that Remember
             </h2>
             <p className="text-[#b8b0d8] leading-relaxed">
               AI-driven simulation for high-stakes decision rehearsal. Built on chronosymbiosis.
