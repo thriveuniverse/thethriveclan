@@ -1,0 +1,13 @@
+# The Tunnel and the Mountain
+
+*Essay · thethriveclan.com*
+
+A lot of companies work hard to protect their employees from their own decisions. It's built on a reasonable-sounding assumption: young staff will get something wrong, not always, but at least once — so why not build a system that stops that from happening? Spare them the pain and the embarrassment of messing up. Spare the boss the fallout. Spare the bottom line.
+
+This is more or less what a KPI does. It tells an employee exactly what will be measured, exactly what "good" looks like, well before they've had the chance to work that out themselves. It would be genuinely cruel to set a target beyond someone's experience — so the target gets set safely inside it instead. Which raises the question nobody quite asks out loud: what, precisely, are we protecting people from? Is it failure — or is it themselves? Is it the company, or is it the discomfort of watching someone learn the hard way, in real time, where we can see it?
+
+I met my husband at university, and even then, I had enough experience of other people to know he was a keeper. But if he'd been the very first person I'd ever met, how would I have known that? If I'd spent my whole life protected from ever encountering a bully, how would I recognise one when he showed up? You can't actually know the shape of "good" unless you've also had some contact with what isn't. Shield someone from the whole range of the thing, and you haven't kept them safe — you've just removed their ability to tell the difference.
+
+I'm not arguing for throwing young employees to the wolves. Nobody needs to be sacrificed to the brutal, unfiltered version of the working world to grow. But there's a real cost to the alternative that we don't talk about honestly enough: a KPI tunnel gets you to the destination, directly, safely, on schedule. It also means you never once had to look up, read the terrain yourself, or decide which way was actually right. The mountain route is harder. It takes longer. You might get it wrong. But it's a route you actually *learned*, and somewhere in all that difficulty, it was also — and this matters — a thousand times more thrilling than the tunnel ever was.
+
+That's the whole design behind Last Prompt, in one line: there's no tunnel. Every world hands a practitioner a set of interdependent conditions and lets them find their own way through, with no marked path and no promise the route they pick is the right one. Not because getting it wrong doesn't matter — it does, and the world remembers it — but because the tunnel was never actually protecting anyone. It was just quietly deciding, on their behalf, that they'd never get the chance to climb.
