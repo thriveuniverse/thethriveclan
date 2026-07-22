@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "thethriveclan.com",
+  "Id": "402556f3-4d42-4ed0-b284-129ee3206625"
+}
