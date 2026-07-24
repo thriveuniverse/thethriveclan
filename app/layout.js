@@ -64,6 +64,7 @@ function Footer() {
     <footer className="bg-[#0a0912] border-t border-[#2a2540] py-6">
       <div className="mx-auto max-w-7xl px-4 text-center text-sm text-[#7a7598] space-y-4">
         <div>© {new Date().getFullYear()} The Thrive Clan · All rights reserved.</div>
+        <div>© 2026 Jonathan and Miranda KELLY Dépôt INPI e-Soleau n° DSO2026006207. All rights reserved.</div>
         <nav className="flex flex-wrap justify-center gap-4">
           {visibleNavItems.map((item) => (
             <Link
