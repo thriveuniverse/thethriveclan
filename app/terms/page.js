@@ -27,7 +27,7 @@ export default function Terms() {
         <p className="text-gray-700 leading-relaxed mb-4">
           French law governs. Disputes in [your local court, e.g., Paris].
         </p>
-        <p className="text-gray-700 italic mt-8">Questions? Email support@thethriveclan.com.</p>
+        <p className="text-gray-700 italic mt-8">Questions? Email support@thethriveclan.com. </p>
       </div>
     </div>
   );
