@@ -126,6 +126,23 @@ export default function LastPromptPage() {
             </a>
           </div>
 
+          {/* Origin essay third */}
+          <div className="bg-[#13111e] rounded-xl p-6 border border-[#2a2540]">
+            <div className="text-cyan-400 text-xs font-semibold uppercase tracking-widest mb-2">The Origin</div>
+            <h2 className="text-xl font-bold text-white mb-3">The Glass</h2>
+            <p className="text-[#b8b0d8] mb-4 leading-relaxed">
+              The event is never what ends the system — it&apos;s the thing nobody was watching
+              while everyone stared at the crisis. The personal essay behind why Last Prompt
+              exists.
+            </p>
+            <Link
+              href="/blog/essays/the-glass"
+              className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors"
+            >
+              Read the essay →
+            </Link>
+          </div>
+
         </div>
 
         <div className="mt-12 p-6 bg-[#0b1929] rounded-xl border border-[#1a3a4a]">

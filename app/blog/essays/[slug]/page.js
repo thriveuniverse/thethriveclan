@@ -12,10 +12,19 @@ const essaysDirectory = path.join(process.cwd(), "content/essays");
 function renderEssayBody(content) {
   const blocks = content.trim().split(/\n\n+/);
   return blocks.map((block, i) => {
-    if (block.trim() === '---') {
+    const trimmedBlock = block.trim();
+    if (trimmedBlock === '---') {
       return <hr key={i} className="my-8 border-[#2a2540]" />;
     }
-    const parts = block.trim().split(/(\*[^*]+\*)/g);
+    if (trimmedBlock.startsWith('>')) {
+      const quote = trimmedBlock.split('\n').map((line) => line.replace(/^>\s?/, '')).join(' ');
+      return (
+        <blockquote key={i} className="my-8 pl-6 border-l-4 border-cyan-700 italic text-white">
+          {quote}
+        </blockquote>
+      );
+    }
+    const parts = trimmedBlock.split(/(\*[^*]+\*)/g);
     return (
       <p key={i} className="mb-6 leading-relaxed">
         {parts.map((part, j) =>
