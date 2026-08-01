@@ -11,24 +11,29 @@ export default function CookieConsentBanner() {
 
   useEffect(() => {
     // Simple client-side EU detection (use a real IP API like ipapi.co for prod)
-    const detectEU = async () => {
+    const init = async () => {
+      let isEUVisitor;
       try {
         const res = await fetch('https://ipapi.co/json/');
         const data = await res.json();
         const euCountries = ['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE'];  // EU ISO codes
-        setIsEU(euCountries.includes(data.country_code));
+        isEUVisitor = euCountries.includes(data.country_code);
       } catch (err) {
         console.warn('EU detection failed, showing banner universally as fallback');
-        setIsEU(true);  // Fallback: Show for all to err on caution
+        isEUVisitor = true;  // Fallback: Show for all to err on caution
+      }
+      setIsEU(isEUVisitor);
+
+      if (!isEUVisitor) {
+        // Non-EU visitors: consent not required, load analytics immediately
+        loadGoogleAnalytics();
+      } else if (document.cookie.includes('thriveclan-consent=true')) {
+        // EU visitors who already consented
+        setConsentGiven(true);
+        loadGoogleAnalytics();
       }
     };
-    detectEU();
-
-    // Check existing consent
-    if (document.cookie.includes('thriveclan-consent=true')) {
-      setConsentGiven(true);
-      loadGoogleAnalytics();
-    }
+    init();
   }, []);
 
   const loadGoogleAnalytics = () => {
