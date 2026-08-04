@@ -12,7 +12,7 @@ export async function POST(req) {
 
     const { error } = await resend.emails.send({
       from: 'The Thrive Clan <hello@thethriveclan.com>',
-      to: ['jon@thethriveclan.com'],
+      to: ['miranda@thethriveclan.com'],
       replyTo: email,
       subject: `Contact — ${name}${organisation ? ` (${organisation})` : ''}`,
       html: `
