@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'About Us | The Thrive Clan',
+  title: 'About Us',
   description: 'Miranda and Jonathan Kelly — the people behind Last Prompt, Resilience Intelligence, and the methodology that connects them.',
 };
 

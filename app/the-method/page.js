@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'The Method | The Thrive Clan',
+  title: 'The Method',
   description: 'Cascade modeling and chronosymbiosis — two frameworks that turned out to be the same insight at different scales.',
 };
 

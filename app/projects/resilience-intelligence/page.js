@@ -2,7 +2,7 @@ import Link from 'next/link';
 import NewsletterSignup from '../../components/NewsletterSignup';
 
 export const metadata = {
-  title: 'Resilience Intelligence | The Thrive Clan',
+  title: 'Resilience Intelligence',
   description: 'Cascade modeling of energy systems and social infrastructure vulnerabilities — live dashboards and published research.',
 };
 

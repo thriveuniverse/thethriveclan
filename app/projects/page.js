@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Our Projects | The Thrive Clan',
+  title: 'Our Projects',
   description: 'One idea, followed by two people to two different conclusions: Last Prompt and Resilience Intelligence.',
 };
 

@@ -5,7 +5,7 @@ import Link from "next/link";
 import QuickThought from "../components/QuickThought";
 
 export const metadata = {
-  title: 'Notes | The Thrive Clan',
+  title: 'Notes',
   description: 'Thinking in progress — quick thoughts, essays, and the working papers behind the work.',
 };
 

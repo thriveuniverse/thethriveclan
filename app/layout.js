@@ -11,7 +11,7 @@ export const metadata = {
   metadataBase: new URL('https://thethriveclan.com'),
   title: {
     default: 'The Thrive Clan | Big Ideas, Rigorous Execution',
-    template: '%s | The Thrive Clan',
+    template: 'The Thrive Clan | %s',
   },
   description: 'Independent research at the intersection of decision intelligence and systemic resilience. Home of Last Prompt and the Compound Cascade Systems Modelling Framework.',
   openGraph: {

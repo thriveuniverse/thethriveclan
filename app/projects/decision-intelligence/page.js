@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Decisions that Remember | The Thrive Clan',
+  title: 'Decisions that Remember',
   description: 'Why your most promising people may not be ready for the decisions you are about to ask them to make — and the consequence-bearing reasoning environment built to close that gap.',
 };
 
