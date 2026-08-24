@@ -6,9 +6,34 @@ import Link from "next/link";
 
 const essaysDirectory = path.join(process.cwd(), "content/essays");
 
-// Essays are plain prose (paragraphs, *emphasis*, --- dividers) — no need
+// Essays are plain prose (paragraphs, *emphasis*, [links](url), --- dividers) — no need
 // for a full MDX pipeline, so this renders them directly to avoid the
 // React 18 / Next 16 RSC version conflict in next-mdx-remote/rsc.
+function renderInline(text) {
+  const parts = text.split(/(\*[^*]+\*|\[[^\]]+\]\([^)]+\))/g);
+  return parts.map((part, j) => {
+    if (part.startsWith('*') && part.endsWith('*') && part.length > 2) {
+      return <em key={j}>{part.slice(1, -1)}</em>;
+    }
+    const linkMatch = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (linkMatch) {
+      const [, label, href] = linkMatch;
+      return (
+        <a
+          key={j}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-cyan-400 hover:text-cyan-300 underline underline-offset-2 transition-colors"
+        >
+          {label}
+        </a>
+      );
+    }
+    return part;
+  });
+}
+
 function renderEssayBody(content) {
   const blocks = content.trim().split(/\n\n+/);
   return blocks.map((block, i) => {
@@ -24,14 +49,9 @@ function renderEssayBody(content) {
         </blockquote>
       );
     }
-    const parts = trimmedBlock.split(/(\*[^*]+\*)/g);
     return (
       <p key={i} className="mb-6 leading-relaxed">
-        {parts.map((part, j) =>
-          part.startsWith('*') && part.endsWith('*') && part.length > 2
-            ? <em key={j}>{part.slice(1, -1)}</em>
-            : part
-        )}
+        {renderInline(trimmedBlock)}
       </p>
     );
   });
