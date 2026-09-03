@@ -3,6 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 const essaysDirectory = path.join(process.cwd(), "content/essays");
 
@@ -69,15 +70,27 @@ export default async function Page({ params }) {
   const { data, content } = matter(fileContents);
 
   return (
-    <article className="min-h-screen bg-[#0d0b14] py-16" style={{ minHeight: '80vh' }}>
+    <article className="min-h-screen bg-[#0d0b14] py-10 md:py-16" style={{ minHeight: '80vh' }}>
       <div className="max-w-3xl mx-auto px-4">
         <div className="text-cyan-400 text-xs font-semibold uppercase tracking-widest mb-4">Essay</div>
-        <header className="mb-10">
+        <header className="mb-8">
           <h1 className="text-4xl font-bold text-white mb-3">{data.title || "Untitled"}</h1>
           {data.teaser && (
             <p className="text-lg text-[#b8b0d8]">{data.teaser}</p>
           )}
         </header>
+        {data.image && (
+          <div className="mb-6 flex justify-center">
+            <Image
+              src={data.image}
+              alt={data.imageAlt || ""}
+              width={data.imageWidth}
+              height={data.imageHeight}
+              className="h-auto w-auto max-h-[28vh] max-w-xs sm:max-w-sm rounded-lg"
+              priority
+            />
+          </div>
+        )}
         <div className="text-lg text-[#b8b0d8] max-w-none">
           {renderEssayBody(content)}
         </div>

@@ -1,6 +1,7 @@
-Essay
-
-# Why, Again?
+---
+title: Why, Again?
+teaser: A toddler doesn't ask why because they're annoying. They ask because they're the only honest scientist in the room — and somewhere around adulthood, most of us stop.
+---
 
 *A toddler doesn't ask a million questions because they're annoying. They ask because they're the only honest scientist in the room.*
 
@@ -33,17 +34,3 @@ I notice this most clearly in the gap between how do I do X and why is X true. T
 How do I do X wants an output. It terminates cleanly, usually in one exchange, because the goal was never to understand the mechanism — the goal was to get the artifact and move on. Why is X true doesn't terminate. It forks. It keeps producing its own next question, the way it did when you were three, because a real model always has another seam if you look closely enough. Most adult thinking, most of the time, lives entirely in the first mode. Not from stupidity. From the same rational pressure that shaped the school system in the first place: the artifact is what gets graded, what gets delivered, what gets paid for. The model underneath it is invisible to whoever's judging the output, so it quietly stops getting built.
 
 The uncomfortable part isn't that we stopped asking why. It's that we usually can't tell we've stopped. Nobody feels the absence of a question they no longer think to ask.
-
----
-
-This is, I think, the real reason Last Prompt asks what it asks.
-
-Every event in every skin is, underneath the specific crisis, the same three-year-old's question dressed up in adult stakes: why is this happening, what would have to be true for my plan to actually hold, and what happens when I push on it. The environment doesn't hand you Rayleigh scattering and move you along. It waits. It wants to know whether your first interpretation survives a second look, whether the model you're about to commit forty-seven employees' futures to would actually hold if someone pushed on it the way a toddler pushes on everything, instinctively, without being taught to.
-
-The infuriating thing about a three-year-old's why is that it doesn't accept a plausible-sounding answer just because it sounds finished. It keeps going until the model is actually theirs. That is, uncomfortably, the harder and rarer thing — not to know an answer, but to have built one you could defend against the next why, and the one after that.
-
-I don't think we need to become toddlers again. I'm not encouraging anyone's balcony, or anyone's good trousers in the rain. But I think we need to notice how much of that instinct we quietly traded away for a faster answer, and ask, every so often, whether the trade was actually worth it.
-
-Why, again?
-
-Not what you choose. How you reason.
