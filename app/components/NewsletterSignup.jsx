@@ -54,7 +54,7 @@ export default function NewsletterSignup() {
     <div className="bg-[#13111e] rounded-xl p-6 border border-[#2a2540]">
       <div className="text-cyan-400 text-xs font-semibold uppercase tracking-widest mb-2">Free Weekly Briefings</div>
       <h2 className="text-xl font-bold text-white mb-2">Get the OilWatch Briefings</h2>
-      <p className="text-[#b8b0d8] mb-4 leading-relaxed">
+      <p className="text-[#e2dff2] mb-4 leading-relaxed">
         One concise email per region, straight from the live dashboards — reserve status,
         price movements, and supply-risk signals. Pick whichever region(s) matter to you.
       </p>
@@ -62,7 +62,7 @@ export default function NewsletterSignup() {
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="flex flex-wrap gap-4">
           {REGIONS.map((region) => (
-            <label key={region.id} className="flex items-center gap-2 text-sm text-[#b8b0d8] cursor-pointer">
+            <label key={region.id} className="flex items-center gap-2 text-sm text-[#e2dff2] cursor-pointer">
               <input
                 type="checkbox"
                 checked={selected.includes(region.id)}

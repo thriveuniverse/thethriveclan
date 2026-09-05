@@ -13,7 +13,7 @@ export default function QuickThought({ title, body }) {
           <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
         </svg>
       </summary>
-      <div className="px-6 pb-6 text-[#b8b0d8] leading-relaxed">
+      <div className="px-6 pb-6 text-[#e2dff2] leading-relaxed">
         {body}
       </div>
     </details>

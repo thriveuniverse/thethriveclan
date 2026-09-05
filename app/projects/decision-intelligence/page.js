@@ -10,7 +10,7 @@ export default function LastPromptPage() {
     <div className="min-h-screen bg-[#0d0b14] py-16">
       <div className="max-w-4xl mx-auto px-4">
         <h1 className="text-4xl font-bold text-white mb-6">Decisions that Remember</h1>
-        <div className="space-y-5 text-lg text-[#b8b0d8] leading-relaxed mb-12 max-w-2xl">
+        <div className="space-y-5 text-lg text-[#e2dff2] leading-relaxed mb-12 max-w-2xl">
           <p>
             Ask a senior leader what mistakes their team makes, and they&apos;ll answer without
             hesitating — people miss the bigger picture, they handle what&apos;s in front of them
@@ -44,7 +44,7 @@ export default function LastPromptPage() {
         </div>
 
         <h2 className="text-2xl font-bold text-white mb-4">This is Last Prompt</h2>
-        <div className="space-y-5 text-lg text-[#b8b0d8] leading-relaxed mb-12 max-w-2xl">
+        <div className="space-y-5 text-lg text-[#e2dff2] leading-relaxed mb-12 max-w-2xl">
           <p>
             Last Prompt is a consequence-bearing reasoning environment — not a game, not a
             course, not a simulation you can pause and rewind. You get one advisor&apos;s honest,
@@ -74,7 +74,7 @@ export default function LastPromptPage() {
           <div className="bg-[#13111e] rounded-xl p-6 border border-[#2a2540]">
             <div className="text-cyan-400 text-xs font-semibold uppercase tracking-widest mb-2">The Methodology</div>
             <h2 className="text-xl font-bold text-white mb-3">LastPrompt — last-prompt.com</h2>
-            <p className="text-[#b8b0d8] mb-4 leading-relaxed">
+            <p className="text-[#e2dff2] mb-4 leading-relaxed">
               This site exists because the decision engine kept being misread. Every explanation —
               human and AI — tried to fit it into an existing category: game, simulation, training tool,
               self-help. It is none of those things. Last-prompt.com is the most complete account of
@@ -112,7 +112,7 @@ export default function LastPromptPage() {
           <div className="bg-[#13111e] rounded-xl p-6 border border-[#2a2540]">
             <div className="text-cyan-400 text-xs font-semibold uppercase tracking-widest mb-2">The Working Paper</div>
             <h2 className="text-xl font-bold text-white mb-3">The Development Trap of the Protected Generation</h2>
-            <p className="text-[#b8b0d8] mb-4 leading-relaxed">
+            <p className="text-[#e2dff2] mb-4 leading-relaxed">
               The full argument — the four mechanisms behind the gap, the eight architectural
               requirements any honest solution has to satisfy, and the early evidence from beta
               testing — written up in full.
@@ -130,7 +130,7 @@ export default function LastPromptPage() {
           <div className="bg-[#13111e] rounded-xl p-6 border border-[#2a2540]">
             <div className="text-cyan-400 text-xs font-semibold uppercase tracking-widest mb-2">The Origin</div>
             <h2 className="text-xl font-bold text-white mb-3">The Glass</h2>
-            <p className="text-[#b8b0d8] mb-4 leading-relaxed">
+            <p className="text-[#e2dff2] mb-4 leading-relaxed">
               The event is never what ends the system — it&apos;s the thing nobody was watching
               while everyone stared at the crisis. The personal essay behind why Last Prompt
               exists.
@@ -146,7 +146,7 @@ export default function LastPromptPage() {
         </div>
 
         <div className="mt-12 p-6 bg-[#0b1929] rounded-xl border border-[#1a3a4a]">
-          <p className="text-[#b8b0d8] leading-relaxed">
+          <p className="text-[#e2dff2] leading-relaxed">
             <span className="font-semibold text-white">Where it connects: </span>
             The same partial-perspective problem shows up on the other side of this site, at a
             different scale. Resilience Intelligence tracks exactly this kind of blindness across
@@ -159,7 +159,7 @@ export default function LastPromptPage() {
         </div>
 
         <div className="mt-8">
-          <Link href="/projects" className="text-[#7a7598] hover:text-[#b8b0d8] text-sm transition-colors">
+          <Link href="/projects" className="text-[#7a7598] hover:text-[#e2dff2] text-sm transition-colors">
             ← Back to Our Projects
           </Link>
         </div>

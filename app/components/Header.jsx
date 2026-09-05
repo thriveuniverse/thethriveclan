@@ -32,7 +32,7 @@ export default function Header() {
               <div key={item.href} className="relative group h-full flex items-center">
                 <Link
                   href={item.href}
-                  className="inline-flex items-center gap-1 text-sm font-medium text-[#b8b0d8] hover:text-white transition-colors py-1"
+                  className="inline-flex items-center gap-1 text-sm font-medium text-[#e2dff2] hover:text-white transition-colors py-1"
                 >
                   {item.label}
                   <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -45,7 +45,7 @@ export default function Header() {
                       <Link
                         key={child.href}
                         href={child.href}
-                        className="block px-4 py-2 text-sm text-[#b8b0d8] hover:bg-[#1c1930] hover:text-white transition-colors"
+                        className="block px-4 py-2 text-sm text-[#e2dff2] hover:bg-[#1c1930] hover:text-white transition-colors"
                       >
                         {child.label}
                       </Link>
@@ -57,7 +57,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium text-[#b8b0d8] hover:text-white transition-colors py-1"
+                className="text-sm font-medium text-[#e2dff2] hover:text-white transition-colors py-1"
               >
                 {item.label}
               </Link>
@@ -70,7 +70,7 @@ export default function Header() {
           <summary className="list-none cursor-pointer p-2 -mr-2">
             <span className="sr-only">Open main menu</span>
             <svg
-              className="h-6 w-6 text-[#b8b0d8]"
+              className="h-6 w-6 text-[#e2dff2]"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -88,7 +88,7 @@ export default function Header() {
               <div key={item.href}>
                 <Link
                   href={item.href}
-                  className="block px-4 py-2 text-sm text-[#b8b0d8] hover:bg-[#1c1930] hover:text-white transition-colors"
+                  className="block px-4 py-2 text-sm text-[#e2dff2] hover:bg-[#1c1930] hover:text-white transition-colors"
                   onClick={() => { if (detailsRef.current) detailsRef.current.open = false; }}
                 >
                   {item.label}

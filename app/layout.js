@@ -70,20 +70,20 @@ function Footer() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm text-[#7a7598] hover:text-[#b8b0d8] transition-colors"
+              className="text-sm text-[#7a7598] hover:text-[#e2dff2] transition-colors"
             >
               {item.label}
             </Link>
           ))}
         </nav>
         <nav className="flex flex-wrap justify-center gap-4">
-          <Link href="/privacy" className="text-sm text-[#7a7598] hover:text-[#b8b0d8] transition-colors">
+          <Link href="/privacy" className="text-sm text-[#7a7598] hover:text-[#e2dff2] transition-colors">
             Privacy Policy
           </Link>
-          <Link href="/refund" className="text-sm text-[#7a7598] hover:text-[#b8b0d8] transition-colors">
+          <Link href="/refund" className="text-sm text-[#7a7598] hover:text-[#e2dff2] transition-colors">
             Refund Policy
           </Link>
-          <Link href="/terms" className="text-sm text-[#7a7598] hover:text-[#b8b0d8] transition-colors">
+          <Link href="/terms" className="text-sm text-[#7a7598] hover:text-[#e2dff2] transition-colors">
             Terms of Service
           </Link>
         </nav>

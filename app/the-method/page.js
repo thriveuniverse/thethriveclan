@@ -11,12 +11,12 @@ export default function TheMethodPage() {
       <div className="max-w-4xl mx-auto px-4">
 
         <h1 className="text-4xl font-bold text-white mb-6">The Method</h1>
-        <p className="text-lg text-[#b8b0d8] leading-relaxed mb-4 max-w-2xl">
+        <p className="text-lg text-[#e2dff2] leading-relaxed mb-4 max-w-2xl">
           We didn&apos;t set out to build a unified methodology. We set out to solve two different
           problems — how leaders rehearse high-stakes decisions, and how energy systems cascade
           into crisis. The method emerged when we noticed we were writing the same equations twice.
         </p>
-        <p className="text-lg text-[#b8b0d8] leading-relaxed mb-4 max-w-2xl">
+        <p className="text-lg text-[#e2dff2] leading-relaxed mb-4 max-w-2xl">
           Cascade Modeling is a chain of consequence — one shock forcing the next, propagating
           outward through a system. Chronosymbiosis is a resonance through threads — the way a
           decision made now echoes forward and reshapes what&apos;s possible later. Different
@@ -36,21 +36,21 @@ export default function TheMethodPage() {
           <div className="bg-[#13111e] rounded-xl p-6 border border-[#2a2540]">
             <div className="text-cyan-400 text-sm font-semibold uppercase tracking-wide mb-2">Component One</div>
             <h2 className="text-xl font-bold text-white mb-3">Cascade Modeling</h2>
-            <p className="text-[#b8b0d8] leading-relaxed mb-4">
+            <p className="text-[#e2dff2] leading-relaxed mb-4">
               Mapping how shocks propagate across interconnected systems. The core question is not
               &ldquo;what happens when X fails?&rdquo; but &ldquo;what else becomes possible —
               or impossible — once X has failed?&rdquo; Cascade thinking treats second- and
               third-order effects as the primary object of analysis, because that is where
               real risk lives.
             </p>
-            <p className="text-[#b8b0d8] leading-relaxed mb-4">
+            <p className="text-[#e2dff2] leading-relaxed mb-4">
               In Resilience Intelligence, this is the entire analytical framework — mapping how
               a disruption at the Strait of Hormuz propagates through fuel prices into food systems,
               or how interconnected vulnerabilities across UK infrastructure amplify rather than
               simply add.
             </p>
             <div className="bg-[#0d0b14] rounded-lg p-4 border-l-4 border-cyan-700">
-              <p className="text-sm text-[#b8b0d8]">
+              <p className="text-sm text-[#e2dff2]">
                 <span className="font-semibold text-white">In the decision engine: </span>
                 The LastPrompt engine applies cascade logic through interdependency multipliers —
                 when cohesion is low, diplomacy outcomes are dampened; when infrastructure is
@@ -64,7 +64,7 @@ export default function TheMethodPage() {
           <div className="bg-[#13111e] rounded-xl p-6 border border-[#2a2540]">
             <div className="text-cyan-400 text-sm font-semibold uppercase tracking-wide mb-2">Component Two</div>
             <h2 className="text-xl font-bold text-white mb-3">Chronosymbiosis</h2>
-            <p className="text-[#b8b0d8] leading-relaxed mb-4">
+            <p className="text-[#e2dff2] leading-relaxed mb-4">
               A framework for weaving temporal dynamics into decision models so that time becomes
               a design variable, not just a constraint. Where conventional analysis asks
               &ldquo;what is true now?&rdquo;, chronosymbiosis asks &ldquo;what becomes true
@@ -72,13 +72,13 @@ export default function TheMethodPage() {
               between present and future is reciprocal: decisions made now alter the conditions
               under which future decisions will be made.
             </p>
-            <p className="text-[#b8b0d8] leading-relaxed mb-4">
+            <p className="text-[#e2dff2] leading-relaxed mb-4">
               In Resilience Intelligence, this is visible in the live dashboards — not a snapshot
               of today&apos;s supply, but an ongoing map of how exposure accumulates and compounds
               over time.
             </p>
             <div className="bg-[#0d0b14] rounded-lg p-4 border-l-4 border-cyan-700">
-              <p className="text-sm text-[#b8b0d8]">
+              <p className="text-sm text-[#e2dff2]">
                 <span className="font-semibold text-white">In the decision engine: </span>
                 Chronosymbiosis is operationalised as <code className="bg-[#2a2540] px-1 rounded text-xs text-cyan-300">temporal_symbiosis</code> —
                 the sixth and final rubric criterion by which every decision is evaluated. It is not
@@ -92,7 +92,7 @@ export default function TheMethodPage() {
 
         {/* Synthesis */}
         <div className="bg-[#1e1b30] rounded-xl p-8 border border-[#2a2540] mb-8">
-          <p className="text-[#b8b0d8] leading-relaxed">
+          <p className="text-[#e2dff2] leading-relaxed">
             Applied to energy systems, it maps how a disruption at the Strait of Hormuz reaches
             a UK supermarket shelf. Applied to decision environments, it maps how a poor
             allocation in Chapter One creates the fragile landscape that makes Chapter

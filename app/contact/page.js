@@ -44,7 +44,7 @@ export default function ContactPage() {
     <div className="min-h-screen bg-[#0d0b14] py-16">
       <div className="max-w-2xl mx-auto px-4">
         <h1 className="text-4xl font-bold text-white mb-4">Contact</h1>
-        <p className="text-[#b8b0d8] leading-relaxed mb-10">
+        <p className="text-[#e2dff2] leading-relaxed mb-10">
           If you&apos;re interested in the decision engine, the research, or just want to talk
           through an idea — we&apos;d like to hear from you.
         </p>
@@ -52,14 +52,14 @@ export default function ContactPage() {
         {status === 'success' ? (
           <div className="bg-[#13111e] border border-[#2a2540] rounded-xl p-8 text-center">
             <p className="text-white text-lg font-medium mb-2">Message sent.</p>
-            <p className="text-[#b8b0d8]">We&apos;ll be in touch.</p>
+            <p className="text-[#e2dff2]">We&apos;ll be in touch.</p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-6">
 
             <div className="grid sm:grid-cols-2 gap-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-[#b8b0d8] mb-2">
+                <label htmlFor="name" className="block text-sm font-medium text-[#e2dff2] mb-2">
                   Name
                 </label>
                 <input
@@ -72,7 +72,7 @@ export default function ContactPage() {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-[#b8b0d8] mb-2">
+                <label htmlFor="email" className="block text-sm font-medium text-[#e2dff2] mb-2">
                   Email
                 </label>
                 <input
@@ -87,7 +87,7 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <label htmlFor="organisation" className="block text-sm font-medium text-[#b8b0d8] mb-2">
+              <label htmlFor="organisation" className="block text-sm font-medium text-[#e2dff2] mb-2">
                 Organisation <span className="text-[#7a7598] font-normal">(optional)</span>
               </label>
               <input
@@ -100,7 +100,7 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-[#b8b0d8] mb-2">
+              <label htmlFor="message" className="block text-sm font-medium text-[#e2dff2] mb-2">
                 Message
               </label>
               <textarea

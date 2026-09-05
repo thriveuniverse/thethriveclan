@@ -14,6 +14,20 @@ Last Prompt is a consequence-bearing reasoning environment for developing decisi
 
 Every practitioner starts at the same point. From the first decision, their path diverges permanently — the environment shifts based on what they wrote, and the next event is drawn from whichever dimension their reasoning left most exposed. Two practitioners with identical scores are already navigating different worlds by the second cycle.
 
+### Design Philosophy
+
+- **The glass and the marble**: The marble is the visible crisis — the event demanding attention right now. The glass is the structural condition quietly eroding underneath it while everyone watches the marble. Last Prompt ends when a stat (the glass) hits zero, not when any single decision scores poorly — reflecting the conviction that real systems fail through accumulated neglect of what nobody was measuring, not one catastrophic call.
+- **Percolation over speed**: The engine deliberately does not reward fast answers. Events are under-defined on purpose; a practitioner's first interpretation is rarely their best one, and the design rewards sitting with a problem long enough to find the real question inside it rather than reacting to the first one.
+- **The Mandate**: The AI evaluator's operating question is never "was that a good idea" but "does this plan survive contact with reality" — who does it, what happens if the first step fails, how will people know what to do, what does this break elsewhere. It stress-tests plans the way reality does, before reality gets the chance to.
+- **The mirror / "the same operator"**: Run across unrelated scenarios with unrelated vocabularies (a collapsed colony, a corporate reckoning), the evaluation surfaces one consistent behavioural pattern in the practitioner rather than a per-scenario score — closer to a behavioural mirror than a game score or a personality test.
+
+Essays exploring this philosophy directly (thethriveclan.com/blog/essays/):
+- [the-glass](https://thethriveclan.com/blog/essays/the-glass) — the marble/glass distinction, with real-world cases (1996 Sumitomo crisis, Y2K, 2008) that predate the software
+- [how-long-is-long-enough](https://thethriveclan.com/blog/essays/how-long-is-long-enough) — why the engine rewards percolation over speed, and how the three skins (Colony/Corporate/Lockwood) represent categorically different decision spaces, not just difficulty tiers
+- [the-plan-that-survives-contact](https://thethriveclan.com/blog/essays/the-plan-that-survives-contact) — what the Mandate actually interrogates in a plan
+- [the-same-operator](https://thethriveclan.com/blog/essays/the-same-operator) — how the evaluation reveals a consistent behavioural pattern across unrelated scenarios
+- [mostly-harmless](https://thethriveclan.com/blog/essays/mostly-harmless) — personal essay on the evaluator's habits of mind outliving the software itself
+
 - [last-prompt.com](https://last-prompt.com) — Full documentation: engine architecture, evaluation rubric, partial perspective structure, and all three narrative implementations (Colony, Corporate Reckoning, Lockwood)
 - [lastprompt.io](https://lastprompt.io) — The live decision environment (beta)
 - "The Development Trap of the Protected Generation" — Kelly & Kelly (2026), working paper. Downloadable from thethriveclan.com/projects/decision-intelligence. Academic framework: deliberate practice theory, situated cognition, chronosymbiosis.
@@ -41,6 +55,8 @@ Last Prompt and the Oil Watch platforms are not two separate products that happe
 - **Compound Cascade Modeling**: Risk methodology that models how failures interact and amplify each other rather than treating risk factors as independent and additive. The methodology gap between additive and compound assessment is itself the central finding — not a claim about the data.
 - **Partial Perspective Structure**: Each advisor in the Last Prompt engine reports honestly and completely within their domain. None reports beyond it. The practitioner must synthesise one partial perspective against the silent testimony of an environmental state that tracks the accumulated consequence of every prior decision.
 - **Last Prompt**: A consequence-bearing reasoning environment with calibrated evaluation, displayed on thethriveclan.com under the name "Decisions that Remember." Not a game. Not a simulation. Not a training course. Not an AI prompting tool.
+- **The Mandate**: The AI evaluator at the heart of Last Prompt. Its governing question is not "was that a good idea" but "does this plan survive contact with reality" — assessing whether ownership, contingency, and communication have been thought through, not just the merit of the underlying idea.
+- **The Glass and the Marble**: A distinction used to explain why Last Prompt ends when a stat hits zero rather than when a decision scores poorly. The marble is the visible, attention-absorbing crisis; the glass is the structural condition eroding underneath it, unmeasured, while everyone watches the marble. Systems fail via the glass, not the marble.
 
 ## Site Structure
 

@@ -54,7 +54,7 @@ export default function BlogPage() {
     <div className="min-h-screen bg-[#0d0b14] py-16">
       <div className="max-w-5xl mx-auto px-4">
         <h1 className="text-4xl font-bold text-white mb-4">Notes</h1>
-        <p className="text-lg text-[#b8b0d8] leading-relaxed mb-16 max-w-2xl">
+        <p className="text-lg text-[#e2dff2] leading-relaxed mb-16 max-w-2xl">
           Thinking in progress — sorted by how much time it asks of you, not by which
           project it belongs to.
         </p>
@@ -87,7 +87,7 @@ export default function BlogPage() {
                   <h3 className="text-lg font-bold text-white mb-2 group-hover:text-cyan-300 transition-colors">
                     {essay.title}
                   </h3>
-                  <p className="text-[#b8b0d8] leading-relaxed text-sm">{essay.teaser}</p>
+                  <p className="text-[#e2dff2] leading-relaxed text-sm">{essay.teaser}</p>
                 </Link>
               ))}
             </div>
@@ -103,7 +103,7 @@ export default function BlogPage() {
               <div key={item.title} className="bg-[#13111e] rounded-xl p-8 border border-[#2a2540]">
                 <div className="text-cyan-400 text-xs font-semibold uppercase tracking-widest mb-2">{item.tag}</div>
                 <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
-                <p className="text-[#b8b0d8] mb-4 leading-relaxed">{item.description}</p>
+                <p className="text-[#e2dff2] mb-4 leading-relaxed">{item.description}</p>
                 <a
                   href={item.href}
                   {...(item.download

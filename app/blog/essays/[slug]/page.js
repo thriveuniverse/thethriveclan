@@ -76,7 +76,7 @@ export default async function Page({ params }) {
         <header className="mb-8">
           <h1 className="text-4xl font-bold text-white mb-3">{data.title || "Untitled"}</h1>
           {data.teaser && (
-            <p className="text-lg text-[#b8b0d8]">{data.teaser}</p>
+            <p className="text-lg text-[#e2dff2]">{data.teaser}</p>
           )}
         </header>
         {data.image && (
@@ -91,11 +91,11 @@ export default async function Page({ params }) {
             />
           </div>
         )}
-        <div className="text-lg text-[#b8b0d8] max-w-none">
+        <div className="text-lg text-[#e2dff2] max-w-none">
           {renderEssayBody(content)}
         </div>
         <div className="mt-12">
-          <Link href="/blog" className="text-[#7a7598] hover:text-[#b8b0d8] text-sm transition-colors">
+          <Link href="/blog" className="text-[#7a7598] hover:text-[#e2dff2] text-sm transition-colors">
             ← Back to Notes
           </Link>
         </div>

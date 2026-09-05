@@ -26,7 +26,7 @@ export default function Home() {
         <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
           Big Ideas,<br />Rigorous Execution
         </h1>
-        <p className="text-xl text-[#b8b0d8] leading-relaxed">
+        <p className="text-xl text-[#e2dff2] leading-relaxed">
           One of us arrives with the impossible idea. The other makes it rigorous, real, and
           deployed. Between us we&apos;ve built AI-evaluated reasoning engines, live energy supply
           dashboards, and published the frameworks that connect them — all because the ideas
@@ -54,16 +54,16 @@ export default function Home() {
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 leading-tight">
           We Live in the World We Create
         </h2>
-        <p className="text-lg text-[#b8b0d8] leading-relaxed mb-5">
+        <p className="text-lg text-[#e2dff2] leading-relaxed mb-5">
           Most environments — companies, communities, societies — aren&apos;t designed. They accumulate.
           Each decision leaves a residue: a process, a precedent, a constraint. Over time, the residue
           becomes the world.
         </p>
-        <p className="text-lg text-[#b8b0d8] leading-relaxed mb-5">
+        <p className="text-lg text-[#e2dff2] leading-relaxed mb-5">
           The implication is uncomfortable: if you&apos;re not deciding deliberately, someone else&apos;s
           decisions are shaping your reality for you.
         </p>
-        <p className="text-lg text-[#b8b0d8] leading-relaxed">
+        <p className="text-lg text-[#e2dff2] leading-relaxed">
           Last Prompt and Resilience Intelligence are both attempts to answer the same
           question — what does it look like to decide with intention, in conditions complex enough
           to matter?
@@ -83,7 +83,7 @@ export default function Home() {
             <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors">
               Decisions that Remember
             </h2>
-            <p className="text-[#b8b0d8] leading-relaxed">
+            <p className="text-[#e2dff2] leading-relaxed">
               A consequence-bearing reasoning environment for high-stakes decision rehearsal. Built on chronosymbiosis.
               The mandate: help leaders think through complexity before they face it.
             </p>
@@ -96,7 +96,7 @@ export default function Home() {
             <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors">
               Resilience Intelligence
             </h2>
-            <p className="text-[#b8b0d8] leading-relaxed">
+            <p className="text-[#e2dff2] leading-relaxed">
               Cascade modeling of energy systems and social infrastructure. Live dashboards
               tracking real supply data across three regions. Published research mapping
               systemic vulnerability before it cascades into crisis.
@@ -107,7 +107,7 @@ export default function Home() {
         <div className="text-center mt-8">
           <Link
             href="/projects"
-            className="text-[#7a7598] hover:text-[#b8b0d8] text-sm transition-colors"
+            className="text-[#7a7598] hover:text-[#e2dff2] text-sm transition-colors"
           >
             See all projects →
           </Link>
@@ -126,7 +126,7 @@ export default function Home() {
                 <a
                   href="/downloads/the-development-trap-of-the-protected-generation.pdf"
                   download
-                  className="text-[#b8b0d8] hover:text-cyan-400 transition-colors text-sm leading-snug block"
+                  className="text-[#e2dff2] hover:text-cyan-400 transition-colors text-sm leading-snug block"
                 >
                   The Development Trap — Working Paper →
                 </a>
@@ -136,7 +136,7 @@ export default function Home() {
                   href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6695618"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#b8b0d8] hover:text-cyan-400 transition-colors text-sm leading-snug block"
+                  className="text-[#e2dff2] hover:text-cyan-400 transition-colors text-sm leading-snug block"
                 >
                   Cascade Methodology — SSRN →
                 </a>
@@ -154,7 +154,7 @@ export default function Home() {
                   href="https://ukoilwatch.com/reports/from-hormuz-to-hunger"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#b8b0d8] hover:text-cyan-400 transition-colors text-sm leading-snug block"
+                  className="text-[#e2dff2] hover:text-cyan-400 transition-colors text-sm leading-snug block"
                 >
                   From Hormuz to Hunger →
                 </a>
@@ -164,7 +164,7 @@ export default function Home() {
                   href="https://ukoilwatch.com/reports/the-fall-of-the-uk"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#b8b0d8] hover:text-cyan-400 transition-colors text-sm leading-snug block"
+                  className="text-[#e2dff2] hover:text-cyan-400 transition-colors text-sm leading-snug block"
                 >
                   The Fall of the UK →
                 </a>
@@ -182,7 +182,7 @@ export default function Home() {
                   href="https://last-prompt.com/#contact"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#b8b0d8] hover:text-cyan-400 transition-colors text-sm block"
+                  className="text-[#e2dff2] hover:text-cyan-400 transition-colors text-sm block"
                 >
                   Apply for Beta Access →
                 </a>
@@ -192,7 +192,7 @@ export default function Home() {
                   href="https://ukoilwatch.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#b8b0d8] hover:text-cyan-400 transition-colors text-sm block"
+                  className="text-[#e2dff2] hover:text-cyan-400 transition-colors text-sm block"
                 >
                   UK OilWatch →
                 </a>
@@ -202,7 +202,7 @@ export default function Home() {
                   href="https://eurooilwatch.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#b8b0d8] hover:text-cyan-400 transition-colors text-sm block"
+                  className="text-[#e2dff2] hover:text-cyan-400 transition-colors text-sm block"
                 >
                   Euro OilWatch →
                 </a>
@@ -212,7 +212,7 @@ export default function Home() {
                   href="https://americasoilwatch.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#b8b0d8] hover:text-cyan-400 transition-colors text-sm block"
+                  className="text-[#e2dff2] hover:text-cyan-400 transition-colors text-sm block"
                 >
                   Americas OilWatch →
                 </a>

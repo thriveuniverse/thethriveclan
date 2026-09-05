@@ -35,7 +35,7 @@ export default function About() {
       <div className="max-w-3xl mx-auto px-4">
         <h1 className="text-4xl font-bold text-white mb-10">About Us</h1>
 
-        <div className="space-y-6 text-[#b8b0d8] leading-relaxed text-lg">
+        <div className="space-y-6 text-[#e2dff2] leading-relaxed text-lg">
           <p className="text-xl text-white font-medium leading-relaxed">
             What we share is a reflex: we see the thing that normalcy bias is hiding,
             and we can&apos;t leave it alone.
